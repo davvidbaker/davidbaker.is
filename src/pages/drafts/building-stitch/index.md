@@ -34,4 +34,44 @@ I know that learning another language/ecosystem will make me a better developer 
 
 🔎etymology of journal🔍
 </aside>
+
 Spew words and then tidy.
+
+#### Learning to build a REST API
+I understand the basic ideas behind **RE**presentational **S**tate **T**ransfer, but some times it is nice to see an example for guidance. In stitch, I have the concept of "Categories", very similar―if not exactly the same―as Trello's "Labels". I ❤️ Trello and its creator Fog Creek (who also made Stack Overflow),so I decided to see exactly how they handle label creation and assignment. I think they know what they're doing.
+
+**With the internet, you can see how everything works**, you just need to know where to look.
+
+![create-label.png](create-label.png)
+
+<aside>Whole aside into taking screenshots of dev tools from dev tools, see [tweet](https://twitter.com/davvidbaker/status/923676617842610176), ${also embed the tweet}</aside>
+
+FLESH THIS OUT/actually write it/key it in(?)
+
+
+Am I actually building a REST API? My backend does some things for you. Is that okay? Obviously it is okay, but is it a bad practice?
+
+
+
+___
+
+Ummm...
+
+Strategy for optimistic rendering. A stackk. []]]]]]]]]
+
+[[[[[[[[[[1]]]]]]]]]]
+
+
+...days later...
+
+# The problem is I am building a thing that lets me work on multiple projects at the same time, and I can't work on multiple projects until it is functional (enough), so until then, I need to work exclusively on it. #yikes
+
+Now that I almost can have multiple threads, I want to start using all of them. First I need to make them actually usable tho.
+
+Oh yeah. I should make black-boxing a first class citizen.
+
+I think a general goal when you're skitching [sic] should be to keep your flames low. Probably. Or at least to end low. ~~To have a smooth descent~~ To be spiky during typical periods, and deep during deep-dives [sic]. I should make a [sic] component, maybe not like that with the brackets though.
+
+## It's all about reviving your working memory. Reviving. Revive. Vive. Veev. Vive la franc.
+
+In case this hasn't been written earlier―command pallette.
