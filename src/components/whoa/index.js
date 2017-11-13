@@ -25,39 +25,12 @@ class Whoa extends Component {
   }
 
   render() {
-    console.log(this.props.children());
     return (
       <div>
         {this.props
           .children()
           .map(child => <Element key={shortid.generate()} {...child} />)}
       </div>
-    );
-    if (!this.props.content) {
-      return (
-        <div>
-          {this.props.children.children.map(child => (
-            <Element key={shortid.generate()} {...child} />
-          ))}
-        </div>
-      );
-    }
-
-    // only pure whoa files are just in content
-    return (
-      <article>
-        {this.props.content.children.map(child => (
-          <Element key={shortid.generate()} {...child} />
-        ))}
-        <style jsx>{`
-          article {
-            max-width: 50rem;
-            margin: 0 auto;
-            padding: 5px;
-            position: relative;
-          }
-        `}</style>
-      </article>
     );
   }
 }

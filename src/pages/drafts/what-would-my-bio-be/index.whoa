@@ -1,0 +1,51 @@
+---
+title: A Bio
+date: "2017-11-13T11:14:06.367Z"
+path: "/what-would-my-bio-be/"
+---
+I was just looking at [the about us ](https://callstack.com/about-us)
+
+What would my bio be, if I had to right one write now?<sic>
+
+David is really into charts. Sometimes. And efficiency. And observability. He thinks visualizations are a neat way to load things into your mind hole. He gets self-conscious when writing about himself. He usually has too many tabs open at the same time.
+
+There are times when my tab count just explodes.
+
+...20 minutes
+Well I have just failed to get snippets working.
+...
+
+I kinda like that idea for markup of time elapsing.
+```whoa
+...20 minutes
+Well I have just failed to get snippets working.
+...
+```
+
+**Oh wait I got it!!!** Not sure at all what changed just now from a few minutes ago. Buuuuut, I should cool figure out if I can get
+
+![tabs](tabs.png)
+
+I am having trouble keeping a train of thought right meow 🐱. |- I'm not really into cats―I mean I like them just fine, but I've never lived with one. -|
+
+My thinking can be disjumbled [sic] sometimes.
+
+I will occasionally look to the Chicago Style Guide to see what they prescribe, [like here for *sic*]().
+
+Having so many windows and desktops open doesn't help.
+
+![desktop-1](desktop-1.png)
+
+![desktop-2](desktop-2.png)
+
+I guess I go for Chicago Style Guide because I don't hate what I'm reading, and [a professor] I thought was wise about prescriptive pedagogy said he used it, I think. |-It would be neat to have snippets for wrapping sections. I guess just Emmet.-|
+
+I should make it so images preload their full-res version on hover, and then clicking does the zoom FLIP animation like Medium.
+
+To make the zoom FLIP animation, I should make a little `react-flip` module.
+
+All these windows and tabs and applications are really eating up my memory. 🕵{Both my computer's memory and my memory of what I am really doing.}
+
+![memory consumption](memory.png)
+
+I would really like more control over my image sizes. That should be easy enough. I should do that―also over my image resolution.

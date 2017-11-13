@@ -9,9 +9,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import shortid from 'shortid';
+import styled from 'styled-components';
 
 import Element from './Element';
 import plainText from '../../utils/plainText';
+
+const Span = styled.span`
+  transition: 0.5s;
+`;
 
 function addNormative(statement, id) {
   return {
@@ -38,7 +43,7 @@ export class Normative extends Component {
 
   render() {
     return (
-      <span
+      <Span
         id={this.props.id}
         ref={ref => {
           this.element = ref;
@@ -51,15 +56,7 @@ export class Normative extends Component {
             </Element>
           );
         })}
-
-        <style jsx>
-          {`
-            span {
-              transition: background 0.25s;
-            }
-          `}
-        </style>
-      </span>
+      </Span>
     );
   }
 }
