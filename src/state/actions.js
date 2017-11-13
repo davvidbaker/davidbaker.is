@@ -1,0 +1,8 @@
+export const CLEAR = 'CLEAR';
+export const COMMAND_RUN = 'COMMAND_RUN';
+export const CURRENT_POST_SET = 'CURRENT_POST_SET';
+export const NORMATIVE_ADD = 'NORMATIVE_ADD';
+export const SIDE_BAR_SHOW = 'SIDE_BAR_SHOW';
+export const SIDE_BAR_HIDE = 'SIDE_BAR_HIDE';
+export const REDACTIONS_SHOW = 'REDACTIONS_SHOW';
+export const REDACTIONS_HIDE = 'REDACTIONS_HIDE';

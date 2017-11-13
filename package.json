@@ -7,6 +7,9 @@
     "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
   },
   "dependencies": {
+    "downshift": "^1.9.1",
+    "front-matter": "^2.3.0",
+    "fuzzaldrin-plus": "^0.5.0",
     "gatsby": "^1.9.79",
     "gatsby-link": "^1.6.23",
     "gatsby-plugin-google-analytics": "^1.0.10",
@@ -27,10 +30,14 @@
     "gatsby-transformer-sharp": "^1.6.13",
     "lodash": "^4.15.0",
     "pngquant-bin": "^3.1.1",
+    "react-modal": "^3.1.2",
+    "react-redux": "^5.0.6",
     "react-responsive-grid": "^0.3.3",
-    "typeface-merriweather": "^0.0.35",
-    "typeface-montserrat": "^0.0.37",
-    "typography-theme-wordpress-2016": "^0.15.1"
+    "recompose": "^0.26.0",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "remark-whoa": "0.0.1",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0",
