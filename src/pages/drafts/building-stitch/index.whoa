@@ -3,15 +3,16 @@ title: Building Stitch
 date: "2017-10-25T21:46:45.506Z"
 path: "/building-stitch/"
 ---
+🕵{redact me}
 
 *I want to document some of the things that are happening/slowing me down/taking time while I am making this thing.*
 
-### The main problem
+## The main problem
 I am trying to do many things at once. The biggest thing I am trying to do is build what I am now calling <span class="stitch-title">stitch</span>. The real purpose of stitch is to manage all my threads of work on the various things. It is what I want. I wish I had it to use *while* I build it.
 
 I want to write down some of the journey, and I think I want that to eventually live on a blog, probably this blog, if you are reading this. I had a blog that was a custom React app, but it started getting annoying to maintain. That's something I don't need to do myself (as much) if I use Gatsby, so now I am using Gatsby. There's lots of components to the old blog that still need to be ported over to this one, but I'll do that later.
 
-**Stitch is like a stack trace for your brain.** It's organized into a (flame chart/flame charts){?}. This is really what I need as I am working on multiple tangential projects. The points is to stay focused on one thing at a time, but easily be able to switch between "threads" and trigger recall so it is like I never left. ${revise last sentence}.
+**Stitch is like a stack trace for your brain.** It's organized into a {flame chart, flame charts}(?). This is really what I need as I am working on multiple tangential projects. The points is to stay focused on one thing at a time, but easily be able to switch between "threads" and trigger recall so it is like I never left. ${revise last sentence}.
 
 The things I am jumping between (my threads)
 - Stitch frontend
@@ -29,11 +30,9 @@ The only general-purpose programming language I really reach for when doing just
 
 I know that learning another language/ecosystem will make me a better developer because it will expose me to ideas/paradigms/MOs ${sic} that we just don't practice in the JavaScript world. Trying to learn the language fundamentals while also trying to learn my way around the Phoenix Framework is proving difficult. **I am trying.**
 
-<aside>
 |- Journal is funny word. -|
 
 🔎etymology of journal🔍
-</aside>
 
 Spew words and then tidy.
 
@@ -61,6 +60,7 @@ Strategy for optimistic rendering. A stackk. []]]]]]]]]
 
 [[[[[[[[[[1]]]]]]]]]]
 
+___
 
 ...days later...
 
@@ -75,3 +75,66 @@ I think a general goal when you're skitching [sic] should be to keep your flames
 ## It's all about reviving your working memory. Reviving. Revive. Vive. Veev. Vive la franc.
 
 In case this hasn't been written earlier―command pallette.
+
+___
+
+...days later... (November 11, 2017)
+
+I'm now at a pretty fun place with Stitch. |- I don't like the name Stitch though. -|
+
+It's usable enough to use for the development of multiple projects at the same time, including itself. And since I can use it, I can now start to see how I am using it and how I could make it better so that things fit closer to my mental model of what's being done―if that makes any sense.
+
+
+Name name name.
+Trello
+Flame Chart
+DevTools
+Stitch
+Ahhh
+Breathe
+asdf
+asdfasdfasdf
+Ay Es Dee Ef
+
+```
+A S D F
+h t e l
+h i v a
+h t T m
+  c o e
+  h o 
+    l C
+    s h
+      a
+      r
+      t
+```
+
+Sigh.
+Sigh-dstitch
+Sidestitch.
+
+Yawn.
+Sigh.
+Ahh.
+
+Yawn Jawn.
+yawnjawn
+
+lawnjawn
+
+Surface.
+
+Hum.
+
+Humdrum.
+
+HUMDRUM
+
+humdrum
+
+humjum
+
+I do like humdrum. I could get humdrum.me.
+
+

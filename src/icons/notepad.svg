@@ -1,0 +1,66 @@
+<svg width="35" height="52" viewBox="0 0 35 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(202 808)">
+<g id="Group">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-202 -808)" fill="#FFFADA"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(-202 -808)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(-202 -808)"/>
+</g>
+</g>
+<g id="Rectangle 2">
+<use xlink:href="#path2_fill" transform="translate(-200 -793)" fill="#A3C7FF"/>
+</g>
+<g id="Rectangle 2.12">
+<use xlink:href="#path2_fill" transform="translate(-200 -796)" fill="#A3C7FF"/>
+</g>
+<g id="Rectangle 2.4">
+<use xlink:href="#path3_fill" transform="translate(-202 -808)" fill="#633C19"/>
+</g>
+<g id="Rectangle 2.1">
+<use xlink:href="#path2_fill" transform="translate(-200 -789.915)" fill="#A3C7FF"/>
+</g>
+<g id="Rectangle 2.2">
+<use xlink:href="#path2_fill" transform="translate(-200 -786.831)" fill="#A3C7FF"/>
+</g>
+<g id="Rectangle 2.3">
+<use xlink:href="#path2_fill" transform="translate(-200 -783.746)" fill="#A3C7FF"/>
+</g>
+<g id="Rectangle 2.5">
+<use xlink:href="#path2_fill" transform="translate(-200 -780.97)" fill="#A3C7FF"/>
+</g>
+<g id="Rectangle 2.6">
+<use xlink:href="#path2_fill" transform="translate(-200 -777.886)" fill="#A3C7FF"/>
+</g>
+<g id="Rectangle 2.7">
+<use xlink:href="#path2_fill" transform="translate(-200 -774.801)" fill="#A3C7FF"/>
+</g>
+<g id="Rectangle 2.8">
+<use xlink:href="#path2_fill" transform="translate(-200 -771.716)" fill="#A3C7FF"/>
+</g>
+<g id="Rectangle 2.9">
+<use xlink:href="#path2_fill" transform="translate(-200 -768.94)" fill="#A3C7FF"/>
+</g>
+<g id="Rectangle 2.10">
+<use xlink:href="#path2_fill" transform="translate(-200 -765.856)" fill="#A3C7FF"/>
+</g>
+<g id="Rectangle 2.11">
+<use xlink:href="#path2_fill" transform="translate(-200 -762.771)" fill="#A3C7FF"/>
+</g>
+<g id="Rectangle 3" style="mix-blend-mode:multiply">
+<use xlink:href="#path4_fill" transform="translate(-198 -805)" fill="#FFD0D0"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 35 0L 35 52L 0 52L 0 0Z"/>
+<path id="path1_stroke_2x" d="M 0 0L 0 -2L -2 -2L -2 0L 0 0ZM 35 0L 37 0L 37 -2L 35 -2L 35 0ZM 35 52L 35 54L 37 54L 37 52L 35 52ZM 0 52L -2 52L -2 54L 0 54L 0 52ZM 0 2L 35 2L 35 -2L 0 -2L 0 2ZM 33 0L 33 52L 37 52L 37 0L 33 0ZM 35 50L 0 50L 0 54L 35 54L 35 50ZM 2 52L 2 0L -2 0L -2 52L 2 52Z"/>
+<path id="path2_fill" d="M 0 0L 31 0L 31 0.771144L 0 0.771144L 0 0Z"/>
+<path id="path3_fill" d="M 0 0L 35 0L 35 4L 0 4L 0 0Z"/>
+<path id="path4_fill" d="M 0 0L 1 0L 1 49L 0 49L 0 0Z"/>
+</defs>
+</svg>
