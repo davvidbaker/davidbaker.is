@@ -82,7 +82,6 @@ const NormativesList = ({
           <p>{normative.statement}</p>
         </li>
       ))}
-    <style jsx>{``}</style>
   </UL>
 );
 NormativesList.propTypes = {
