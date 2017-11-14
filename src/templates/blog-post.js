@@ -4,13 +4,14 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import get from 'lodash/get';
 import styled from 'styled-components';
+import CommandPalette from 'react-command-palette';
 
 import Whoa from '../components/whoa';
 import PostHeading from '../components/PostHeading';
 import PostBody from '../components/PostBody';
 import SideBar from '../components/SideBar';
 import Header from '../components/Header';
-import CommandPalette from '../components/CommandPalette';
+// import CommandPalette from '../components/CommandPalette';
 import StyledMain from '../components/StyledMain';
 import WithEventListeners from '../components/WithEventListeners';
 import commands from '../constants/commands';
@@ -81,7 +82,9 @@ class BlogPostTemplate extends React.Component {
                 />
               )}
               <div
+                className="scroll-main"
                 style={{
+                  overflowY: 'scroll',
                   maxWidth: '50rem',
                   margin: '0 auto',
                 }}
@@ -103,6 +106,7 @@ class BlogPostTemplate extends React.Component {
               commands={commands}
               isOpen={this.state.commandPaletteVisible}
               hideCommandPalette={this.hideCommandPalette}
+              dispatchAction={this.props.dispatchAction}
             />
           </BlogPost>
         )}
@@ -120,6 +124,7 @@ export default connect(
     setCurrentPost: title => dispatch({ type: 'CURRENT_POST_SET', title }),
     toggleSideBar: showing =>
       dispatch({ type: showing ? 'SIDE_BAR_HIDE' : 'SIDE_BAR_SHOW' }),
+    dispatchAction: type => dispatch({ type }),
   })
 )(BlogPostTemplate);
 

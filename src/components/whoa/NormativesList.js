@@ -11,8 +11,11 @@ import { connect } from 'react-redux';
 import styled from 'styled-components';
 
 import smoothScrollTo from '../../utils/smoothScrollTo';
+import colors from '../../constants/colors';
 
 const UL = styled.ul`
+  padding: 0;
+
   a {
     color: unset;
     text-decoration: none;
@@ -26,7 +29,7 @@ const UL = styled.ul`
     border-bottom-color: #ccc;
   }
   li:hover {
-    background: var(--color-highlight);
+    background: ${colors.highlight};
   }
 `;
 
@@ -68,11 +71,14 @@ const NormativesList = ({
           onClick={() => {
             const toNode = document.getElementById(normative.id);
             const scrollTo = toNode.getBoundingClientRect().top;
-            const mainNode = document.querySelector('main');
+            /** ⚠️ kinda sketchy―should use refs */
+            const mainNode = document.querySelector('.scroll-main');
+            console.log('scrolling');
 
+            console.log('scrollTo', scrollTo);
             if (scrollTo < 0 || scrollTo > window.innerHeight) {
               smoothScrollTo(
-                document.querySelector('main'),
+                mainNode,
                 scrollTo +
                   (mainNode.scrollTop + mainNode.getBoundingClientRect().top)
               );

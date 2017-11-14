@@ -30,6 +30,7 @@
     "gatsby-transformer-sharp": "^1.6.13",
     "lodash": "^4.15.0",
     "pngquant-bin": "^3.1.1",
+    "react-command-palette": "0.0.6",
     "react-modal": "^3.1.2",
     "react-redux": "^5.0.6",
     "react-responsive-grid": "^0.3.3",

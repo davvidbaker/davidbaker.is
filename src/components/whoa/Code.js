@@ -25,13 +25,13 @@ const BlockCode = styled.pre`
 
 function Code({ value, inline = false, ...props }) {
   return inline ? (
-    <span>
+    <InlineCode>
       <InlineCode>{value}</InlineCode>
-    </span>
+    </InlineCode>
   ) : (
-    <pre>
+    <BlockCode>
       <code>{value}</code>
-    </pre>
+    </BlockCode>
   );
 }
 
