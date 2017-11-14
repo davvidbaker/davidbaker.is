@@ -10,10 +10,11 @@ import { connect } from 'react-redux';
 import Element from './Element';
 
 const Span = styled.span`
-  background: ${props => (props.redactionsVisible ? 'unset' : 'black')};
+  ${props => (props.redactionsVisible ? '' : 'background: black')};
 
-  &::selection {
-    ${props => (props.redactionsVisible ? 'unset' : 'black')};
+  *::selection {
+    ${props =>
+      props.redactionsVisible ? 'background: red' : 'background: black;'};
   }
 `;
 

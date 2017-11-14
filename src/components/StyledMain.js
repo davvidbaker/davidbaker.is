@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import colors from '../constants/colors';
+
 const Main = styled.main`
   position: absolute;
   left: 300px;
@@ -16,7 +18,7 @@ const Main = styled.main`
   }
 
   blockquote {
-    border-left: 5px solid var(--color-main);
+    border-left: 5px solid ${colors.accent1};
     padding: 0.5rem;
     padding-left: 1.5rem;
     margin: 0 1rem;
@@ -46,6 +48,7 @@ const Main = styled.main`
   p {
     margin-top: 0;
     line-height: 1.75em;
+    vertical-align: middle;
   }
 
   ul p {
