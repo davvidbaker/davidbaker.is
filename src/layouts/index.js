@@ -4,6 +4,10 @@ import styled, { injectGlobal } from 'styled-components';
 import WebFont from 'webfontloader';
 
 injectGlobal`
+  :root {
+    /* --display-marginal: none; */
+  }
+
   html {
     min-height: 100vh;
     box-sizing: border-box;
@@ -16,6 +20,19 @@ injectGlobal`
   body {
     margin: 0;
   }
+  
+.marginal {
+  max-width: 250px;
+  display: var(--display-marginal, block);
+}
+
+@media(max-width: 500px) {
+  .marginal {
+      transition: 0.4s;
+      z-index: -100;
+      opacity: 0.05;
+    }
+}
 `;
 
 // 💁 doing font-sizing based on https://css-tricks.com/rems-ems/
@@ -74,7 +91,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            David Baker
           </Link>
         </H1>
       );

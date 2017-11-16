@@ -1,8 +1,36 @@
-import withRedux from 'next-redux-wrapper';
-import { Component } from 'react';
-import Link from 'next/link';
-import { connect } from 'react-redux';
+import React, { Component } from 'react';
+import Link from 'gatsby-link';
+import styled from 'styled-components';
+import colors from '../constants/colors';
 
+const UL = styled.ul`
+  list-style: none;
+  padding: 10px;
+
+  li {
+    margin-bottom: 10px;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a:visited {
+    color: rebeccapurple;
+  }
+  h1 {
+    display: inline;
+    color: ${colors.accent1};
+    font-size: 1rem;
+  }
+  p {
+    display: inline;
+    color: #888;
+    font-family: monospace;
+    font-size: 1rem;
+  }
+`;
 
 class PostList extends Component {
   componentDidMount() {
@@ -11,67 +39,31 @@ class PostList extends Component {
 
   render() {
     return (
-      <ul>
-        {this.props.posts
-          .sort(
-            (a, b) =>
-              new Date(b.date).valueOf() -
-              new Date(a.date).valueOf()
-          )
-          .map(post =>
-            <li key={`link-${post.slug}`}>
-              <Link
-                href={{
-                  pathname: '/blog',
-                  query: { slug: post.slug },
+      <UL>
+        {this.props.posts.map(post => (
+          <li key={post.node.frontmatter.path}>
+            <Link
+              href={{
+                pathname: '/blog',
+                query: { slug: post.slug },
+              }}
+              to={post.node.frontmatter.path}
+            >
+              <h1
+                style={{
+                  opacity: `${post.readTime / 10 + 0.5}`,
+                  fontSize: `${post.readTime / 2 + 0.5}rem`,
                 }}
-                as={`/${post.slug}`}
               >
-                <a>
-                  <h1 style={{opacity: `${post.readTime/10 + 0.5}`, fontSize:  `${post.readTime/2 + 0.5}rem`}} >{post.title}</h1>
-                </a>
-              </Link>
-              {' '}
-              <p>{post.date}</p>
-            </li>
-          )}
-
-        <style jsx>{`
-          ul {
-            list-style: none;
-            padding: 10px;
-          }
-          li {
-            margin-bottom: 10px;
-          }
-          a {
-            text-decoration: none;
-          }
-          a:hover {
-            text-decoration: underline;
-          }
-          a:visited {
-            color: rebeccapurple;
-          }
-          h1 {
-            display: inline;
-            color: var(--color-main);
-            font-size: 1rem;
-          }
-          p {
-            display: inline;
-            color: #888;
-            font-family: var(--font-monospace);
-            font-size: 1rem;
-          }
-        `}</style>
-      </ul>
+                {post.node.frontmatter.title}
+              </h1>
+            </Link>{' '}
+            <p>{post.node.frontmatter.date}</p>
+          </li>
+        ))}
+      </UL>
     );
   }
 }
 
-export default connect(null, dispatch => ({
-  clear: () => {
-    dispatch({ type: 'CLEAR' });
-  },
-}))(PostList);
+export default PostList;

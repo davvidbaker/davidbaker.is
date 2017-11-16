@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
+    title: 'David Baker is Writing',
+    author: 'David Baker',
   },
   plugins: [
     {
@@ -38,4 +38,4 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
   ],
-}
+};

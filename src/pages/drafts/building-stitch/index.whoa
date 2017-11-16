@@ -132,3 +132,30 @@ ___
 *Unrelated: I should make days later/time elapse thing look like it does in Spongebob*
 
 I am starting to feel like the distinction between threads and activities is arbitrary (for stich/humdrum). Yes I believe it is, it's just a matter of how wide a category you want the activity/thread to be, right? 🤔
+
+___
+
+November 16, around midnight
+
+I'm kinda almost **giddy with excitement** over how this tool is coming along. Part of it is that I just love how smooth the zooming is. It's really satisfying. I hope it will scale. I should test that eventually―see what the limits are for maintaining good performance with a variety of variables, like thread count, activity count, word count in the activities, number of different categories (probably not a big deal though). Nevertheless, I am happy with the performance so far, except I need to tweak the hovered block, which is occasionally tripping things up.
+
+I don't think anyone has really applied flame charts on a human level like this before. The closest thing I can think of is a [Gantt chart](https://en.wikipedia.org/wiki/Gantt_chart), but that is more aimed towards planning the future/scheduling, while this is more for tracing real-time/history. 
+
+🔎Gantt charts vs flame charts🔍
+
+That query yields zero relevant results. |- My internet keeps going out. God dammit Spectrum! -| 
+
+It's looking good, isn't it!?
+
+![screen-cap](capture.png)
+
+One thing I definitely need to do is make them exportable (read-only), so they can be embedded wherever without needing the server. That image ☝️ isn't a clear picture of what is really going on.
+
+At the end of the day I don't think I really care if people use *my* product. **I think it's visualizing my progress in this way is going to be helpful for me staying on task and finishing things.** Sure, it would be great if I could make some cash money 🤑 because other people also find this useful, but my primary audience is myself right now. Once the event model gets ironed out a little bit, I'm going to see what some friends think/if it's useful for them―but to do that I need to do a number of infrastructural things:
+
+- tighter user permissions on the backend
+- a user login and signup flow
+- rethink my database structure so I am not executing so many queries on a trace request
+- get the backend up and running in the cloud
+- get a database up and running in the cloud
+- set up the frontend production environment (jk it's static, so should be super simple)
