@@ -82,20 +82,21 @@ class Template extends React.Component {
     }
 
     if (location.pathname === rootPath) {
-      header = (
-        <H1>
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            David Baker
-          </Link>
-        </H1>
-      );
+      // header = (
+      //   <H1>
+      //     <Link
+      //       style={{
+      //         boxShadow: 'none',
+      //         textDecoration: 'none',
+      //         color: 'inherit',
+      //       }}
+      //       to={'/'}
+      //     >
+      //       David Baker
+      //     </Link>
+      //   </H1>
+      // );
+      header = null;
     } else {
       header = null;
       // (
