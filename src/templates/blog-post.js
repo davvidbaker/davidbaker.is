@@ -82,9 +82,7 @@ class BlogPostTemplate extends React.Component {
                 />
               )}
               <div
-                className="scroll-main"
                 style={{
-                  overflowY: 'scroll',
                   maxWidth: '50rem',
                   margin: '0 auto',
                 }}

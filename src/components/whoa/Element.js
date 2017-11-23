@@ -19,6 +19,7 @@ import Revision from './Revision';
 import Code from './Code';
 import Search from './Search';
 import Image from './Image';
+import Sic from './Sic';
 
 function Element({ type, children, ...props }) {
   if (typeof type !== 'string') {
@@ -107,6 +108,7 @@ function Element({ type, children, ...props }) {
     case 'link':
 
     case 'linkReference':
+      if (children[0] && children[0].value === 'sic') return <Sic />;
       Tag = 'a';
       elementProps.href = props.url;
       break;

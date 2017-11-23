@@ -105,6 +105,7 @@ class Tangent extends React.Component {
     const beyondPage =
       this.svg.getBoundingClientRect().right -
       document.documentElement.clientWidth;
+      console.log('beyondPage', beyondPage);
     if (beyondPage > 0) {
       // console.log('beyond page', beyondPage)
       this.setState(

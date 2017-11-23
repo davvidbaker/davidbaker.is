@@ -9,12 +9,13 @@ import PropTypes from 'prop-types';
 import { withHandlers, compose } from 'recompose';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
+import scrollToElement from 'scroll-to-element';
 
-import smoothScrollTo from '../../utils/smoothScrollTo';
 import colors from '../../constants/colors';
 
 const UL = styled.ul`
   padding: 0;
+  margin: 0;
 
   a {
     color: unset;
@@ -24,6 +25,7 @@ const UL = styled.ul`
     overflow-x: hidden;
     padding: 10px 15px;
     border-bottom: 1px solid #ededed;
+    cursor: pointer;
   }
   li:nth-last-of-type(1) {
     border-bottom-color: #ccc;
@@ -40,13 +42,10 @@ const enhance = compose(
   })),
   withHandlers({
     onMouseEnter: dispatch => id => {
-      console.log('mouse entered', id);
-      document.querySelector(`#${id}`).style.background =
-        'var(--color-highlight)';
+      document.querySelector(`#${id}`).style.background = colors.highlight;
     },
     onMouseLeave: dispatch => id => {
       document.querySelector(`#${id}`).style.background = 'unset';
-      console.log('mouse left', id);
     },
   })
 );
@@ -69,20 +68,8 @@ const NormativesList = ({
             onMouseLeave(normative.id);
           }}
           onClick={() => {
-            const toNode = document.getElementById(normative.id);
-            const scrollTo = toNode.getBoundingClientRect().top;
-            /** ⚠️ kinda sketchy―should use refs */
-            const mainNode = document.querySelector('.scroll-main');
-            console.log('scrolling');
-
-            console.log('scrollTo', scrollTo);
-            if (scrollTo < 0 || scrollTo > window.innerHeight) {
-              smoothScrollTo(
-                mainNode,
-                scrollTo +
-                  (mainNode.scrollTop + mainNode.getBoundingClientRect().top)
-              );
-            }
+            const toElement = document.getElementById(normative.id);
+            scrollToElement(`#${normative.id}`, { duration: 300 });
           }}
         >
           <p>{normative.statement}</p>

@@ -3,6 +3,8 @@ import Link from 'gatsby-link';
 import styled, { injectGlobal } from 'styled-components';
 import WebFont from 'webfontloader';
 
+import { italic } from '../constants/styles';
+
 injectGlobal`
   :root {
     /* --display-marginal: none; */
@@ -46,8 +48,7 @@ const Container = styled.div`
   em,
   i {
     font-size: 1.25em;
-    font-family: 'mr-eaves-sans', 'mr-eaves-modern', cursive;
-    font-style: italic;
+    ${italic};
   }
 
   /* em::before,

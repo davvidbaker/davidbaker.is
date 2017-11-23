@@ -38,6 +38,7 @@
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
     "remark-whoa": "0.0.1",
+    "scroll-to-element": "^2.0.0",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
@@ -55,6 +56,7 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
+    "start": "gatsby develop",
     "dev": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -43,18 +43,22 @@ const Div = styled.div`
     position: relative;
     transform-origin: center center;
     transform: scale(0.5);
+    background: #ccc;
+    cursor: pointer;
   }
 
   .arrow::before {
     content: '';
+    /* background: #ccc; */
     width: 0;
     height: 0;
     position: absolute;
     top: -25px;
     left: -20%;
-    border-right: 50px solid buttonface;
+    border-right: 50px solid #ccc;
     border-top: 50px solid transparent;
     border-bottom: 50px solid transparent;
+    cursor: pointer;
   }
 
   .arrow:focus {

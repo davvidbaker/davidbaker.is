@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import colors from '../constants/colors';
 
 const Main = styled.main`
-  position: absolute;
+  position: relative;
   left: 300px;
   transition: width 0.5s, left 0.5s;
   font-size: 1em;
@@ -11,6 +11,10 @@ const Main = styled.main`
   a {
     color: #0066c0;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     &:visited {
       color: rebeccapurple;
