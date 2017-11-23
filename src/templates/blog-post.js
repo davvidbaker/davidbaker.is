@@ -29,6 +29,17 @@ class BlogPostTemplate extends React.Component {
 
   componentDidMount() {
     this.props.setCurrentPost(this.props.data.whoa.frontmatter.title);
+
+    /** ⚠️🔮 TURN INTO A GATSBY PLUGIN? */
+    if (typeof document !== 'undefined') {
+      const utterances = document.createElement('script');
+      utterances.setAttribute('src', 'https://utteranc.es/client.js');
+      utterances.setAttribute('repo', 'davvidbaker/blog');
+      utterances.setAttribute('branch', 'master');
+      utterances.setAttribute('issue-term', 'pathname');
+      utterances.setAttribute('async', true);
+      document.querySelector('main').appendChild(utterances);
+    }
   }
 
   componentDidCatch(error, info) {
