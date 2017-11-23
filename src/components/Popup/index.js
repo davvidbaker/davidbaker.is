@@ -17,9 +17,6 @@ const Span = styled.span`
   opacity: 0.95;
   z-index: 1;
 `;
-/* Popup can either be used as a component or just by importing the style, which is useful for before/after pseudo-elements */
-/* ⚠ right now there is a bug in styled-jsx that breaks external stylesheets. The bug literally was filed today. https://github.com/zeit/styled-jsx/issues/251*/
-
 const Popup = ({ children, additionalStyles = {} }) => (
   <Span style={additionalStyles}>{children}</Span>
 );

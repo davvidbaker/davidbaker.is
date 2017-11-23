@@ -8,7 +8,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import plainText from '../../utils/plainText';
+import styled from 'styled-components';
 
+const Form = styled.form`
+  font-family: arial, sans-serif;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  margin: 5px 0;
+  input {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    font-size: 1em;
+    padding: 5px 0;
+    border: 0;
+
+    &:focus {
+      /** ⚠️ if I want to do an animation, should use opacity */
+      box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.16),
+        0 0 0 1px rgba(0, 0, 0, 0.08);
+    }
+  }
+`;
 class Search extends React.Component {
   state = { textValue: '' };
 
@@ -46,7 +71,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <form
+      <Form
         onSubmit={evt => {
           this.onSubmit(evt);
         }}
@@ -68,34 +93,7 @@ class Search extends React.Component {
           onMouseLeave={this.onBlur}
           onBlur={this.onBlur}
         />
-
-        <style jsx>{`
-          form {
-            font-family: arial, sans-serif;
-            font-size: 24px;
-            width: 100%;
-            text-align: center;
-            display: inline-block;
-            width: 100%;
-            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16),
-              0 0 0 1px rgba(0, 0, 0, 0.08);
-            margin: 5px 0;
-          }
-          input {
-            height: 100%;
-            width: 100%;
-            text-align: center;
-            outline: none;
-            font-size: 1.35rem;
-
-            border: 0;
-          }
-          .inFocus {
-            box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.16),
-              0 0 0 1px rgba(0, 0, 0, 0.08);
-          }
-        `}</style>
-      </form>
+      </Form>
     );
   }
 }

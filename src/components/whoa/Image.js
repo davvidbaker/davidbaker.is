@@ -6,6 +6,20 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  img {
+    max-width: 100%;
+    transition: 0.1s 1s;
+  }
+
+  .blur {
+    transition: opacity 0.5s 1s;
+    position: absolute;
+    z-index: 2;
+  }
+`;
 
 class Image extends React.Component {
   static propTypes = {
@@ -45,13 +59,12 @@ class Image extends React.Component {
     let visible = true;
     if (match) {
       return (
-        <div
+        <Wrapper
           style={{
             maxWidth: '100%',
-            overflowY: 'hidden'
+            overflowY: 'hidden',
           }}
         >
-
           <img
             id={blurId}
             className="blur"
@@ -66,29 +79,12 @@ class Image extends React.Component {
           <img
             src={this.props.src}
             alt={`❗ ${this.props.alt || this.props.src} ❗`}
-            style={{opacity: this.state.showBlur ? 0 : 1}}
+            style={{ opacity: this.state.showBlur ? 0 : 1 }}
             onLoad={() => {
               this.loadedImage();
             }}
           />
-
-          <style jsx>
-            {`
-
-          img {
-            max-width: 100%;
-            transition: 0.1s 1s;
-          }
-
-          .blur {
-            transition: opacity 0.5s 1s;
-            position: absolute;
-            z-index: 2;
-          }
-
-        `}
-          </style>
-        </div>
+        </Wrapper>
       );
     }
 
