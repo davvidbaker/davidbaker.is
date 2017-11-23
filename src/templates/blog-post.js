@@ -62,7 +62,10 @@ class BlogPostTemplate extends React.Component {
 
     console.log(this.props.data);
     return (
-      <WithEventListeners eventListeners={eventListeners} node={document}>
+      <WithEventListeners
+        eventListeners={eventListeners}
+        node={typeof document !== 'undefined' ? document : undefined}
+      >
         {() => (
           <BlogPost>
             <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />

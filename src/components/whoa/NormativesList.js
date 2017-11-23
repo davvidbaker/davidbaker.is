@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import { withHandlers, compose } from 'recompose';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
-import scrollToElement from 'scroll-to-element';
+import scrollIntoView from 'scroll-into-view';
 
 import colors from '../../constants/colors';
 
@@ -69,7 +69,7 @@ const NormativesList = ({
           }}
           onClick={() => {
             const toElement = document.getElementById(normative.id);
-            scrollToElement(`#${normative.id}`, { duration: 300 });
+            scrollIntoView(toElement, { time: 300 });
           }}
         >
           <p>{normative.statement}</p>

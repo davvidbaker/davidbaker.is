@@ -9,7 +9,7 @@ class WithEventListeners extends Component {
     super(props);
     props.eventListeners &&
       props.eventListeners.forEach(([evt, func]) => {
-        props.node.addEventListener(evt, func);
+        if (props.node) props.node.addEventListener(evt, func);
       });
   }
 
@@ -32,6 +32,10 @@ WithEventListeners.propTypes = {
     PropTypes.instanceOf(HTMLDocument),
     PropTypes.instanceOf(HTMLElement),
   ]).isRequired,
+};
+
+WithEventListeners.defaultProps = {
+  node: typeof document !== 'undefined' ? document : undefined,
 };
 
 export default WithEventListeners;

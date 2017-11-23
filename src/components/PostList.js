@@ -34,7 +34,7 @@ const UL = styled.ul`
 
 class PostList extends Component {
   componentDidMount() {
-    this.props.clear();
+    // this.props.clear();
   }
 
   render() {

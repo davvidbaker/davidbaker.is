@@ -10,7 +10,7 @@ export { popupStyle };
 
 const Span = styled.span`
   position: absolute;
-  background: var(--color-contrasting-background);
+  /* background: var(--color-contrasting-background); */
   border-radius: 3px;
   padding: 5px;
   color: white;
