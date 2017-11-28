@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
 import PostList from '../components/PostList';
-import astronaut from './astronaut-pushing.svg';
+import astronaut from '../images/astronaut-pushing.svg';
 
 const Main = styled.main`
   margin: 0 auto;
@@ -18,12 +18,11 @@ const Main = styled.main`
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const posts = get(this, 'props.data.allWhoa.edges');
 
     return (
       <div>
-        <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
+        <Helmet title={'David Baker is Scribbling'} />
         {/* <Bio /> */}
         <Main>
           <p>I probably wouldn't read any of this if I were you.</p>

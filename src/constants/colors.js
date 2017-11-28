@@ -2,4 +2,5 @@
 export default {
   accent1: 'firebrick',
   highlight: '#fbf99a',
+  link: '#0066c0',
 };

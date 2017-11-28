@@ -26,9 +26,11 @@
     "gatsby-remark-responsive-iframe": "^1.4.12",
     "gatsby-remark-smartypants": "^1.4.8",
     "gatsby-source-filesystem": "^1.5.5",
+    "gatsby-transformer-json": "^1.0.12",
     "gatsby-transformer-remark": "^1.7.17",
     "gatsby-transformer-sharp": "^1.6.13",
     "lodash": "^4.15.0",
+    "marked": "^0.3.6",
     "pngquant-bin": "^3.1.1",
     "react-command-palette": "0.0.6",
     "react-modal": "^3.1.2",
@@ -47,7 +49,9 @@
     "prettier": "^1.7.4"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
@@ -57,14 +61,11 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "gatsby develop --host localhost",
-    "lint":
-      "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format":
-      "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "fix-semi":
-      "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
 }

@@ -4,6 +4,8 @@ import styled, { injectGlobal } from 'styled-components';
 import WebFont from 'webfontloader';
 
 import { italic } from '../constants/styles';
+import colors from '../constants/colors';
+import Nav from '../components/Nav';
 
 injectGlobal`
   :root {
@@ -34,6 +36,22 @@ injectGlobal`
       z-index: -100;
       opacity: 0.05;
     }
+}
+
+hr {
+  margin: 2em auto;
+  border-left: 10vw solid transparent;
+  border-right: 10vw solid transparent;
+  width: 30%;
+}
+
+a {
+  color: ${colors.link};
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 `;
 
@@ -81,44 +99,15 @@ class Template extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`;
     }
 
-    if (location.pathname === rootPath) {
-      // header = (
-      //   <H1>
-      //     <Link
-      //       style={{
-      //         boxShadow: 'none',
-      //         textDecoration: 'none',
-      //         color: 'inherit',
-      //       }}
-      //       to={'/'}
-      //     >
-      //       David Baker
-      //     </Link>
-      //   </H1>
-      // );
-      header = null;
+    console.log('location', location);
+    if (
+      location.pathname === rootPath ||
+      /** 💁 include nav in top-level directories */
+      location.pathname.match(/\//g).length === 1
+    ) {
+      header = <Nav />;
     } else {
       header = null;
-      // (
-      //   <H1
-      //     style={{
-      //       fontFamily: 'Montserrat, sans-serif',
-      //       marginTop: 0,
-      //       // marginBottom: rhythm(-1),
-      //     }}
-      //   >
-      //     <Link
-      //       style={{
-      //         boxShadow: 'none',
-      //         textDecoration: 'none',
-      //         color: 'inherit',
-      //       }}
-      //       to={'/'}
-      //     >
-      //       Gatsby Starter Blog
-      //     </Link>
-      //   </H1>
-      // )
     }
     return (
       <Container>

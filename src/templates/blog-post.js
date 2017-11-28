@@ -73,7 +73,6 @@ class BlogPostTemplate extends React.Component {
       ],
     ];
 
-    console.log(this.props.data);
     return (
       <WithEventListeners
         eventListeners={eventListeners}

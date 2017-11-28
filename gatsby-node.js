@@ -7,7 +7,7 @@ const fs = require(`fs-extra`);
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
-  return new Promise((resolve, reject) => {
+  const BlogPosts = new Promise((resolve, reject) => {
     const pages = [];
     const blogPost = path.resolve('./src/templates/blog-post.js');
     resolve(
@@ -44,6 +44,44 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       })
     );
   });
+
+  const Projects = new Promise((resolve, reject) => {
+    const pages = [];
+    const projectTemplate = path.resolve('./src/templates/project.js');
+    resolve(
+      graphql(
+        `
+          {
+            allProjectsJson(limit: 1000) {
+              edges {
+                node {
+                  path
+                }
+              }
+            }
+          }
+        `
+      ).then(result => {
+        if (result.errors) {
+          console.log(result.errors);
+          reject(result.errors);
+        }
+
+        // Create blog posts pages.
+        _.each(result.data.allProjectsJson.edges, edge => {
+          createPage({
+            path: `${edge.node.path}`,
+            component: projectTemplate,
+            context: {
+              path: edge.node.path,
+            },
+          });
+        });
+      })
+    );
+  });
+
+  return Promise.all([BlogPosts, Projects]);
 };
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
