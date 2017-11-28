@@ -1,0 +1,36 @@
+---
+title: Whoa
+date: "2017-04-03T05:00:00.000Z"
+path: whoa
+---
+
+# Whoa
+**whoah**
+
+*All Markdown should work.*
+
+Because Markdown is **dope**.
+
+So EXPRESSIVE AND {fast, easy, readable}(?). I wonder(?) what happens when this line breaks. Might be something be baad. Indeed. indeed Indeed(?) indeed..
+
+And here's onemore(?).
+
+Let's see... . when this is all said and done, those dots should have appeared one by one.
+```
+const foo = (bar) => { 
+  console.log(bar);
+};
+```
+## Depth 2 Title
+
+**Just** is a weird word.
+
+Let's explore its etymology.
+
+So is **token**.
+
+Been going slow and steady on this here thing. But excellent **progress *is* being made**!
+
+To be fair with myself, I didn't know what an [Abstract Syntax Tree](ast.com) really was a few days ago.
+
+So you start off talking about one thing, but then! |-This is a tangent. You can tell by the way it {is, is enclosed by |pipes| and -hyphens-}(?). Well actually once it has been made you shouldn't be able to tell that it is enclosed like that. Except in the editor. -| Now we need some text going afterwards to make sure the tangent is working.

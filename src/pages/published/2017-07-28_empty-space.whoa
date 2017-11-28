@@ -1,0 +1,58 @@
+---
+title: Empty Document Memory
+path: empty-space
+date: "2017-07-28T06:00:00.000Z"
+---
+
+My current project for work has got me diving deep into **Chrome's memory debugging tools**. I'm grappling with GPU memory for work, but I've always wanted to better understand ~~everything~~ the memory section of the `Performance` panel, also known as **the panel formerly known as `Timeline`**.
+
+Any production web page is going to have a lot going on in a performance profile, so it is important to be able to filter out the noise and see the things that are really important. This got me wondering...
+
+# What does the performance profile of an empty document look like?
+
+So I created an empty file, `memory.html`, and then opened the file from my filesystem in a Chrome incognito window. |-I am using Chrome Canary, version 62.0.3166.0. You need to use an incognito window so extensions can be disabled―all of mine are.-|
+
+I started a performance profile recording with the `Memory` checkbox checked,then reloaded the page manually and recorded for about 10 seconds. *I couldn't rely on the start profiling and reload option `⌘⇧E`, because it stops recording before I wanted it to.*
+
+### I expected to see a profile that looked something like this 👇.
+
+![expected-profile.png](/static/blog/expected-profile.png)
+
+### But what I actually got looked like this 👇.
+
+![actual-profile.png](/static/blog/actual-profile.png)
+
+Get the profile [here](/static/blog/Profile-empty-document).
+
+Okay, so actually, I understand where the flat tail at the end of that image is coming from, mostly.
+
+Zoomed in on the tail, it looks like this 👇.
+
+![actual-profile-tail.png](/static/blog/actual-profile-tail.png)
+
+This is the memory profile *after* a **major [garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science))** 👆, which you can see if you [get the profile](/static/blog/Profile-empty-document) and follow along.
+
+
+- We've got 1 document, as expected.
+- We have 0 listeners, as expected.
+- We have 4 nodes, which Chrome will automatically generate for every HTML page: `document`, `html`, `head`, and `body`.
+
+![dom-tree-4.svg](/static/blog/dom-tree-4.svg)
+
+What I don't understand about the tail is why we have any JavaScript heap at all 🤔. I should come back to that later.
+
+My big question is this:
+
+## What are the other 4 documents and 71 nodes that are generated and then cleaned up after a few seconds?
+
+This kind of thing is very difficult to Google.
+
+🔎chrome empty document generated documents🔍
+
+🔎garbage collected documents after page loads🔍
+
+🔎performance timeline shows extra documents🔍
+
+So far, I really haven't gotten anywhere with an answer to this.
+
+Further research is needed.

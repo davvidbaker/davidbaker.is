@@ -1,0 +1,52 @@
+---
+title: Incremental Progress
+path: small-steps
+date: "2017-05-08T06:00:00.000Z"
+---
+
+I just want to {write, do}(?) something meaningful. I am afraid I am not trying hard enough. Does that mean I am not trying hard enough? Why am I so attracted to the idea of individual works (individual as opposed to collective)?
+
+> I would really like to be a writer who codes. What I like so much about written works is they are usually individual endeavors and can express such voice. Movies and television shows are never so intimately tied to 1 person.
+
+Ugghhh. Why did I spend way too much styling that blockquote!? It doesn't even look good 😡. I guess I didn't originally know that `<blockquote>` was an HTML element. So that's something good that came out of it. But yeesh its so ugly. Hopefully it looks better by the time anyone may see it, which is probably not ever going to ever never ever happen. But currently it only exists on my local machine. |- I guess it is going to exist rather soon up on Github, but I really don't think anyone is looking at my every move on there. I certainly hope not. People have better things to do with their time.-| If you were to look at this page (*Incremental Progress*), you would be thinking damn that's a lot of text right there in that there paragraph. Why has the standard for paragraphs, *at least on the web*, become so short? Is it our short attention spans? Nobody reads anymore! **That's egregious hyperbole.**
+
+🔎Is egregious a word?🔍 
+
+And have I spelled it correctly?
+
+I want to see a new age of writing where the writer uses the page for more than words, yet mostly for words. Not quite a {picturebook, picture book}(?). I guess there are **graphic novels** and **comic books**. Can't forget about those things. But still I am not trying to describe those things. That's a different category. 
+
+## I'm talking much more textually focused than that.
+
+So if you were to look at this post, you would probably not be interested in reading it―it's just another random person's raw ramblings. I know I wouldn't. How do I write with more purpose? How do I make you feeeeel? |-Why can't I feeel? Where's the passion!? And who am I to judge *the current state of writing on the whole*.  I don't even read that much. And there are so many more talented people than myself. What's the point even? -|
+
+🔎What's the point even?🔍
+
+### Oh damn it's 🕵{4:20 am 🕟☘}
+|Revise|It's not even my fault.Revise. I should get my revise component in here. I know I made one once. Hmmm...🤔, what should it's markup look like? I'm thinking emoji might not be best since it isn't (yet) very easy to wrap things. Maybe something that is a mix of wrapping and emoji, {like this}✏
+
+Also. I think I know what I am advocating for. The next generation needs to start taking advantage of the awesome creative capabilities that we have at our disposal. It's not that hard to make something dope 🌈. |- I should see what I can do with maybe like a custom Emmet abbreviation? -|
+
+I should maybe make components for the following things.
+- Shader
+- Random Idea/Random thought that should only very loosely be tethered to its home. I'm imagining a cloud that is held down as if by a balloon string. And it's only very kinda windy out.
+
+Right okay okay I'm getting into it. It's the linearity of stories that need not be the same as it always has been. *Maybe*. Imagine this as a story. The dark descent of a madman as seen spread among(?) his cyber-presence. There are just a number of things. Projects? But everything is very narrated. All the in betweens? Sometimes? All the projects have their own commit histories, which, along with each other, and the code that is being written/projects that are being created, which have visual histories as well, everything is layed out in front of you.
+
+Ohh I have an idea for how I should render Revise component. I think that is one of the most proper uses of render I have made in a while. I use it to mean far too different things. Kinda. Maybe. 
+
+## SVG bezier path funn-ness overlaid in red pencil.
+
+**Maybe not red**. But maybe.
+
+...1 hour or so... 
+
+Back to the shader 
+
+I should make another component that is commentary on other parts of the page. Might want to do this through regexes for certain keywords(that are preprocessed by `whoa-loader`. Maybe.) That would be easiest way to reference other things,.
+
+# The Componentized Web is Going to be splendid.
+
+WebGL everywhere could be kinda cool. Maybe not **everywhere** but more where.
+
+🔎Is writ a word?🔍

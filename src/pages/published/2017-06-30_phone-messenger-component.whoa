@@ -1,0 +1,27 @@
+---
+title: Quick
+path: phone-messenger-component
+date: "2017-06-30T06:00:00.000Z"
+---
+
+Real quick I just wanted to take a snapshot of this phone component I made over the past couple days.
+
+![phone-component](/static/blog/phone-messenger.png)
+
+One thing I am realizing is that I wish I could just use `.whoa` syntax anywhere I wanted to. Would it be too distracting for straight up writing to be amongst the weeds of a javascript file?
+
+That way I could have more control over components—total control of the DOM—within a post.
+
+In fact, with Web Components, I might be able to do literally everything from the browser. 
+
+Hmmm. Maybe not... Going backwards from editing a component to a source file might be tricky, so I think I would run into some intermediary(?) problems.
+
+Like I'm not sure if I'd be able to edit components **AND** retain state. 😲.
+
+# This post really went nowhere and I probably should redact most of it.
+
+Oh also I thought about writing this earlier, but then forgot, and am now questioning its 🕵{consequences}.
+
+## I see 🕵{signs} all the time. 
+
+Those 🕵{signs} are usually 🕵{telling} me 🕵{to smoke more weed}.

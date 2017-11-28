@@ -30,16 +30,17 @@ class BlogPostTemplate extends React.Component {
   componentDidMount() {
     this.props.setCurrentPost(this.props.data.whoa.frontmatter.title);
 
-    /** ⚠️🔮 TURN INTO A GATSBY PLUGIN? */
-    if (typeof document !== 'undefined') {
-      const utterances = document.createElement('script');
-      utterances.setAttribute('src', 'https://utteranc.es/client.js');
-      utterances.setAttribute('repo', 'davvidbaker/blog');
-      utterances.setAttribute('branch', 'master');
-      utterances.setAttribute('issue-term', 'pathname');
-      utterances.setAttribute('async', true);
-      document.querySelector('main').appendChild(utterances);
-    }
+    if (process.env.NODE_ENV === `production`)
+      if (typeof document !== 'undefined') {
+        /** ⚠️🔮 TURN INTO A GATSBY PLUGIN? */
+        const utterances = document.createElement('script');
+        utterances.setAttribute('src', 'https://utteranc.es/client.js');
+        utterances.setAttribute('repo', 'davvidbaker/blog');
+        utterances.setAttribute('branch', 'master');
+        utterances.setAttribute('issue-term', 'pathname');
+        utterances.setAttribute('async', true);
+        document.querySelector('main').appendChild(utterances);
+      }
   }
 
   componentDidCatch(error, info) {
@@ -55,6 +56,7 @@ class BlogPostTemplate extends React.Component {
   };
 
   render() {
+    console.log('this.props, this.props.data', this.props, this.props.data);
     const post = this.props.data.whoa;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
 

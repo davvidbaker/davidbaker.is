@@ -1,0 +1,29 @@
+---
+title: We're Up All Night To Get Lucky
+path: up-all-night-to-this-song
+date: "2017-05-17T06:00:00.000Z"
+---
+
+There are nights like these where I just can't sleep. Granted, my sleep schedule has been **fucked** for about the last month or two.
+
+...
+
+I've been thinking a bit about the future, what it's going to look like and what will become of today's internet stuff(?). Here's some things I searched for:
+
+🔎the future of inputting text🔍
+🔎sustainable internetting🔍
+🔎long term html🔍
+
+I throw out a Google search to see if others are putting/have put lots of thought into these things already.
+
+**This would go great in an annotation describing that input element up there.** Typing on a keyboard isn't going to last forever. It might not last that much longer, even. This idea about the near future of input was brought up by [Adam Sontag](http://ajpiano.com/) in [this JS Party yayQuery reunion episode](https://changelog.com/jsparty/10). What the replacement is going to be, I struggle to imagine. I don't think voice-to-text is super user-friendly (even with increasingly advanced natural language processing). I go back and forth on whether I like it for text entry. I guess it's fine for texting friends and maybe some types of writing, but not for writing that needs precision, like coding. It also just feels weird sometimes talking to the computer.
+
+One possibility for writing code could be describing aloud the general gist of what you are trying to *create*, and layers on layers of abstraction processing your human words into valid `whatever`. That seems like it would be tough though. Especially when editing. But I guess if an AI can understand what I mean and what I want, it can take care of zipping around the files and changing relevant bits.
+
+Next level would be removing speech and just going ***straight to the brain.*** This has its challenges too, in addition to the hardware challenges. Let's say we want to go deeper than just translating words that I think of into text. Parsing concepts and abstract thoughts is going to be hard and **super cool**.
+
+## Even seemingly simple thoughts will prove challenging.
+
+There's got to be a whole lot stuff going on leading up to morpheme selection(?). [Tip o' the tongue](https://en.wikipedia.org/wiki/Tip_of_the_tongue) to ya. *Thinking about thinking really dizzies me sometimes.* 
+
+|-I should figure out a flexible data-model that will let me comment on all the things, including things like Socratic word counts. I know I've used "even" a lot.-| I think I might be able to fall asleep now. Or get close. 💤 But I definitely didn't at all describe what I meant by sustainable internetting. That'll have to wait. Even though it musn't wait. **We must solve it at once!** *Even if it isn't totally broken yet.*

@@ -1,0 +1,31 @@
+---
+title: Figuring Out Posts
+path: "figuring-out-posts"
+date: "2017-03-04T06:00:00.000Z"
+---
+
+# This whole taxonomy thing is hard.
+
+It's like, how much do you plan ahead?
+
+## Where do things go!?
+
+Let's say we're making a new post. Like a blog post. You could think of it like that. Where does that belong in our file structure? Is it itself its own component. That's a fun sentence.
+
+# Is it itself its own component?
+
+I feel like it is. But I also feel like the post is going to mostly just be text data that can sort of just hydrate a react component tree.
+
+### I'm definitely leaning towards a post being a component though. If for nothing more than the ability to encapsulate its own styles.
+
+## I'd like to be able to write this using a Markdown editor though also.
+
+Is that somehting I should sacrifice in the name of freedom?
+
+<hr>
+
+I also must come back to the ideas that I've been circling in my head.
+
+# Time Travelling Styles, Scripts, and Crips
+
+## Cookie Crips
