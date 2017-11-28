@@ -4,14 +4,14 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import get from 'lodash/get';
 import styled from 'styled-components';
-import CommandPalette from 'react-command-palette';
+import Commander from 'react-commander';
 
 import Whoa from '../components/whoa';
 import PostHeading from '../components/PostHeading';
 import PostBody from '../components/PostBody';
 import SideBar from '../components/SideBar';
 import Header from '../components/Header';
-// import CommandPalette from '../components/CommandPalette';
+// import Commander from '../components/Commander';
 import StyledMain from '../components/StyledMain';
 import WithEventListeners from '../components/WithEventListeners';
 import commands from '../constants/commands';
@@ -24,7 +24,7 @@ const BlogPost = styled.div`
 
 class BlogPostTemplate extends React.Component {
   state = {
-    commandPaletteVisible: false,
+    com: false,
   };
 
   componentDidMount() {
@@ -47,12 +47,17 @@ class BlogPostTemplate extends React.Component {
     debugger;
   }
 
-  showCommandPalette = () => {
-    this.setState({ commandPaletteVisible: true });
+  submitCommand = command => {
+    this.hideCommander();
+    this.props.dispatchAction(command);
   };
 
-  hideCommandPalette = () => {
-    this.setState({ commandPaletteVisible: false });
+  showCommander = () => {
+    this.setState({ com: true });
+  };
+
+  hideCommander = () => {
+    this.setState({ com: false });
   };
 
   render() {
@@ -67,7 +72,7 @@ class BlogPostTemplate extends React.Component {
           if (e.shiftKey && (e.metaKey || e.ctrlKey) && e.key === 'p') {
             /** 💁 By default, if chrome devtools are open, this will pull up their command palette, even if focus is in the page, not dev tools. */
             e.preventDefault();
-            this.showCommandPalette();
+            this.showCommander();
           }
         },
       ],
@@ -115,11 +120,11 @@ class BlogPostTemplate extends React.Component {
               toggleSideBar={this.props.toggleSideBar}
             />
 
-            <CommandPalette
+            <Commander
               commands={commands}
-              isOpen={this.state.commandPaletteVisible}
-              hideCommandPalette={this.hideCommandPalette}
-              dispatchAction={this.props.dispatchAction}
+              isOpen={this.state.com}
+              hideCommander={this.hideCommander}
+              onSubmit={this.submitCommand}
             />
           </BlogPost>
         )}

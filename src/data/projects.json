@@ -7,7 +7,7 @@
     "year": [2017],
     "description":
       "Estee Lauder had a **360 video** on Youtube that they needed to work offline for marketing purposes. I created an iOS app using the [Google VR SDK for iOS](https://developers.google.com/vr/ios/) to show the video in 360 or VR (with a Google Cardboard).\n\nThis was my first real foray into the native iOS world, and I went deep into the **Swift and Xcode** world to make this project happen.",
-    "images": ["/static/elc360.png-noShadow"],
+    "images": ["elc360.png-noShadow"],
     "keywords": ["iOS", "Swift", "360", "VR"],
     "agency": { "name": "Click 3X", "link": "http://click3x.com/" }
   },
@@ -38,9 +38,9 @@
     "link": "https://davvidbaker.github.io/Swyzzle/",
     "linkToSource": "https://github.com/davvidbaker/Swyzzle",
     "linkToTrello": "https://trello.com/b/fAycvoLY/swyzzle",
-    "logo": "/static/swyzzle-logo.svg",
+    "logo": "swyzzle-logo.svg",
     "images": [],
-    "videos": ["/static/swyzzle_fast_small.mp4"]
+    "videos": ["swyzzle_fast_small.mp4"]
   },
   {
     "name": "Box Man",
@@ -54,8 +54,8 @@
     "link": "https://davvidbaker.github.io/BoxMan",
     "linkToSource": "https://github.com/davvidbaker/BoxMan",
     "linkToTrello": "https://trello.com/b/6r04R3fb/box-man",
-    "logo": "/static/boxman-boxman.png",
-    "images": ["/static/boxman.png-noShadow"],
+    "logo": "boxman-boxman.png",
+    "images": ["boxman.png-noShadow"],
     "keywords": ["VR", "AR", "Performance Art", "WebRTC", "React", "Redux"]
   },
   {
@@ -70,7 +70,7 @@
     "callToAction": "Paradise awaits...",
     "link": "http://experience.cremedelamer.com/",
     "keywords": ["three.js", "WebGL"],
-    "videos": ["/static/La_Mer_Demo.mp4"],
+    "videos": ["La_Mer_Demo.mp4"],
     "agency": { "name": "Click 3X", "link": "http://click3x.com/" }
   },
   {
@@ -80,7 +80,7 @@
     "status": ["BETA?", "#DD4E25"],
     "tagline": "A cross-platform kids' game kinda like Club Penguin?",
     "description":
-      "We (*Click 3X*) teamed up with [Donroy](http://www.donroy.uk/) to create the world that is Puppy Club. Currently, it is only exists as a desktop web game, but I am in the process of wrapping it up into Android and iOS apps.\n\n### I've been the *lead developer* on the game for the past 9 months.\n\nThe process has pretty much been: *they* provide me with static assets, ie an Illustrator file, and **I bring it to life**. I've had quite a bit of creative license across the board, at times even writing copy. I also helped with [the website](http://puppyclub.staging.click3x.com/home)",
+      "We (*Click 3X*) teamed up with [Donroy](http://www.donroy.uk/) to create the world that is Puppy Club. Currently, it is only exists as a desktop web game, but I am in the process of wrapping it up into Android and iOS apps.\n\n### I've been the *lead developer* on the game for the past 9 months.\n\nThe process has pretty much been: *they* provide me with static assets, ie an Illustrator file, and **I bring it to life**. I've had quite a bit of creative license across the board, at times even writing copy. I also helped with [the website](http://puppyclub.com/home).",
     "callToAction": "Get a pup!",
     "keywords": [
       "Phaser",
@@ -90,9 +90,9 @@
       "Node",
       "cross-platform"
     ],
-    "link": "http://puppyclub.staging.click3x.com/clubhouse",
+    "link": "http://puppyclub.com/clubhouse",
     "agency": { "name": "Click 3X", "link": "http://click3x.com/" },
-    "images": ["/static/puppy-club.png"]
+    "images": ["puppy-club.png"]
   },
   {
     "name": "92Y",
@@ -112,7 +112,7 @@
       "Cinema 4D "
     ],
     "agency": { "name": "Click 3X", "link": "http://click3x.com/" },
-    "images": ["/static/92Y.png-noShadow"]
+    "images": ["92Y.png-noShadow"]
   },
   {
     "name": "Theraflu Thermoselfies",
@@ -124,7 +124,7 @@
       "In conjunction with CES 2017, Saatchi & Saatchi NY approached us (Click 3X) with a request for an outdoor touch screen selfie kiosk for their client Theraflu.\n\nOur team produced the entire operation in just 4 weeks, from research and development, to the kiosk build, to the installation on the Las Vegas strip.\n\n **I was in charge of choosing the hardware and creating the highest quality thermal image possible**. It turned out that the best option was going to be combine the images of a normal visual spectrum camera and a FLIR thermal camera. I wrote WebGL shaders to basically do edge detection on the \"normal\" image and blend that together with the lower-resolution thermal image.\n\nI *also* went to Vegas to oversee the installation.",
     "keywords": ["WebGL", "image processing", "thermal", "real-time FX"],
     "agency": { "name": "Click 3X", "link": "http://click3x.com/" },
-    "videos": ["/static/theraflu.mp4"]
+    "videos": ["theraflu.mp4"]
   },
   {
     "name": "Typography",
@@ -137,14 +137,14 @@
     "callToAction": "Get the fonts!",
     "link": "https://github.com/davvidbaker/fonts/wiki/Fonts",
     "keywords": ["Birdfont", "Handwriting", "IPA", "Phonetics"],
-    "images": ["/static/typography.png-noShadow"]
+    "images": ["typography.png-noShadow"]
   },
   {
     "name": "Wedding Card",
     "path": "a-brother-in-law",
     "year": [2016],
     "status": ["shipped", "green"],
-    "tagline": "A card for my brother and his now-wife. ",
+    "tagline": "A card for my brother and his now-wife.",
     "link": "https://davvidbaker.github.io/wedding-card/index.html",
     "linkToSource": "https://github.com/davvidbaker/wedding-card",
     "keywords": ["Phaser"]
@@ -165,7 +165,7 @@
       "Android",
       "Oculus Rift"
     ],
-    "images": ["/static/bernieSnap1.JPG", "/static/bernieSnap4.JPG"]
+    "images": ["bernieSnap1.JPG", "bernieSnap4.JPG"]
   },
   {
     "name": "Ragdoll Golf",
@@ -176,7 +176,7 @@
     "status": ["shipped", "green"],
     "description":
       "Inspired by [Cat with Bow Golf](http://www.addictinggames.com/sports-games/catwithbowgolf.jsp), this is a mini-game demo I created with Unity for Google Cardboard.",
-    "images": ["/static/ragdollGolf.PNG"],
+    "images": ["ragdollGolf.PNG"],
     "keywords": ["Unity", "VR", "Fuse", "Will Smith"],
     "callToAction": "Get it while its hot!",
     "link":
@@ -203,7 +203,7 @@
         "link": "https://www.linkedin.com/in/tyler-caron-a54bb852/"
       }
     ],
-    "images": ["/static/forcefield.JPG"],
+    "images": ["forcefield.JPG"],
     "link": "https://www.youtube.com/watch?v=5L02NgFlN2I&feature=youtu.be",
     "callToAction": "Watch presentation"
   },
@@ -226,7 +226,7 @@
       "Cows",
       "Animal Husbandry"
     ],
-    "images": ["/static/udder-space.png"],
+    "images": ["udder-space.png"],
     "callToAction": "Watch pilot",
     "link": "https://www.youtube.com/watch?v=usUPKPuEd1Q&feature=youtu.be",
     "teammates": [
@@ -246,7 +246,7 @@
     "tagline":
       "A surround sound system that uses a single centrally placed speaker.",
     "description":
-      "sound360 is **a surround sound system that only uses a single centrally placed speaker**. Ultrasonic transducers—with the help of some fancy signal modulation and a nonlinearity in the air—create narrow beams of sound which are then bounced off reflectors to arrive at a listener positioned centrally on the couch. For more details you can check out the [project's final report here](/static/sound360_finalReport.pdf).\n\nMarcus and I created this project for an **embedded systems class in college**, and I continued to develop it for Penn's xLAB over the summer of 2015. *I'm not sure if anyone there has continued working on the project*. We created everything—circuitry, design, code, etc.",
+      "sound360 is **a surround sound system that only uses a single centrally placed speaker**. Ultrasonic transducers—with the help of some fancy signal modulation and a nonlinearity in the air—create narrow beams of sound which are then bounced off reflectors to arrive at a listener positioned centrally on the couch. For more details you can check out the [project's final report here](sound360_finalReport.pdf).\n\nMarcus and I created this project for an **embedded systems class in college**, and I continued to develop it for Penn's xLAB over the summer of 2015. *I'm not sure if anyone there has continued working on the project*. We created everything—circuitry, design, code, etc.",
     "keywords": [
       "Embedded Systems",
       "Hardware",
@@ -254,8 +254,8 @@
       "Signal Processing",
       "Directional Sound"
     ],
-    "images": ["/static/sound360.png-noShadow"],
-    "link": "/static/sound360_finalReport.pdf",
+    "images": ["sound360.png-noShadow"],
+    "link": "sound360_finalReport.pdf",
     "teammates": [
       {
         "name": "Marcus Pan",

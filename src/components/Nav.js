@@ -16,24 +16,21 @@ const Wrapper = styled.nav`
   }
 
   li {
-    padding: 15px 10px;
-    transition: background 0.2s;
-    color: #ccc;
-    cursor: pointer;
+    padding: 0;
   }
   li:hover {
-    color: #222;
   }
   a {
-    color: inherit;
+    display: block;
+    color: #ccc;
+    margin: 0 10px;
+    line-height: 3em;
     font-weight: bold;
     text-decoration: none;
   }
   a:hover {
     text-decoration: none;
-  }
-  a:visited {
-    color: unset;
+    color: #222;
   }
 `;
 

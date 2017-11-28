@@ -349,7 +349,7 @@ ProjectDetails.propTypes = {
   tagline: PropTypes.string,
   status: PropTypes.arrayOf(PropTypes.string),
   description: PropTypes.string,
-  year: PropTypes.arrayOf(PropTypes.number),
+  year: PropTypes.array,
   callToAction: PropTypes.string,
   link: PropTypes.string,
   linkToSource: PropTypes.string,
@@ -370,10 +370,15 @@ export const pageQuery = graphql`
       images
       videos
       keywords
+      logo
       link
       linkToSource
       linkToTrello
       callToAction
+      teammates {
+        name
+        link
+      }
       agency {
         name
         link

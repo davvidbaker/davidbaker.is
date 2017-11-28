@@ -15,39 +15,45 @@ const compareYears = ({ node: a }, { node: b }) => {
     return 1;
   } else if (Math.min(...a.year) < Math.min(...b.year)) {
     return 1;
+  } else if (Math.min(...a.year) > Math.min(...b.year)) {
+    return -1;
   } else if (
     Math.min(...a.year) === Math.min(...b.year) &&
     Math.max(...a.year) === Math.max(...b.year)
   ) {
     if (a.name.length > b.name.length) {
-      // arbitrary but deterministic (I doubt descriptions will often be same length)
+      // arbitrary but deterministic (I doubt names will often be same length)
       return 1;
     }
   }
+
   return 0;
 };
 
 const ProjectList = ({ projects }) => (
   // <ul className={showingAdditionalInfo ? 'hidden' : 'visible'}>
   <UL>
-    {projects.sort(compareYears).map(project => (
-      <ProjectItem
-        key={project.node.name}
-        year={project.node.year}
-        status={project.node.status}
-        tagline={project.node.tagline}
-        name={project.node.name}
-        description={project.node.description}
-        callToAction={project.node.callToAction}
-        link={project.node.link}
-        linkToSource={project.node.linkToSource}
-        linkToTrello={project.node.linkToTrello}
-        highlight={project.node.highlight}
-        agency={project.node.agency}
-        path={project.node.path}
-        // showAdditionalInfo={showAdditionalInfo}
-      />
-    ))}
+    {projects.sort(compareYears).map(project => {
+      console.log('project.node.year', project.node.year);
+      console.log('project.node.name', project.node.name);
+      return (
+        <ProjectItem
+          key={project.node.name}
+          year={project.node.year}
+          status={project.node.status}
+          tagline={project.node.tagline}
+          name={project.node.name}
+          description={project.node.description}
+          callToAction={project.node.callToAction}
+          link={project.node.link}
+          linkToSource={project.node.linkToSource}
+          linkToTrello={project.node.linkToTrello}
+          highlight={project.node.highlight}
+          agency={project.node.agency}
+          path={project.node.path}
+        />
+      );
+    })}
   </UL>
 );
 

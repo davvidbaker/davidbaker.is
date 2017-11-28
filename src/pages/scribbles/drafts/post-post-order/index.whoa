@@ -133,7 +133,8 @@ I'm thinking I should maybe use Firebase for Stitch for two reasons.
 🔎firebase pricing🔍
 
 TODO Look at trump twitter reply and retweet count, frequency, etc
-And other statistics.
+And other statistics. [This infographic](https://www.politico.com/magazine/gallery/2016/04/donald-trump-twitter-account-history-social-media-campaign-000631?slide=4) did a little bit, but it is static and from 2016!
+[Here's the relevant API](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object)
 
 I hope I wake up tomorrow with this much excitement about some features. I already know Firebase (event just researching whether it really would make things easier ever) is a potential timesuck.
 

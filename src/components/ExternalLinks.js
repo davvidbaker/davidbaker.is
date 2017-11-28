@@ -38,7 +38,7 @@ const UL = styled.ul`
 const ExternalLinks = ({ link, linkToSource, linkToTrello, callToAction }) => (
   <UL>
     <li className="project-link">
-      <p>{link && <a href={link}>{callToAction}</a>}</p>
+      <p>{link && <a href={link}>{callToAction || 'Check it out!'}</a>}</p>
     </li>
 
     {linkToSource && (
