@@ -34,7 +34,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // Create blog posts pages.
         _.each(result.data.allWhoa.edges, edge => {
           createPage({
-            path: edge.node.frontmatter.path,
+            path: `scribbling-about-${edge.node.frontmatter.path}`,
             component: blogPost,
             context: {
               path: edge.node.frontmatter.path,

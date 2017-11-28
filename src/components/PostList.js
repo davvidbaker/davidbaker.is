@@ -70,10 +70,11 @@ class PostList extends Component {
               )}
               <Link
                 href={{
+                  /** ⚠️ is this (pathname) right 👇?? */
                   pathname: '/blog',
                   query: { slug: post.slug },
                 }}
-                to={post.node.frontmatter.path}
+                to={`scribbling-about-${post.node.frontmatter.path}`}
               >
                 <h1
                   style={{
