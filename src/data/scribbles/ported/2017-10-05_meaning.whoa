@@ -1,0 +1,57 @@
+---
+title: Meaning
+path: meaning
+date: 2017-10-05T04:00:00.000Z
+---
+
+I've made starts at this essay too many times. I think I do this when I am sad.
+
+<h1 style="font-size:5em; text-align:center;">😢</h1>
+
+
+The mass shooting in Vegas happened this past weekend.
+
+How do I fight the nihilism that locks me up? That's what it really is. **Nihilism**.
+
+It's so hard to try to live a meaningful life when you know there is no meaning. I think that's a big problem that faces my generation. Maybe friends and family could bring back some meaning into my life.
+
+
+<h1> I would love to fall in <span style="color: palevioletred">love</span>.</h1>
+
+I am not good at putting myself out there. This is probably my greatest character flaw. 🕵{Call it neurodiversity or call it mild Aspergers or whatever} the fuck you want. It's something I struggle with.
+        
+## I want to push the world forward in some way. 
+
+Why? I'd like the world to be a more fun and friendly place? Maybe?
+
+🕵{I also just want to be happy}. And getting attention of any sort brings me happiness. Okay no not any sort. Positive attention.
+
+People are doing things with their lives. And I am just sort of floating. I have no meaningful job. I have no girlfriend. The only girls in my life are ones I have built friendships with over years, really. I've fallen in love with ✍{all of them}(Okay, that's not really true. But some of them. It definitely reads nicer as "all".). I don't think I could ever tell them.`
+
+```component
+tag: CycleItems
+props: 
+  title: "I am afraid"
+  items: [
+    "to lose my friends.", "of rejection."
+  ]
+```
+
+### Maybe it's not so much that I'm afraid of rejection, but that I am afraid I am repulsive.
+        
+I am putting this out there into the ether because no one will ever see it. And if they do, I'll appear to be 🕵{just another self-hating loser on the internet}. Which I guess I am. There are plenty of people I am sure who are just like me.
+
+```component
+tag: Definition
+props:
+  word: me
+  ipa: miiiiii
+  PoS: noun
+  children: just another shlub on the internet
+```
+
+```style
+  article li {
+    list-style: none !important;
+  }
+```

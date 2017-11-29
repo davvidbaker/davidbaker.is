@@ -24,8 +24,10 @@ import Sic from './Sic';
 
 // 🔮 should maybe dynamically load components that aren't core Whoa on a per-use basis
 import CycleItems from '../CycleItems';
+import Definition from '../Definition';
 const customComponents = {
-  CycleItems: CycleItems,
+  CycleItems,
+  Definition,
 };
 
 function Element({ type, children, ...props }) {
@@ -168,7 +170,12 @@ function Element({ type, children, ...props }) {
       console.log('yaml(props.value)');
       const { tag: compTag, props: compProps } = yaml.load(props.value);
       Tag = customComponents[compTag];
+      console.log('compTag, compProps', compTag, compProps);
       return <Tag {...compProps} />;
+
+    case 'span':
+      Tag = 'span';
+      break;
 
     default:
       Tag = 'span';

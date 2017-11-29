@@ -1,57 +1,39 @@
-import unified from 'unified';
-import remarkParse from 'remark-parse';
-import remarkWhoa from 'remark-whoa';
-import React from 'react';
+---
+title: Great Slug
+path: you-me-and-mqtt
+date: 2017-08-09T04:00:00.000Z
+---
 
-import Whoa from '../whoa-components';
-import MeList from '../components/MeList.js';
-import BlogPost from '../components/Blog/Post.js';
+```component
+tag: CycleItems
+props: 
+  title: "I want"
+  items: [
+    "lots of things.","to tell you about what I've been learning recently.","more time."
+  ]
+```
 
-const whoaParse = unified().use(remarkParse).use(remarkWhoa).parse;
+There's certain things about composabililitlity that differ from framework to framework. Especially when it comes to the style cascade. I guess I should try to use the standard? Shadow DOM encapsulation?
 
-const attributes = {
-  title: 'Great Slug',
-  slug: 'you-me-and-mqtt',
-  date: 'August 9, 2017',
-  published: 'false',
-  js: true,
-};
+It took me far to long to just get to editing this post. I should definitely fix that ASAP. There are a bunch of things that I should do better.
 
-export default () => (
-  <BlogPost attributes={attributes}>
-    <MeList
-      title="I want"
-      items={[
-        'lots of things.',
-        "to tell you about what I've been learning recently.",
-        'more time.',
-      ]}
-    />
-    <p>
-      There's certain things about composabililitlity that differ from framework to framework. Especially when it comes to the style cascade. I guess I should try to use the standard? Shadow DOM encapsulation?
-    </p>
-    <Whoa>
-      {whoaParse(
-        'It took me far to long to just get to editing this post. I should definitely fix that ASAP. There are a bunch of things that I should do better.'
-      )}
-    </Whoa>
-    <MeList
-      title="This is a good space to practice"
-      items={[
-        'refactoring.',
-        'maintaining.',
-        'sustaining.',
-        'experimenting.',
-        'comparadacting.',
-      ]}
-    />
-
-    <Whoa>
-      {whoaParse(
+```component
+tag: CycleItems
+props: 
+  title: "This is a good space to practice"
+  items: [
+    'refactoring.',
+    'maintaining.',
+    'sustaining.',
+    'experimenting.',
+    'comparadacting.',
+  ]
+```
         `
 ## I should look at prettier's source code. I wonder how easy it is to intercept its AST.
 
 I just came across this quote for the first time.
+
 > When applications are done well, they are just the really application-specific, brackish residue that can't be so easily abstracted away. All the nice, reusable components sublimate away onto github and npm where everybody can collaborate to advance the commons.
 
 — substack from "how I write modules"
@@ -74,14 +56,8 @@ Even though I gotta stop doing that...I really want to. Not starting quite from 
 
 I always talk about not having the exact tool I need to do these things efficienlty. I really need to make take some effort towards making that tool. [component.io](https://component.io/projects) seems pretty cool, **but definitely not the UI that's in my mind.**
 
-`
-      )}
-    </Whoa>
-
-    <style global jsx>{`
-        article li {
-          list-style: none !important;
-        }
-        `}</style>
-  </BlogPost>
-);
+```style
+  article li {
+    list-style: none !important;
+  }
+```
