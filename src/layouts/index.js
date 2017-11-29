@@ -24,6 +24,7 @@ injectGlobal`
   
   body {
     margin: 0;
+    font-family: sans-serif;    
   }
   
 .marginal {
@@ -61,7 +62,6 @@ const Container = styled.div`
   /* font-family: 'mr-eaves-modern', sans-serif; */
   /* font-size: 1.5rem; */
 
-  font-family: sans-serif;
   font-size: 1rem;
 
   em,
