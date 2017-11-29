@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
 
 import {
-  CLEAR,
   COMMAND_RUN,
   CURRENT_POST_SET,
+  NAV_HIDE,
+  NAV_SHOW,
   NORMATIVE_ADD,
+  CLEAR,
   REDACTIONS_SHOW,
   REDACTIONS_HIDE,
   SIDE_BAR_SHOW,
@@ -57,15 +59,27 @@ const redactionsVisible = (state = false, action) => {
   }
 };
 
+const navVisible = (state = true, action) => {
+  switch (action.type) {
+    case NAV_SHOW:
+      return true;
+    case NAV_HIDE:
+      return false;
+    default:
+      return state;
+  }
+};
+
 const whoaReducer = combineReducers({
-  normatives,
   currentPost,
+  normatives,
   redactionsVisible,
 });
 
 const rootReducer = combineReducers({
   whoa: whoaReducer,
   sideBarVisible: sideBarReducer,
+  navVisible,
 });
 
 export default rootReducer;

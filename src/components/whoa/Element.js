@@ -9,6 +9,7 @@
 import shortid from 'shortid';
 import React from 'react';
 import PropTypes from 'prop-types';
+import yaml from 'js-yaml';
 
 import WordChoice from './WordChoice';
 import Ellipsis from './Ellipsis';
@@ -21,8 +22,15 @@ import Search from './Search';
 import Image from './Image';
 import Sic from './Sic';
 
+// 🔮 should maybe dynamically load components that aren't core Whoa on a per-use basis
+import CycleItems from '../CycleItems';
+const customComponents = {
+  CycleItems: CycleItems,
+};
+
 function Element({ type, children, ...props }) {
   if (typeof type !== 'string') {
+    console.log('type, children, props', type, children, props);
     console.error('WHOA! type of element was not a string');
     debugger;
   }
@@ -148,17 +156,19 @@ function Element({ type, children, ...props }) {
       break;
 
     case 'html':
-      console.log(
-        'props.value.includes("style")',
-        props.value.includes('style')
-      );
-      console.log('props', props);
-
       return <span dangerouslySetInnerHTML={{ __html: props.value }} />;
 
     case 'yaml':
       console.log('yaml', props.value);
       return null;
+
+    case 'component':
+      console.log('yaml', yaml);
+
+      console.log('yaml(props.value)');
+      const { tag: compTag, props: compProps } = yaml.load(props.value);
+      Tag = customComponents[compTag];
+      return <Tag {...compProps} />;
 
     default:
       Tag = 'span';

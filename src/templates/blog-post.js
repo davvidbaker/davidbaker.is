@@ -60,10 +60,21 @@ class BlogPostTemplate extends React.Component {
     this.setState({ com: false });
   };
 
+  componentWillUnmount() {
+    this.props.showNav();
+    this.props.clear();
+  }
+
   render() {
     console.log('this.props, this.props.data', this.props, this.props.data);
     const post = this.props.data.whoa;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
+
+    if (post.frontmatter.bareNaked) {
+      this.props.hideNav();
+    } else {
+      this.props.showNav();
+    }
 
     const eventListeners = [
       [
@@ -107,9 +118,11 @@ class BlogPostTemplate extends React.Component {
                   margin: '0 auto',
                 }}
               >
-                <PostHeading date={post.frontmatter.date}>
-                  {() => post.frontmatter.title}
-                </PostHeading>
+                {!post.frontmatter.bareNaked && (
+                  <PostHeading date={post.frontmatter.date}>
+                    {() => post.frontmatter.title}
+                  </PostHeading>
+                )}
                 <PostBody normatives={this.props.normatives}>
                   <Whoa>{() => JSON.parse(post.ast).children}</Whoa>
                 </PostBody>
@@ -135,14 +148,18 @@ class BlogPostTemplate extends React.Component {
 
 export default connect(
   state => ({
-    sideBarVisible: state.sideBarVisible,
+    navVisible: state.navVisible,
     normatives: state.whoa.normatives,
+    sideBarVisible: state.sideBarVisible,
   }),
   dispatch => ({
+    hideNav: () => dispatch({ type: 'NAV_HIDE' }),
+    showNav: () => dispatch({ type: 'NAV_SHOW' }),
     setCurrentPost: title => dispatch({ type: 'CURRENT_POST_SET', title }),
     toggleSideBar: showing =>
       dispatch({ type: showing ? 'SIDE_BAR_HIDE' : 'SIDE_BAR_SHOW' }),
     dispatchAction: type => dispatch({ type }),
+    clear: () => dispatch({ type: 'CLEAR' }),
   })
 )(BlogPostTemplate);
 
@@ -160,6 +177,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        bareNaked
       }
     }
   }

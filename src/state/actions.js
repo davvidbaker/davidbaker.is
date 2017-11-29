@@ -1,6 +1,8 @@
 export const CLEAR = 'CLEAR';
 export const COMMAND_RUN = 'COMMAND_RUN';
 export const CURRENT_POST_SET = 'CURRENT_POST_SET';
+export const NAV_HIDE = 'NAV_HIDE';
+export const NAV_SHOW = 'NAV_SHOW';
 export const NORMATIVE_ADD = 'NORMATIVE_ADD';
 export const SIDE_BAR_SHOW = 'SIDE_BAR_SHOW';
 export const SIDE_BAR_HIDE = 'SIDE_BAR_HIDE';

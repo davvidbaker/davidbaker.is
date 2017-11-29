@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import { connect } from 'react-redux';
 import styled, { injectGlobal } from 'styled-components';
 import PropTypes from 'prop-types';
 import WebFont from 'webfontloader';
@@ -82,7 +83,7 @@ const Container = styled.div`
 
 const H1 = styled.h1``;
 
-class Template extends React.Component {
+class IndexLayout extends React.Component {
   componentDidMount = () => {
     WebFont.load({
       typekit: {
@@ -106,7 +107,7 @@ class Template extends React.Component {
       /** 💁 include nav in top-level directories */
       location.pathname.match(/\//g).length === 1
     ) {
-      header = <Nav />;
+      header = this.props.navVisible && <Nav />;
     } else {
       header = null;
     }
@@ -119,10 +120,12 @@ class Template extends React.Component {
   }
 }
 
-Template.propTypes = {
+IndexLayout.propTypes = {
   children: PropTypes.func,
   location: PropTypes.object,
   route: PropTypes.object,
 };
 
-export default Template;
+export default connect(state => ({ navVisible: state.navVisible }), null)(
+  IndexLayout
+);
