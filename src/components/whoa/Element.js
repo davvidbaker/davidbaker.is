@@ -87,6 +87,10 @@ function Element({ type, children, ...props }) {
       return <Code inline value={props.value} />;
 
     case 'code':
+      console.log('props', props);
+      if (props.lang === 'style') {
+        return;
+      }
       return <Code value={props.value} />;
 
     case 'delete':
@@ -104,6 +108,9 @@ function Element({ type, children, ...props }) {
     case 'blockquote':
       Tag = 'blockquote';
       break;
+
+    case 'style':
+      return <style>{props.value}</style>;
 
     case 'link':
 
@@ -141,6 +148,12 @@ function Element({ type, children, ...props }) {
       break;
 
     case 'html':
+      console.log(
+        'props.value.includes("style")',
+        props.value.includes('style')
+      );
+      console.log('props', props);
+
       return <span dangerouslySetInnerHTML={{ __html: props.value }} />;
 
     case 'yaml':

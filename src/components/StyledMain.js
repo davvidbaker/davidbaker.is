@@ -22,21 +22,16 @@ const Main = styled.main`
   }
 
   blockquote {
-    border-left: 5px solid ${colors.accent1};
-    padding: 0.5rem;
-    padding-left: 1.5rem;
-    margin: 0 1rem;
+    border-left: 5px solid #444;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    padding: 0.5em;
+    padding-left: 1.5em;
+    margin: 1em;
+    background: #fafafa;
+
     p {
       margin: 0;
-      margin-top: 0.5rem;
-    }
-    p::before {
-      content: '';
-      width: 20px;
-      height: 5px;
-      background: var(--color-main);
-      position: absolute;
-      transform: translateX(-1.5rem) translateY(-1rem);
     }
   }
 
