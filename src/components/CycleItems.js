@@ -20,62 +20,68 @@ class CycleItems extends Component {
     this.itemInd = 1;
     // add a space to the end of the items (for text-breaking purposes)
     this.items = this.props.items.map(item => `${item} `);
+
+    this.timeouts = [];
+    this.raf = null;
   }
 
   componentDidMount() {
     this.nextCharacter();
   }
 
+  componentWillUnmount() {
+    console.log('unmounting');
+    this.timeouts.forEach(timeout => clearTimeout(timeout));
+    window.cancelAnimationFrame(this.raf);
+  }
+
   nextCharacter() {
-    try {
-      window.requestAnimationFrame(() => {
-        let letter;
-        // if (this.text && this.text.textContent) {
-        if (this.text.textContent.length - 1 < this.characterInd) {
-          // if the current textContent doesn't have a character at character ind, just add to textContent
-          letter = letterThatMightBeAnEmoji(
-            this.items[this.itemInd].substr([this.characterInd], 2)
+    console.log('nextCharacter called');
+    this.raf = window.requestAnimationFrame(() => {
+      let letter;
+      // if (this.text && this.text.textContent) {
+      if (this.text.textContent.length - 1 < this.characterInd) {
+        // if the current textContent doesn't have a character at character ind, just add to textContent
+        letter = letterThatMightBeAnEmoji(
+          this.items[this.itemInd].substr([this.characterInd], 2)
+        );
+        this.text.textContent += letter;
+      } else if (this.characterInd < this.items[this.itemInd].length) {
+        letter = letterThatMightBeAnEmoji(
+          this.items[this.itemInd].substr([this.characterInd], 2)
+        );
+        // replace the text at that ind
+        this.text.textContent =
+          this.text.textContent.substr(0, this.characterInd) +
+          letter +
+          this.text.textContent.substr(
+            this.characterInd + letter.length,
+            this.text.textContent.length - this.characterInd - letter.length
           );
-          this.text.textContent += letter;
-        } else if (this.characterInd < this.items[this.itemInd].length) {
-          letter = letterThatMightBeAnEmoji(
-            this.items[this.itemInd].substr([this.characterInd], 2)
-          );
-          // replace the text at that ind
-          this.text.textContent =
-            this.text.textContent.substr(0, this.characterInd) +
-            letter +
-            this.text.textContent.substr(
-              this.characterInd + letter.length,
-              this.text.textContent.length - this.characterInd - letter.length
-            );
-        } else {
-          this.text.textContent = `${this.text.textContent.substr(
-            0,
-            this.characterInd
-          )}${' '}${this.text.textContent.substr(
-            this.characterInd + 1,
-            this.text.textContent.length - this.characterInd - 1
-          )}`;
-        }
+      } else {
+        this.text.textContent = `${this.text.textContent.substr(
+          0,
+          this.characterInd
+        )}${' '}${this.text.textContent.substr(
+          this.characterInd + 1,
+          this.text.textContent.length - this.characterInd - 1
+        )}`;
+      }
 
-        this.characterInd += letter ? letter.length : 1;
+      this.characterInd += letter ? letter.length : 1;
 
-        if (
-          this.characterInd >= this.items[this.itemInd].length &&
-          this.characterInd >= this.text.textContent.length
-        ) {
-          this.itemInd = (this.itemInd + 1) % this.items.length;
-          this.characterInd = 0;
-          setTimeout(() => this.nextCharacter(), 1000);
-          return;
-        }
-        this.nextCharacter();
-        // }
-      });
-    } catch (e) {
-      console.log('hit an error', e);
-    }
+      if (
+        this.characterInd >= this.items[this.itemInd].length &&
+        this.characterInd >= this.text.textContent.length
+      ) {
+        this.itemInd = (this.itemInd + 1) % this.items.length;
+        this.characterInd = 0;
+        this.timeouts.push(setTimeout(() => this.nextCharacter(), 1000));
+        return;
+      }
+      this.nextCharacter();
+      // }
+    });
   }
 
   render() {

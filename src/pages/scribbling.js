@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import PostList from '../components/PostList';
 import astronaut from '../images/astronaut-pushing.svg';
@@ -46,7 +47,7 @@ class BlogIndex extends React.Component {
 }
 
 BlogIndex.propTypes = {
-  route: React.PropTypes.object,
+  route: PropTypes.object,
 };
 
 export default BlogIndex;

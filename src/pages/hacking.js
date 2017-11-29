@@ -5,6 +5,7 @@ import Link from 'gatsby-link';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 // import PROJECTS from '../constants/projects';
 import ProjectList from '../components/ProjectList';
@@ -72,7 +73,7 @@ class ProjectsIndex extends React.Component {
 }
 
 ProjectsIndex.propTypes = {
-  route: React.PropTypes.object,
+  route: PropTypes.object,
 };
 
 export default ProjectsIndex;

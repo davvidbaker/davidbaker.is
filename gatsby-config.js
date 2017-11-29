@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'David Baker',
+    title: 'David Baker is Here',
     author: 'David Baker',
   },
   plugins: [
@@ -45,5 +45,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-next`,
   ],
 };

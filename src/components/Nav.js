@@ -58,7 +58,7 @@ const Nav = () => (
         </Link>
       </li>
       <li>
-        <Link activeStyle={activeStyle} to="resume">
+        <Link activeStyle={activeStyle} to="peacocking">
           Résumé
         </Link>
       </li>
