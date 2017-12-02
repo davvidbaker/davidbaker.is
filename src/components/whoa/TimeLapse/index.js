@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import someTimeLater from '../../../fonts/some_time_later.otf';
 import eggFlower from './eggflower.svg';
-const P = styled.p`
+const Div = styled.div`
   @font-face {
     font-family: 'some time later';
     src: url(${someTimeLater});
@@ -16,6 +16,8 @@ const P = styled.p`
   position: relative;
   /* animation: gradAn 1s infinite; */
   overflow: hidden;
+  padding: 1em;
+  transform: scalex(1.1) rotate(-1deg);
 
   background: radial-gradient(
     ellipse at bottom left,
@@ -40,7 +42,7 @@ const P = styled.p`
     /* transform: rotate(30deg); */
     transform-origin: 60% 30%;
 
-    animation: spinFlower 100s infinite linear;
+    animation: spinFlower 111s infinite linear;
   }
 
   &::after {
@@ -59,6 +61,11 @@ const P = styled.p`
     transform-origin: left center;
   }
 
+  p {
+    margin-bottom: 0;
+    transform: rotate(1deg);
+  }
+
   @keyframes spinFlower {
     to {
       transform: rotate(390deg);
@@ -67,14 +74,18 @@ const P = styled.p`
 
   @keyframes zoom {
     to {
-      transform: scale(0) rotate(1080deg);
+      transform: scale(0) rotate(-1080deg);
       transform-origin: right center;
     }
   }
 `;
 
 const TimeLapse = ({ children = 'Some Time Later' }) => {
-  return <P>{children}</P>;
+  return (
+    <Div>
+      <p>{children}</p>
+    </Div>
+  );
 };
 
 export default TimeLapse;
