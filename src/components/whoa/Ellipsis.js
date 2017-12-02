@@ -7,7 +7,8 @@
 import React from 'react';
 
 function Ellipsis({ children }) {
-  return <span>...</span>;
+  console.log('children', children);
+  return <span>...ELLIPSIS</span>;
 }
 
 Ellipsis.propTypes = {};

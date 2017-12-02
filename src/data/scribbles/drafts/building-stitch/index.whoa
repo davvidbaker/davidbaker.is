@@ -4,8 +4,6 @@ date: "2017-10-25T21:46:45.506Z"
 path: building-stitch
 ---
 
-🕵{redact me}
-
 *I want to document some of the things that are happening/slowing me down/taking time while I am making this thing.*
 
 ## The main problem
@@ -63,7 +61,7 @@ Strategy for optimistic rendering. A stackk. []]]]]]]]]
 
 ___
 
-...days later...
+...{days later...}
 
 # The problem is I am building a thing that lets me work on multiple projects at the same time, and I can't work on multiple projects until it is functional (enough), so until then, I need to work exclusively on it. #yikes
 

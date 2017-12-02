@@ -21,6 +21,7 @@ import Code from './Code';
 import Search from './Search';
 import Image from './Image';
 import Sic from './Sic';
+import TimeLapse from './TimeLapse';
 
 // 🔮 should maybe dynamically load components that aren't core Whoa on a per-use basis
 import CycleItems from '../CycleItems';
@@ -75,6 +76,10 @@ function Element({ type, children, ...props }) {
 
     case 'revision':
       Tag = Revision;
+      break;
+
+    case 'timeLapse':
+      Tag = TimeLapse;
       break;
     /* 🔝🔝🔝🔝🔝🔝🔝🔝🔝🔝🔝🔝🔝🔝🔝🔝🔝🔝
      * Custom Elements Above
@@ -179,7 +184,6 @@ function Element({ type, children, ...props }) {
 
     default:
       Tag = 'span';
-      debugger;
       break;
 
     // return null;

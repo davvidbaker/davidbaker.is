@@ -49,7 +49,7 @@ class BlogPostTemplate extends React.Component {
 
   submitCommand = command => {
     this.hideCommander();
-    this.props.dispatchAction(command);
+    this.props.dispatchAction({ type: command.action });
   };
 
   showCommander = () => {
@@ -97,7 +97,6 @@ class BlogPostTemplate extends React.Component {
         {() => (
           <BlogPost>
             <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-
             <StyledMain
               style={{
                 left: this.props.sideBarVisible ? '300px' : 0,
@@ -158,7 +157,7 @@ export default connect(
     setCurrentPost: title => dispatch({ type: 'CURRENT_POST_SET', title }),
     toggleSideBar: showing =>
       dispatch({ type: showing ? 'SIDE_BAR_HIDE' : 'SIDE_BAR_SHOW' }),
-    dispatchAction: type => dispatch({ type }),
+    dispatchAction: action => dispatch(action),
     clear: () => dispatch({ type: 'CLEAR' }),
   })
 )(BlogPostTemplate);
