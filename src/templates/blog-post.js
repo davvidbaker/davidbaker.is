@@ -112,8 +112,9 @@ class BlogPostTemplate extends React.Component {
                 />
               )}
               <div
+                className="full-width-grid"
                 style={{
-                  maxWidth: '50rem',
+                  // maxWidth: '50rem',
                   margin: '0 auto',
                 }}
               >

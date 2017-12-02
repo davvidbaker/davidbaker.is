@@ -5,6 +5,7 @@ const OuterDiv = styled.div`
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  grid-column: 2;
 
   .inner-title {
     display: flex;

@@ -18,8 +18,10 @@ class PostBody extends React.Component {
   componentDidCatch() {
     debugger;
   }
+
+  /** ⚠️🔮 when I can use fragments (once Gatsby version of react (or react-next) has been updated, or maybe JSX or idk, babel for gatsby i thinkss, I should use fragment*/
   render() {
-    return <Article>{this.props.children}</Article>;
+    return <React.Fragment>{this.props.children}</React.Fragment>;
   }
 }
 

@@ -8,6 +8,15 @@ const Main = styled.main`
   transition: width 0.5s, left 0.5s;
   font-size: 1em;
 
+  .full-width-grid {
+    display: grid;
+    grid-template-columns: 1fr 50em 1fr;
+
+    * {
+      grid-column: 2;
+    }
+  }
+
   a {
     color: #0066c0;
     text-decoration: none;

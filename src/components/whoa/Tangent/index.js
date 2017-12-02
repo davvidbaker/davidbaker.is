@@ -52,14 +52,15 @@ class Tangent extends React.Component {
     };
   }
 
+  // 🤯 none of this should be //ed out
   componentDidMount() {
-    this._isMounted = true;
-    this.onResize = this.calculatePath.bind(this);
+    // this._isMounted = true;
+    // this.onResize = this.calculatePath.bind(this);
     window.addEventListener('resize', this.onResize);
 
-    setTimeout(() => {
-      this.calculatePath();
-    }, 300);
+    // setTimeout(() => {
+    // this.calculatePath();
+    // }, 300);
   }
 
   componentWillUnmount() {
@@ -79,8 +80,8 @@ class Tangent extends React.Component {
     const svgLeft = this.svg && this.svg.getBoundingClientRect().left;
     // TODO this is hacky-ish, could instead use a ref that is passed down down down. Actually maybe this is better
     const postBody =
-      document.querySelector('article') &&
-      document.querySelector('article').getBoundingClientRect();
+      document.querySelector('.full-width-grid') &&
+      document.querySelector('.full-width-grid').getBoundingClientRect();
     let straightLength = postBody.right - svgLeft - 60;
     if (straightLength < 0) {
       straightLength = 0;
@@ -105,7 +106,7 @@ class Tangent extends React.Component {
     const beyondPage =
       this.svg.getBoundingClientRect().right -
       document.documentElement.clientWidth;
-      console.log('beyondPage', beyondPage);
+    console.log('beyondPage', beyondPage);
     if (beyondPage > 0) {
       // console.log('beyond page', beyondPage)
       this.setState(

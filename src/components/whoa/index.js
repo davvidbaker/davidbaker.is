@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
 
@@ -26,11 +26,11 @@ class Whoa extends Component {
 
   render() {
     return (
-      <div>
+      <Fragment>
         {this.props
           .children()
           .map(child => <Element key={shortid.generate()} {...child} />)}
-      </div>
+      </Fragment>
     );
   }
 }
