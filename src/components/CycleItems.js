@@ -7,6 +7,7 @@ import styled from 'styled-components';
 
 const LI = styled.li`
   font-family: monospace;
+  list-style: none;
 
   .title {
     font-weight: bold;

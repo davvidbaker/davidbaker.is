@@ -11,6 +11,7 @@ import Element from './Element';
 
 const Span = styled.span`
   ${props => (props.redactionsVisible ? '' : 'background: black')};
+  transition: background-color 0.5s;
 
   *::selection {
     ${props =>

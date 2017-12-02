@@ -7,9 +7,7 @@ import Popup from '../Popup';
 import WithToggle from '../WithToggle';
 
 const Span = styled.span`
-  .revision {
-    text-decoration: underline wavy rgba(255, 0, 0, 0.7);
-  }
+  text-decoration: underline dashed rgba(255, 0, 0, 0.5);
 `;
 
 const Revision = ({ children, popupOpen, show, hide }) => {
@@ -17,7 +15,7 @@ const Revision = ({ children, popupOpen, show, hide }) => {
 
   if (length === 1) {
     return (
-      <Span className="revision">
+      <Span>
         <Element type={children[0].type} {...children[0]}>
           {children[0].children}
         </Element>
