@@ -16,6 +16,7 @@ const StyledSic = styled.span`
 
   &::before,
   &::after {
+    font-family: sans-serif;
     font-style: normal;
     transform: scaley(0.8);
     display: inline-block;
