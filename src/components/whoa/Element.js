@@ -27,9 +27,11 @@ import TrelloCard from './TrelloCard';
 // 🔮 should maybe dynamically load components that aren't core Whoa on a per-use basis
 import CycleItems from '../CycleItems';
 import Definition from '../Definition';
+import Phone from '../Phone';
 const customComponents = {
   CycleItems,
   Definition,
+  Phone,
 };
 
 function Element({ type, children, ...props }) {
@@ -93,6 +95,11 @@ function Element({ type, children, ...props }) {
 
     case 'paragraph':
       Tag = 'p';
+
+      /** 💁 This is how I am allowing image elements to span the full page width */
+      if (children.length === 1 && children[0].type === 'image') {
+        elementProps.style = { gridColumn: '1 / span 3' };
+      }
       break;
 
     case 'text':
@@ -141,10 +148,17 @@ function Element({ type, children, ...props }) {
 
     case 'image':
       Tag = 'img';
+      console.log('props.blur', props.blur);
+      console.log('props.blur64', props.blur64);
       return props.url.includes('https://trello.com') ? (
         <TrelloCard src={props.src || props.url} alt={props.alt} />
       ) : (
-        <Image src={props.src || props.url} alt={props.alt} />
+        <Image
+          src={props.src || props.url}
+          blur={props.blur64}
+          width={props.width}
+          alt={props.alt}
+        />
       );
       // elementProps.style = { maxWidth: '100%' };
       // elementProps.src = props.src || props.url;

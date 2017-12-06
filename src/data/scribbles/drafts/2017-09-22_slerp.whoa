@@ -19,23 +19,27 @@ Once I start writing it's like I get very tired. 🕵{Why is this? What have you
 
 ## Why is it so hard to find my voice sometimes?
 
-    <Phone vertical>
-      <Messenger className="messenger" name="Me">
-        <Message me>
-          <h1 style={m0}>Maybe it's cuz of texting.</h1>
-        </Message>
+```component
+tag: Phone
+props:
+  name: Me
+  messages: [
+    {
+      me: true,
+      value: "# Maybe it's cuz of texting"
+    },
+    {
+      me: true,
+      value: "### Probably not though"
+    },
+    {
+      value: "It's probably just my fault"
+    }
+  ]
+```
+    
 
-        <Message me>
-          <h3 style={m0}>Probably not though.</h3>
-        </Message>
-
-        <Message>
-          <p>It's probably just my fault.</p>
-        </Message>
-      </Messenger>
-    </Phone>
-
-Okay. I am adding styled-components to this blog? That actually might be a bad idea, until I can totally eleminate styled-jsx code, which probably won't be easy, due to its scoping.
+Okay. I am adding styled-components to this blog? That actually might be a bad idea, until I can totally eliminate styled-jsx code, which probably won't be easy, due to its scoping.
 
 🔎Migrate from styled-jsx to styled-components🔍
       

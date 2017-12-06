@@ -16,7 +16,7 @@ So here is what drafting a post looks like, next to the rendered version.
 
  Here is what whoa does for me. I draft a post with the extension `.whoa`. This post looks like this. |- I'll throw a tangent in here just for fun.-|
 
-![cur-state.png](/static/blog/cur-state.png)
+![cur-state.png](cur-state.png)
 
 > *It can be kinda hard to differentiate between what `whoa` does and what the blog structure I set up does. Ideally I would have them less closely coupled, but that isn't pressing.*
 
@@ -50,7 +50,7 @@ Probably the component I've put the most time into. |-It's best displayed as a s
 🔎What's up with Russia today?🔍
 
 ### Revisions
-✍{Some bad text that you should hover over.}(You gotta do better kid.) ✍{And some that hovering over doesn't do nothin}.
+✍️{Some bad text that you should hover over.}(You gotta do better kid.) ✍️{And some that hovering over doesn't do nothin}.
 
 ### Normatives
 I should find a new job. Now look over in the notes to the left 👈.

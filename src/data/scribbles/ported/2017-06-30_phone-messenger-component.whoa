@@ -6,7 +6,7 @@ date: "2017-06-30T06:00:00.000Z"
 
 Real quick I just wanted to take a snapshot of this phone component I made over the past couple days.
 
-![phone-component](/static/blog/phone-messenger.png)
+![phone-component](phone-messenger.png)
 
 One thing I am realizing is that I wish I could just use `.whoa` syntax anywhere I wanted to. Would it be too distracting for straight up writing to be amongst the weeds of a javascript file?
 

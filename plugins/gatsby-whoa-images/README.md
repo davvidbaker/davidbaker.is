@@ -1,0 +1,1 @@
+# Similar to [gatsby-remark-images](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-remark-images) but not exactly the same

@@ -16,28 +16,28 @@ I started a performance profile recording with the `Memory` checkbox checked,the
 
 ### I expected to see a profile that looked something like this 👇.
 
-![expected-profile.png](/static/blog/expected-profile.png)
+![expected-profile.png](expected-profile.png)
 
 ### But what I actually got looked like this 👇.
 
-![actual-profile.png](/static/blog/actual-profile.png)
+![actual-profile.png](actual-profile.png)
 
-Get the profile [here](/static/blog/Profile-empty-document).
+Get the profile [here](Profile-empty-document).
 
 Okay, so actually, I understand where the flat tail at the end of that image is coming from, mostly.
 
 Zoomed in on the tail, it looks like this 👇.
 
-![actual-profile-tail.png](/static/blog/actual-profile-tail.png)
+![actual-profile-tail.png](actual-profile-tail.png)
 
-This is the memory profile *after* a **major [garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science))** 👆, which you can see if you [get the profile](/static/blog/Profile-empty-document) and follow along.
+This is the memory profile *after* a **major [garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science))** 👆, which you can see if you [get the profile](Profile-empty-document) and follow along.
 
 
 - We've got 1 document, as expected.
 - We have 0 listeners, as expected.
 - We have 4 nodes, which Chrome will automatically generate for every HTML page: `document`, `html`, `head`, and `body`.
 
-![dom-tree-4.svg](/static/blog/dom-tree-4.svg)
+![dom-tree-4.png](dom-tree-4.png)
 
 What I don't understand about the tail is why we have any JavaScript heap at all 🤔. I should come back to that later.
 

@@ -9,6 +9,8 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+  text-align: center;
+
   img {
     max-width: 100%;
     transition: 0.1s 1s;
@@ -18,6 +20,7 @@ const Wrapper = styled.div`
     transition: opacity 0.5s 1s;
     position: absolute;
     z-index: 2;
+    pointer-events: none;
   }
 `;
 
@@ -34,8 +37,6 @@ class Image extends React.Component {
     };
   }
 
-  componentWillMount() {}
-
   loadedImage() {
     this.setState({ showBlur: false });
   }
@@ -44,20 +45,18 @@ class Image extends React.Component {
     // don't do the blur thing with svgs, which are don't have a little blur thumbnail
     if (this.props.src.match(/.*\.svg$/)) {
       return (
-        <img
-          src={this.props.src}
-          alt={`missing image ❗ ${this.props.alt || this.props.src} ❗`}
-        />
+        <Wrapper>
+          <img
+            src={this.props.src}
+            alt={`missing image ❗ ${this.props.alt || this.props.src} ❗`}
+          />
+        </Wrapper>
       );
     }
 
     // if we have specified a size in the image url, use it
-    const match = this.props.src.match(/_s=(\d+)w(\d+)h/);
-    const blurId = `${this.props.src.replace(/\/|=|\./g, '')}-blur`;
-    console.log('match', match);
-    console.log(blurId);
     let visible = true;
-    if (match) {
+    if (this.props.blur) {
       return (
         <Wrapper
           style={{
@@ -66,12 +65,12 @@ class Image extends React.Component {
           }}
         >
           <img
-            id={blurId}
+            id={this.props.blur}
             className="blur"
-            src={this.props.src.replace(/(\.\w\w\w)$/, '_blur$1')}
-            alt={`missing image ❗ ${this.props.alt || this.props.src} ❗`}
+            src={this.props.blur}
+            alt={`missing image ❗ ${this.props.alt} ❗`}
             style={{
-              width: `${match[1]}px`,
+              width: `${this.props.width}px`,
               opacity: this.state.showBlur ? 1 : 0,
             }}
           />
@@ -89,11 +88,13 @@ class Image extends React.Component {
     }
 
     return (
-      <img
-        style={{ maxWidth: '100%' }}
-        src={this.props.src}
-        alt={`❗ ${this.props.alt || this.props.src} ❗`}
-      />
+      <Wrapper>
+        <img
+          style={{ maxWidth: '100%' }}
+          src={this.props.src}
+          alt={`❗ ${this.props.alt || this.props.src} ❗`}
+        />
+      </Wrapper>
     );
   }
 }

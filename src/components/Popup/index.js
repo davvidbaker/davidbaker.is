@@ -2,15 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import popupStyle from './styles';
-
-console.log(popupStyle);
-
-export { popupStyle };
-
 const Span = styled.span`
   position: absolute;
-  /* background: var(--color-contrasting-background); */
+  background: firebrick;
   border-radius: 3px;
   padding: 5px;
   color: white;

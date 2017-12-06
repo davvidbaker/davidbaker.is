@@ -14,8 +14,8 @@ A lot of time has been put into deciding what tools to use to build everything. 
 
 Right now I am at the point where I am trying to figure out what should go on [my home page](https://🙃🐢.ws). |- That reminds me, I am pretty excited—I don't know why I would use the word excited, but it seems kind of accurate—excited about being able to use emoji in domain names. Right now, it only works for the .ws domain, though. I sorta kinda just want to be able to make business cards that look like this.-|
 
-![🙃🐢.ws](/static/blog/business-card.svg)
-
+![🙃🐢.ws](business-card.png)
+s
 TODO: I should align that image, and all images, better.
 
 I should really figure out a better method than I currently have for drafting a blog post. The `whoa-theme` is great, but it isn't everything. Right now, as part of a workaround for Next.js's lack of server side rendering for custom webpack loaders, I have to run a script that uses `whoa-loader` and compiles it to a javascript object that is then used. 
