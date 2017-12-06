@@ -22,6 +22,7 @@ import Search from './Search';
 import Image from './Image';
 import Sic from './Sic';
 import TimeLapse from './TimeLapse';
+import TrelloCard from './TrelloCard';
 
 // 🔮 should maybe dynamically load components that aren't core Whoa on a per-use basis
 import CycleItems from '../CycleItems';
@@ -140,7 +141,11 @@ function Element({ type, children, ...props }) {
 
     case 'image':
       Tag = 'img';
-      return <Image src={props.src || props.url} alt={props.alt} />;
+      return props.url.includes('https://trello.com') ? (
+        <TrelloCard src={props.src || props.url} alt={props.alt} />
+      ) : (
+        <Image src={props.src || props.url} alt={props.alt} />
+      );
       // elementProps.style = { maxWidth: '100%' };
       // elementProps.src = props.src || props.url;
       // elementProps.alt = props.alt;

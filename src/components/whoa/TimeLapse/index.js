@@ -17,16 +17,16 @@ const Div = styled.div`
   /* animation: gradAn 1s infinite; */
   overflow: hidden;
   padding: 1em;
-  transform: scalex(1.1) rotate(-1deg);
+  /* transform: scalex(1.1) rotate(-1deg); */
 
-  background: radial-gradient(
+  /* background: radial-gradient(
     ellipse at bottom left,
     #d2ff52 0%,
     #79ea4d 23%,
     #d2ff52 84%,
     #91e842 100%
-  );
-
+  ); */
+/* 
   &::before {
     content: '';
     position: absolute;
@@ -37,15 +37,15 @@ const Div = styled.div`
     background: url(${eggFlower});
     background-repeat: repeat;
     /* background-repeat-y: repeat; */
-    background-position-y: 40px;
-    opacity: 0.2;
+    /* background-position-y: 40px; */
+    /* opacity: 0.2; */
     /* transform: rotate(30deg); */
-    transform-origin: 60% 30%;
+    /* transform-origin: 60% 30%; */
 
-    animation: spinFlower 111s infinite linear;
-  }
+    /* animation: spinFlower 1101s infinite linear; */
+  /* } */
 
-  &::after {
+  /* &::after {
     content: '';
     position: absolute;
     top: 0;
@@ -56,17 +56,17 @@ const Div = styled.div`
     background: url(${eggFlower});
     background-size: contain;
     background-repeat: no-repeat;
-    animation: zoom 100s infinite linear;
+    animation: zoom 1000s infinite linear;
     transform: scale(1) rotate(80deg);
     transform-origin: left center;
-  }
+  } */
 
   p {
     margin-bottom: 0;
     transform: rotate(1deg);
   }
 
-  @keyframes spinFlower {
+  /* @keyframes spinFlower {
     to {
       transform: rotate(390deg);
     }
@@ -77,7 +77,7 @@ const Div = styled.div`
       transform: scale(0) rotate(-1080deg);
       transform-origin: right center;
     }
-  }
+  } */
 `;
 
 const TimeLapse = ({ children = 'Some Time Later' }) => {
