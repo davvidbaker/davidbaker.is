@@ -62,6 +62,22 @@ const Main = styled.main`
   ul p {
     margin: 0;
   }
+
+  del {
+    color: salmon;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      left: -5%;
+      width: 110%;
+      height: 150%;
+      background: bisque;
+      box-shadow: 0px -1px 20px 3px lightsalmon,
+        inset 0px 2px 5px 3px palevioletred;
+      mix-blend-mode: multiply;
+    }
+  }
 `;
 
 export default Main;
