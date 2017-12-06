@@ -107,7 +107,7 @@ class IndexLayout extends React.Component {
       /** 💁 include nav in top-level directories */
       location.pathname.match(/\//g).length === 1
     ) {
-      header = this.props.navVisible && <Nav />;
+      header = this.props.navVisible && <Nav location={location} />;
     } else {
       header = null;
     }

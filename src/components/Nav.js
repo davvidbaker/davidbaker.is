@@ -32,6 +32,11 @@ const Wrapper = styled.nav`
     text-decoration: none;
     color: #222;
   }
+
+  .active {
+    cursor: default;
+    color: #222;
+  }
 `;
 
 const activeStyle = {
@@ -39,11 +44,12 @@ const activeStyle = {
   color: '#222',
 };
 
-const Nav = () => (
+/** 💁 root path was matching for all other paths, so I am not using activeStyle prop, but a class instead, for just that link */
+const Nav = ({ location }) => (
   <Wrapper>
     <ul>
       <li>
-        <Link activeStyle={activeStyle} to="/">
+        <Link className={location.pathname === '/' ? 'active' : null} to="/">
           Home
         </Link>
       </li>
@@ -58,7 +64,7 @@ const Nav = () => (
         </Link>
       </li>
       <li>
-        <Link activeStyle={activeStyle} to="peacocking">
+        <Link activeStyle={activeStyle} to="looking-for-work">
           Résumé
         </Link>
       </li>
