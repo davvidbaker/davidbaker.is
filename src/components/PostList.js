@@ -22,13 +22,13 @@ const UL = styled.ul`
   h1 {
     display: inline;
     color: ${colors.accent1};
-    font-size: 1rem;
+    font-size: 1em;
   }
   p {
     display: inline;
     color: #888;
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1em;
   }
 
   .draft {
@@ -37,6 +37,7 @@ const UL = styled.ul`
     font-size: 1.5em;
     position: absolute;
     transform: rotate(-3deg);
+    pointer-events: none;
 
     span {
       display: inline-block;
@@ -78,9 +79,12 @@ class PostList extends Component {
               >
                 <h1
                   style={{
-                    // opacity: `${post.readTime / 10 + 0.5}`,
-                    opacity: isDraft ? 0.25 : 1,
-                    fontSize: `${post.readTime / 2 + 0.5}rem`,
+                    opacity: isDraft
+                      ? 0.25
+                      : `${post.node.wordCount.words / 200 / 10 + 0.5}`,
+                    fontSize: isDraft
+                      ? '1em'
+                      : `${post.node.wordCount.words / 200 / 2 + 0.5}em`,
                   }}
                 >
                   {post.node.frontmatter.title}

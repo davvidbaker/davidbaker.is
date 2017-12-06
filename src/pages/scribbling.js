@@ -71,6 +71,9 @@ export const pageQuery = graphql`
           frontmatter {
             title
           }
+          wordCount {
+            words
+          }
         }
       }
     }
