@@ -72,7 +72,7 @@ const Main = styled.main`
 
 const IndexPage = ({ url }) => (
   <div>
-    <Helmet title="David Baker is Here" />
+    <Helmet title="David Baker is Online" />
     <Main>
       <header>
         <h1>David Baker</h1>
@@ -80,12 +80,12 @@ const IndexPage = ({ url }) => (
         <ul>
           <li>
             <a href="https://github.com/davvidbaker">
-              <img src={GithubImg} alt="Github" />
+              <img width="35px" src={GithubImg} alt="Github" />
             </a>
           </li>
           <li>
             <a href="https://twitter.com/davvidbaker">
-              <img src={TwitterImg} alt="Twitter" />
+              <img width="35px" src={TwitterImg} alt="Twitter" />
             </a>
           </li>
           <li>

@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 
 class TrelloCard extends Component {
   componentWillMount() {
-    const script = document.createElement('script');
-    script.src = 'https://p.trellocdn.com/embed.min.js';
-    script.async = true;
+    if (typeof document !== 'undefined') {
+      const script = document.createElement('script');
+      script.src = 'https://p.trellocdn.com/embed.min.js';
+      script.async = true;
 
-    document.body.appendChild(script);
+      document.body.appendChild(script);
+    }
   }
 
   render() {

@@ -234,7 +234,7 @@ const ResumeIndex = ({ url }) => (
       <header>
         <h1 className="name">David Baker</h1>
         <p className="subtitle print-show">
-          davvidbaker.com<br />davvidbaker@gmail.com
+          davidbaker.is/online<br />davvidbaker@gmail.com
         </p>
         <button
           className="print-hide"

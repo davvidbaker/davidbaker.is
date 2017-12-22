@@ -31,13 +31,11 @@ class CycleItems extends Component {
   }
 
   componentWillUnmount() {
-    console.log('unmounting');
     this.timeouts.forEach(timeout => clearTimeout(timeout));
     window.cancelAnimationFrame(this.raf);
   }
 
   nextCharacter() {
-    console.log('nextCharacter called');
     this.raf = window.requestAnimationFrame(() => {
       let letter;
       // if (this.text && this.text.textContent) {

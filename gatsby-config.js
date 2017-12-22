@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'David Baker is Here',
+    title: 'David Baker is Online',
     author: 'David Baker',
   },
   plugins: [
@@ -47,5 +47,9 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-react-next`,
+    /** 💁 this is intentionally left out because both it and redux implement ssr 
+     * https://github.com/gatsbyjs/gatsby/issues/2005
+    */
+    // 'gatsby-plugin-styled-components',
   ],
 };
