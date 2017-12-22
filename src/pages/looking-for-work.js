@@ -271,7 +271,7 @@ const ResumeIndex = ({ url }) => (
             <h2>Work Experience</h2>
             <h3>
               <a href="http://click3x.com/">Click 3X</a> ― Senior Developer
-              <span>[June 2016 - present]</span>
+              <span>[June 2016 - December 2017]</span>
             </h3>
             <ul>
               <li>
@@ -423,7 +423,9 @@ const ResumeIndex = ({ url }) => (
               <li>
                 <p>
                   Website: <a href="https://🙃🐢.ws">🙃🐢.ws</a> or{' '}
-                  <a href="https://davvidbaker.com">davvidbaker.com</a>
+                  <a href="https://davidbaker.is/online">
+                    davidbaker.is/online
+                  </a>
                 </p>
               </li>
               <li>

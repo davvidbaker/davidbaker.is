@@ -1,5 +1,15 @@
 [
   {
+    "name": "stitch",
+    "path": "a-busy-bee",
+    "status": ["coming soon!", "darkmagenta"],
+    "tagline":
+      "Chrome DevTools-inspired flame charts for keeping track of your life.",
+    "year": [2017],
+    "linkToSource": "https://github.com/davvidbaker/stitch",
+    "keywords": []
+  },
+  {
     "name": "ELC 360",
     "path": "a-vr-native-360-ios-swift-master",
     "status": ["shipped", "green"],
@@ -18,7 +28,7 @@
     "tagline": "An exploration of writing with custom markup and components.",
     "year": [2017],
     "callToAction": "See it in action!",
-    "link": "https://davvidbaker.com/blog",
+    "link": "https://davidbaker.is/scribbling",
     "linkToSource": "https://github.com/davvidbaker/whoa",
     "linkToTrello": "https://trello.com/b/kDjPvwZq/dot-whoa",
     "description":

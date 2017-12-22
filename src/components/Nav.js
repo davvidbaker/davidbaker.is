@@ -49,7 +49,14 @@ const Nav = ({ location }) => (
   <Wrapper>
     <ul>
       <li>
-        <Link className={location.pathname === '/' ? 'active' : null} to="/">
+        <Link
+          className={
+            location.pathname === '/' || location.pathname === '/online'
+              ? 'active'
+              : null
+          }
+          to="online"
+        >
           Home
         </Link>
       </li>
