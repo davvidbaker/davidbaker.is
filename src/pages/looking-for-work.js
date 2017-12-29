@@ -4,11 +4,6 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
 const Div = styled.div`
-  #container {
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
   main {
     margin: 0 auto;
     padding: 0 20px;
@@ -230,7 +225,12 @@ const Div = styled.div`
 const ResumeIndex = ({ url }) => (
   <Div>
     <Helmet title="David Baker - Résumé" />
-    <div id="container">
+    <div
+      style={{
+        margin: '0 auto',
+        padding: '0 20px',
+      }}
+    >
       <header>
         <h1 className="name">David Baker</h1>
         <p className="subtitle print-show">

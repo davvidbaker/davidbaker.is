@@ -44,7 +44,7 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`, // I think this has been fucking shit up wit hth
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-react-next`,
     /** 💁 this is intentionally left out because both it and redux implement ssr 
