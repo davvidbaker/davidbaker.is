@@ -1,5 +1,10 @@
+```
+# as always
+npm start
+```
 
 ## Running in development
+
 `gatsby develop`
 
-*built with Gatsby*
+_built with Gatsby_

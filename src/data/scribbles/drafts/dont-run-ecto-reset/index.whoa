@@ -1,0 +1,19 @@
+---
+title: mix ecto.reset
+date: "2018-03-07T18:55:04.344Z"
+path: losing-data
+---
+
+*Note to self*
+
+# Don't run 
+
+```
+mix ecto.reset
+```
+
+## You'll drop your database.
+
+Only do this if ***you want to drop your database***.
+
+# FML 🤦
