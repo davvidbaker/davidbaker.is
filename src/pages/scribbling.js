@@ -59,7 +59,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allWhoa(sort: { fields: [frontmatter___date], order: DESC }) {
+    allWhoa(sort: { fields: [frontmatter___date], order: ASC }) {
       edges {
         node {
           excerpt
