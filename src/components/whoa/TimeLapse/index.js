@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import someTimeLater from '../../../fonts/some_time_later.otf';
-import eggFlower from './eggflower.svg';
 const Div = styled.div`
   @font-face {
     font-family: 'some time later';
