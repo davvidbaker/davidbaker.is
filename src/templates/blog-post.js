@@ -28,6 +28,7 @@ class BlogPostTemplate extends React.Component {
   };
 
   componentDidMount() {
+    // debugger;
     this.props.setCurrentPost(this.props.data.whoa.frontmatter.title);
 
     if (process.env.NODE_ENV === `production`)
@@ -70,7 +71,7 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.whoa;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
 
-    if (post.frontmatter.bareNaked) {
+    if (post && post.frontmatter.bareNaked) {
       this.props.hideNav();
     } else {
       this.props.showNav();
@@ -89,14 +90,18 @@ class BlogPostTemplate extends React.Component {
       ],
     ];
 
-    return (
+    return !post ? (
+      <div>Missing post</div>
+    ) : (
       <WithEventListeners
         eventListeners={eventListeners}
         node={typeof document !== 'undefined' ? document : undefined}
       >
         {() => (
           <BlogPost>
-            <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+            <Helmet
+              title={`${post && post.frontmatter.title} | ${siteTitle}`}
+            />
             <StyledMain
               style={{
                 left: this.props.sideBarVisible ? '300px' : 0,
@@ -118,11 +123,12 @@ class BlogPostTemplate extends React.Component {
                   margin: '0 auto',
                 }}
               >
-                {!post.frontmatter.bareNaked && (
-                  <PostHeading date={post.frontmatter.date}>
-                    {() => post.frontmatter.title}
-                  </PostHeading>
-                )}
+                {post &&
+                  !post.frontmatter.bareNaked && (
+                    <PostHeading date={post.frontmatter.date}>
+                      {() => post.frontmatter.title}
+                    </PostHeading>
+                  )}
                 <PostBody normatives={this.props.normatives}>
                   <Whoa>{() => JSON.parse(post.ast).children}</Whoa>
                 </PostBody>

@@ -422,7 +422,7 @@ const ResumeIndex = ({ url }) => (
             <ul>
               <li>
                 <p>
-                  Website: <a href="https://🙃🐢.ws">🙃🐢.ws</a> or{' '}
+                  Website: <a href="http://🙃🐢.ws">🙃🐢.ws</a> or{' '}
                   <a href="https://davidbaker.is/online">
                     davidbaker.is/online
                   </a>

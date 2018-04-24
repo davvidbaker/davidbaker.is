@@ -1,11 +1,11 @@
 /**
-*
-* Element
-*
-* Element must receive an object with prop type.
-* It will also usually have children, unless teh type is an image, or text?
-* There may be other props
-*/
+ *
+ * Element
+ *
+ * Element must receive an object with prop type.
+ * It will also usually have children, unless teh type is an image, or text?
+ * There may be other props
+ */
 import shortid from 'shortid';
 import React from 'react';
 import PropTypes from 'prop-types';

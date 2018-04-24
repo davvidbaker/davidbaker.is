@@ -37,7 +37,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             path: `scribbling-about-${edge.node.frontmatter.path}`,
             component: blogPost,
             context: {
-              path: edge.node.frontmatter.path,
+              postPath: edge.node.frontmatter.path,
             },
           });
         });
