@@ -140,7 +140,7 @@ class BlogPostTemplate extends React.Component {
             />
 
             <Commander
-              appElement={window.___gatsby}
+              appElement={typeof window !== 'undefined' && window.___gatsby}
               commands={commands}
               isOpen={this.state.com}
               hideCommander={this.hideCommander}
