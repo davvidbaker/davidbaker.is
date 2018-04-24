@@ -34,6 +34,7 @@
     "lodash": "^4.17.5",
     "marked": "^0.3.19",
     "pngquant-bin": "^3.1.1",
+    "react-commander": "davvidbaker/react-commander",
     "react-modal": "^3.3.2",
     "react-redux": "^5.0.7",
     "react-responsive-grid": "^0.3.3",

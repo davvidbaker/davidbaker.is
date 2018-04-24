@@ -128,7 +128,6 @@ module.exports = (
 
             // Ignore gifs as we can't process them,
             // svgs as they are already responsive by definition
-            console.log('\nnode.url', node.url);
             if (
               isRelativeUrl(node.url) &&
               fileType !== `gif` &&

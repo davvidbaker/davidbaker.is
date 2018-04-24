@@ -67,13 +67,13 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors);
         }
 
-        // Create blog posts pages.
         _.each(result.data.allProjectsJson.edges, edge => {
+          console.log('edge.node.path', edge.node.path);
           createPage({
             path: `${edge.node.path}`,
             component: projectTemplate,
             context: {
-              path: edge.node.path,
+              projectPath: edge.node.path,
             },
           });
         });

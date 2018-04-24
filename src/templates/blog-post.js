@@ -28,7 +28,7 @@ class BlogPostTemplate extends React.Component {
   };
 
   componentDidMount() {
-    // debugger;
+    console.log('this.props.data', this.props.data);
     this.props.setCurrentPost(this.props.data.whoa.frontmatter.title);
 
     if (process.env.NODE_ENV === `production`)
@@ -140,6 +140,7 @@ class BlogPostTemplate extends React.Component {
             />
 
             <Commander
+              appElement={window.___gatsby}
               commands={commands}
               isOpen={this.state.com}
               hideCommander={this.hideCommander}
@@ -170,14 +171,14 @@ export default connect(
 )(BlogPostTemplate);
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query BlogPostByPath($postPath: String!) {
     site {
       siteMetadata {
         title
         author
       }
     }
-    whoa(frontmatter: { path: { eq: $path } }) {
+    whoa(frontmatter: { path: { eq: $postPath } }) {
       id
       ast
       frontmatter {

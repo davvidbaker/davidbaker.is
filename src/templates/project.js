@@ -359,8 +359,8 @@ ProjectDetails.propTypes = {
 export default ProjectTemplate;
 
 export const pageQuery = graphql`
-  query ProjectByPath($path: String!) {
-    projectsJson(path: { eq: $path }) {
+  query ProjectByPath($projectPath: String!) {
+    projectsJson(path: { eq: $projectPath }) {
       id
       name
       status
