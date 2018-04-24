@@ -14,7 +14,6 @@ const Div = styled.div`
 
 class FourOFourPage extends Component {
   componentDidMount() {
-    setInterval(() => (window.location.href += '1'), 200);
     if (typeof window !== 'undefined') {
       window
         .fetch(

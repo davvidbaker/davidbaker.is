@@ -12,7 +12,7 @@ I am 🕵{getting back into} it.
 - I need a tab manager
 - I need everything.now to be working better ― I guess mostly more feature work. But not only. It's essential UX stuff, that is keeping me from using it.
 - Fix my `code` commands (for opening Visual Studio Code)
-- I feel like  🕵{I am only excited about} many of { my projects when I am a} certain 🕵{level of high}.
+- I feel like  🕵{I am only excited about} many of 🕵{my projects when I am a} certain 🕵{level of high}.
 - I need a better way to {organize, group}? windows and tabs into project-focused windows.
 
 I like to leave behind trails 🕵{of fun} in my codebases. 🍬🍬🍬🍬🗺
@@ -76,3 +76,8 @@ I'd like to set a goal of writing (more).
 I have a pair of glasses that I use for finding my other glasses. (exaggeration).
 
 Fuck I've just spent over an hour just trying to make this thing work again. My writing tool I mean. Ughh. Okay now it will is just not reloading in the browser unless I restart the gatsby server.
+
+...Many more days later...
+Hot reloading is working once again!
+
+It's *weird* how things break seemingly randomly and then somehow *magically* work again.

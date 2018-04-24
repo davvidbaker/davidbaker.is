@@ -1,8 +1,8 @@
 /**
-*
-* Normatives
-*
-*/
+ *
+ * Normatives
+ *
+ */
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -42,10 +42,12 @@ const enhance = compose(
   })),
   withHandlers({
     onMouseEnter: dispatch => id => {
-      document.querySelector(`#${id}`).style.background = colors.highlight;
+      const el = document.querySelector(`#${id}`);
+      if (el) el.style.background = colors.highlight;
     },
     onMouseLeave: dispatch => id => {
-      document.querySelector(`#${id}`).style.background = 'unset';
+      const el = document.querySelector(`#${id}`);
+      if (el) el.style.background = 'unset';
     },
   })
 );
