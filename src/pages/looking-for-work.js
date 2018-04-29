@@ -247,7 +247,7 @@ const ResumeIndex = ({ url }) => (
           <section>
             <h2>Education</h2>
             <h3>
-              <a href="www.upenn.edu">University of Pennsylvania</a>
+              <a href="https://www.upenn.edu">University of Pennsylvania</a>
               <span>[2011 - 2015]</span>
             </h3>
             <ul>

@@ -28,7 +28,6 @@ class BlogPostTemplate extends React.Component {
   };
 
   componentDidMount() {
-    console.log('this.props.data', this.props.data);
     this.props.setCurrentPost(this.props.data.whoa.frontmatter.title);
 
     if (process.env.NODE_ENV === `production`)
@@ -67,7 +66,6 @@ class BlogPostTemplate extends React.Component {
   }
 
   render() {
-    console.log('this.props, this.props.data', this.props, this.props.data);
     const post = this.props.data.whoa;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
 

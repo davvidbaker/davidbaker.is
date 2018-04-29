@@ -23,7 +23,6 @@ const Span = styled.span`
 `;
 
 const Redaction = ({ children, redactionsVisible }) => {
-  console.log('updating redaction');
   return (
     <Span redactionsVisible={redactionsVisible}>
       {children.map(child => (

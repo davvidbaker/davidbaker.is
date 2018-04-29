@@ -1,9 +1,9 @@
 /**
-*
-* Search
-*
-* Only accepts plain text. Should be a Block Level Element, despite how whoa-loader might be set up.
-*/
+ *
+ * Search
+ *
+ * Only accepts plain text. Should be a Block Level Element, despite how whoa-loader might be set up.
+ */
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -48,9 +48,9 @@ class Search extends React.Component {
 
   onSubmit(evt) {
     evt.preventDefault();
-    console.log(this.state.textValue);
-    const searchString = `https://www.google.com/search?q=${this.state
-      .textValue}`;
+    const searchString = `https://www.google.com/search?q=${
+      this.state.textValue
+    }`;
 
     const strWindowFeatures =
       'menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes';

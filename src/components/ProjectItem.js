@@ -95,7 +95,6 @@ const ProjectItem = ({
   showAdditionalInfo,
   agency,
 }) => {
-  console.log('name, path, year', name, path, year);
   return (
     <LI
       className={`project ${highlight && 'highlight-project'}`}
@@ -107,9 +106,7 @@ const ProjectItem = ({
       </h1>
       {status && <Status status={status} focused={focused} />}
       <p className="tagline">{tagline}</p>
-
-      {/*? <Link href={{ pathname: '/projects/' + name.replace(/\s/g, '-'), query: { name: name.replace(/\s/g, '-') } }}><a>Read More...</a></Link>*/}
-      {description ? <Link to={`/${path}`>Read more...</Link> : null}
+      {description ? <Link to={`/${path}`}>Read more...</Link> : null}
       <ExternalLinks {...{ link, linkToSource, linkToTrello, callToAction }} />
     </LI>
   );

@@ -68,7 +68,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
 
         _.each(result.data.allProjectsJson.edges, edge => {
-          console.log('edge.node.path', edge.node.path);
           createPage({
             path: `${edge.node.path}`,
             component: projectTemplate,

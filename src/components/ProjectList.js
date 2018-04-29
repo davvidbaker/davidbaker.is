@@ -34,8 +34,6 @@ const ProjectList = ({ projects }) => (
   // <ul className={showingAdditionalInfo ? 'hidden' : 'visible'}>
   <UL>
     {projects.sort(compareYears).map(project => {
-      console.log('project.node.year', project.node.year);
-      console.log('project.node.name', project.node.name);
       return (
         <ProjectItem
           key={project.node.name}

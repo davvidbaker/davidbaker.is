@@ -8,7 +8,6 @@ import Status from '../components/Status';
 
 class ProjectTemplate extends React.Component {
   render() {
-    console.log('this.props.data', this.props.data);
     return <ProjectDetails {...this.props.data.projectsJson} />;
   }
 }

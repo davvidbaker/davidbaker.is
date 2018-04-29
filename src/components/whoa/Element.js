@@ -41,10 +41,6 @@ function Element({ type, children, ...props }) {
     debugger;
   }
 
-  /*  console.table({ type });
-  console.log('children', children);
-  console.log('props', props);*/
-
   let Tag, href, src, alt;
 
   const elementProps = {
@@ -110,7 +106,6 @@ function Element({ type, children, ...props }) {
       return <Code inline value={props.value} />;
 
     case 'code':
-      console.log('props', props);
       if (props.lang === 'style') {
         return;
       }
@@ -148,8 +143,6 @@ function Element({ type, children, ...props }) {
 
     case 'image':
       Tag = 'img';
-      console.log('props.blur', props.blur);
-      console.log('props.blur64', props.blur64);
       return props.url.includes('https://trello.com') ? (
         <TrelloCard src={props.src || props.url} alt={props.alt} />
       ) : (
@@ -185,16 +178,11 @@ function Element({ type, children, ...props }) {
       return <span dangerouslySetInnerHTML={{ __html: props.value }} />;
 
     case 'yaml':
-      console.log('yaml', props.value);
       return null;
 
     case 'component':
-      console.log('yaml', yaml);
-
-      console.log('yaml(props.value)');
       const { tag: compTag, props: compProps } = yaml.load(props.value);
       Tag = customComponents[compTag];
-      console.log('compTag, compProps', compTag, compProps);
       return <Tag {...compProps} />;
 
     case 'span':
@@ -231,10 +219,8 @@ function ChildrenElements(chunks, tag) {
       tag === 'redaction' ||
       tag === 'revision'
     ) {
-      console.log('chunks special', chunks);
       return chunks;
     }
-    console.log(chunks);
     return chunks.map(
       val =>
         val.type === 'text' ? (
@@ -246,7 +232,6 @@ function ChildrenElements(chunks, tag) {
         )
     );
   } else if (chunks.type) {
-    console.log(chunks.type, chunks.children);
     return (
       <Element type={chunks.type} {...chunks}>
         {chunks.children}
