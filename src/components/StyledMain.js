@@ -10,7 +10,10 @@ const Main = styled.main`
 
   .full-width-grid {
     display: grid;
-    grid-template-columns: 1fr 50em 1fr;
+    grid-template-columns: minmax(10px, 1fr) minmax(10em, 50em) minmax(
+        10px,
+        1fr
+      );
 
     * {
       grid-column: 2;

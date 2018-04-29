@@ -29,6 +29,7 @@ class Whoa extends Component {
       <Fragment>
         {this.props
           .children()
+          .slice(3) /* 💁 this slices off the frontmatter */
           .map(child => <Element key={shortid.generate()} {...child} />)}
       </Fragment>
     );
