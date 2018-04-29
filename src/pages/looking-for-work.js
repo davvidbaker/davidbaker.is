@@ -282,7 +282,7 @@ const ResumeIndex = ({ url }) => (
                   experiences.
                   <em>
                     {' '}
-                    See <Link to="hacking">projects</Link> page for specifics.
+                    See <Link to="/hacking">projects</Link> page for specifics.
                   </em>
                 </p>
               </li>
@@ -312,7 +312,7 @@ const ResumeIndex = ({ url }) => (
               <li>
                 <p>
                   Researched electroacoustics and developed a{' '}
-                  <Link to="bombarded-by-sound">
+                  <Link to="/bombarded-by-sound">
                     home entertainment surround sound system
                   </Link>
                   , using parametric arrays and reflections to deliver highly
@@ -451,7 +451,7 @@ const ResumeIndex = ({ url }) => (
               <li>
                 <p>
                   For senior design project{' '}
-                  <Link to="a-haptics-engineer">ForceField</Link>
+                  <Link to="/a-haptics-engineer">ForceField</Link>
                 </p>
               </li>
             </ul>

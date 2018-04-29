@@ -55,23 +55,23 @@ const Nav = ({ location }) => (
               ? 'active'
               : null
           }
-          to="online"
+          to="/online"
         >
           Home
         </Link>
       </li>
       <li>
-        <Link activeStyle={activeStyle} to="hacking">
+        <Link activeStyle={activeStyle} to="/hacking">
           Projects
         </Link>
       </li>
       <li>
-        <Link activeStyle={activeStyle} to="scribbling">
+        <Link activeStyle={activeStyle} to="/scribbling">
           Scribbles
         </Link>
       </li>
       <li>
-        <Link activeStyle={activeStyle} to="looking-for-work">
+        <Link activeStyle={activeStyle} to="/looking-for-work">
           Résumé
         </Link>
       </li>

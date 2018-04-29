@@ -75,7 +75,7 @@ class PostList extends Component {
                   pathname: '/blog',
                   query: { slug: post.slug },
                 }}
-                to={`scribbling-about-${post.node.frontmatter.path}`}
+                to={`/scribbling-about-${post.node.frontmatter.path}`}
               >
                 <h1
                   style={{

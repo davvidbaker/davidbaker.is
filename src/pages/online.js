@@ -122,7 +122,7 @@ const IndexPage = ({ url }) => (
         <p>
           <strong>
             You should check out the{' '}
-            <Link to="hacking">
+            <Link to="/hacking">
               <a>projects page</a>
             </Link>
           </strong>{' '}
