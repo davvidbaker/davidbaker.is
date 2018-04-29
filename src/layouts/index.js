@@ -60,9 +60,6 @@ a:hover {
 
 // 💁 doing font-sizing based on https://css-tricks.com/rems-ems/
 const Container = styled.div`
-  /* font-family: 'mr-eaves-modern', sans-serif; */
-  /* font-size: 1.5rem; */
-
   font-size: 1rem;
 
   em,
@@ -70,15 +67,6 @@ const Container = styled.div`
     font-size: 1.25em;
     ${italic};
   }
-
-  /* em::before,
-  em::after {
-    content: '*';
-    position: absolute;
-    opacity: 0.25;
-    font-size: 0.5em;
-    transform: translatey(-0.25em);
-  } */
 `;
 
 const H1 = styled.h1``;
@@ -101,16 +89,15 @@ class IndexLayout extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`;
     }
 
-    console.log('location', location);
-    if (
-      location.pathname === rootPath ||
-      /** 💁 include nav in top-level directories */
-      location.pathname.match(/\//g).length === 1
-    ) {
-      header = this.props.navVisible && <Nav location={location} />;
-    } else {
-      header = null;
-    }
+    // if (
+    //   location.pathname === rootPath ||
+    //   /** 💁 include nav in top-level directories */
+    //   location.pathname.match(/\//g).length === 1
+    // ) {
+    header = this.props.navVisible && <Nav location={location} />;
+    // } else {
+    //   header = null;
+    // }
     return (
       <Container>
         {header}
