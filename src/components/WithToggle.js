@@ -24,7 +24,6 @@ const WithToggle = toggleProp =>
         dispatch({ type: 'HIDE' });
       },
       toggle: ({ dispatch }) => toggledOn => {
-        console.log('toggledOn', toggledOn)
         toggledOn ? dispatch({ type: 'HIDE' }) : dispatch({ type: 'SHOW' });
       },
     })
