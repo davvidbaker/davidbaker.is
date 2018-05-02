@@ -11,3 +11,23 @@ That's my hot {guess, take}(?) anyways.
 It's not really founded in {sources, facts}(?).
 
 If I wasn't 3D printing something right now, I'd look at the Kinect to see what body parts can easily be tracked (nodes of an armature, basically). Unfortunately, I don't think my PC has enough USB3 ports that can supply enough power to operate both the Kinect and Lulzbot mini at the same time. This is strange though, because both the Kinect and Lulzbot have external power sources. Maybe I should look into that again. Not tonight though.
+
+## [Mission critical](https://en.wikipedia.org/wiki/Mission_critical) software is super interesting.
+
+And I guess mission critcal sytems on the whole.
+
+I wonder what the state of the art solutions to inter-communicating networks of autonomous vehicles look like. My buddy and I sometimes joke about a type of cruise control where your car will avoid all obstacles while driving at a constant speed, or something like that? What was the thought... shoot.
+
+Anyway, I would imagine each vehicle in the network has a goal/intent that it expresses to everyone else and somehow all the vehicles need to come to consensus on who has the right of way, and then they must also work together to minimize all travel times (or maybe fuel consumption?).
+
+Let's say there's no possibility of random exterior events that could disrupt the cars' plans. 
+
+Let's use existing road infrastructure, but assume all vehicles are on the network.
+
+**I think it's pretty clear lanes should naturally appear**, at least in moderately trafficked areas. But would lanes always make sense in low traffic areas? Probably not, right?
+
+---
+Here's a question, for another day.
+# How do we bend the machines to our will?
+
+Or rather, how can we best accomplish this{., ?}(?)
