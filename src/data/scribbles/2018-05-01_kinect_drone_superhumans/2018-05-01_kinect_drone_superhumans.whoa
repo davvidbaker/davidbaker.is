@@ -1,0 +1,12 @@
+---
+title: Kinect Drone Superhumans
+path: mapping-a-user-armature-to-a-bunch-of-mini-drones
+date: 2018-05-02T04:52:13.832Z
+---
+
+![drone-drawing](drone-drawing-2.png)
+
+Boy do I wish I could port notability `.note` files to `SVG` and maintain variable stroke widths. I think this is the kind of thing I should just wait and let happen. It's too bad variable width strokes are probably 5+ years away from being in the [SVG standard](https://www.w3.org/Graphics/SVG/WG/wiki/Proposals/Variable_width_stroke). 
+That's my hot {guess, take}(?) anyways.
+It's not really founded in {sources, facts}(?).
+
