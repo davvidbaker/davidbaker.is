@@ -16,7 +16,7 @@ If I wasn't 3D printing something right now, I'd look at the Kinect to see what 
 
 And I guess mission critcal sytems on the whole.
 
-I wonder what the state of the art solutions to inter-communicating networks of autonomous vehicles look like. My buddy and I sometimes joke about a type of cruise control where your car will avoid all obstacles while driving at a constant speed, or something like that? What was the thought... shoot.
+I wonder what the state of the art solutions to inter-communicating networks of autonomous vehicles look like. My buddy and I sometimes joke about **adaptive cruise control** being where your car will avoid all obstacles while driving at a constant speed.
 
 Anyway, I would imagine each vehicle in the network has a goal/intent that it expresses to everyone else and somehow all the vehicles need to come to consensus on who has the right of way, and then they must also work together to minimize all travel times (or maybe fuel consumption?).
 
@@ -24,7 +24,7 @@ Let's say there's no possibility of random exterior events that could disrupt th
 
 Let's use existing road infrastructure, but assume all vehicles are on the network.
 
-**I think it's pretty clear lanes should naturally appear**, at least in moderately trafficked areas. But would lanes always make sense in low traffic areas? Probably not, right?
+**I think it's pretty clear lanes {should, would}(?) naturally appear**, at least in moderately trafficked areas. But would lanes always make sense in low traffic areas? Probably not, right?
 
 ---
 Here's a question, for another day.
