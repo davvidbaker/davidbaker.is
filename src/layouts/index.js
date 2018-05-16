@@ -13,10 +13,12 @@ injectGlobal`
   :root {
     /* --display-marginal: none; */
   }
-
   html {
     min-height: 100vh;
     box-sizing: border-box;
+    height: 100%; 
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   *, *::before, *::after {
@@ -25,6 +27,7 @@ injectGlobal`
   
   body {
     margin: 0;
+    height: 100%;
     font-family: sans-serif;    
   }
   
@@ -76,6 +79,10 @@ class IndexLayout extends React.Component {
     WebFont.load({
       typekit: {
         id: 'diy2xuy',
+      },
+      /* ⚠️ I don't need the whole font, at least not now, so maybe only load needed glyphs... */
+      google: {
+        families: ['Yesteryear'],
       },
     });
   };

@@ -15,10 +15,25 @@ const Main = styled.main`
   p {
     text-align: right;
   }
+  
 `;
 
 class BlogIndex extends React.Component {
+  componentDidMount() {
+    /* ⚠️ not working. Just fucking think about it for a second and figure it out! 🤯 */
+    // setTimeout(() => document.body.animate({ scrollTop: document.body.scrollHeight }, 200), 1000)
+    // setTimeout(() => window.scrollTo({top: document.body.scrollHeight}), 1000);
+    
+    /* **************☝️**************    */
+
+  }
+  
   render() {
+    /* ⚠️ not working */
+    // window.scrollTo({top: document.body.scrollHeight});
+    // document.body.animate({ scrollTop: document.body.scrollHeight }, 200)
+    /* **************☝️**************    */
+
     const posts = get(this, 'props.data.allWhoa.edges');
 
     return (

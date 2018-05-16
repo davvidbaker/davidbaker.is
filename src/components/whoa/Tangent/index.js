@@ -138,7 +138,10 @@ class Tangent extends React.Component {
             {this.state.innerText}
           </Popup>
         )}
+        /*// ⚠️  ⚠🔮 ️be smarter about these things */
         <svg
+          width={this.state.straightLength + 250}
+          height={500}
           ref={ref => {
             this.svg = ref;
           }}

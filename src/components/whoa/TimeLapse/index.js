@@ -10,7 +10,7 @@ const Div = styled.div`
 
   font-family: 'some time later', fantasy;
   font-size: 2em;
-  grid-column: 1 / span 3 !important;
+  /* grid-column: 2 / span 4; */
   text-align: center;
   position: relative;
   overflow: hidden;

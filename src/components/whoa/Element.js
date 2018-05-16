@@ -10,6 +10,8 @@ import shortid from 'shortid';
 import React from 'react';
 import PropTypes from 'prop-types';
 import yaml from 'js-yaml';
+import styled from 'styled-components';
+// import FlambeLogo from 'flambe-logo';
 
 import WordChoice from './WordChoice';
 import Ellipsis from './Ellipsis';
@@ -33,6 +35,14 @@ const customComponents = {
   Definition,
   Phone,
 };
+
+const ScopedStyle = styled.style`
+  & {
+    * {
+      ${({ str }) => str};
+    }
+  }
+`;
 
 function Element({ type, children, ...props }) {
   if (typeof type !== 'string') {
@@ -94,7 +104,7 @@ function Element({ type, children, ...props }) {
 
       /** 💁 This is how I am allowing image elements to span the full page width */
       if (children.length === 1 && children[0].type === 'image') {
-        elementProps.style = { gridColumn: '1 / span 3' };
+        elementProps.style = { gridColumn: '1 / span 6' };
       }
       break;
 
@@ -107,6 +117,7 @@ function Element({ type, children, ...props }) {
 
     case 'code':
       if (props.lang === 'style') {
+        debugger;
         return;
       }
       return <Code value={props.value} />;
@@ -128,7 +139,8 @@ function Element({ type, children, ...props }) {
       break;
 
     case 'style':
-      return <style>{props.value}</style>;
+      /* ⚠️ DO THIS bETTER */
+      return <ScopedStyle str={props.value}>}</ScopedStyle>;
 
     case 'link':
 
@@ -175,6 +187,15 @@ function Element({ type, children, ...props }) {
       break;
 
     case 'html':
+      /* ⚠️ this isn't a foolproof regex. Like it prevents using "less than" in a css attribute. */
+      const match = props.value.match(/<style>([^<]*)<\/style>/m);
+      if (props.value.includes('<style>')) {
+        console.log(`match`, match);
+        console.log(`props.value`, props.value);
+      }
+      if (match) {
+        return <ScopedStyle str={match[1]} />;
+      }
       return <span dangerouslySetInnerHTML={{ __html: props.value }} />;
 
     case 'yaml':

@@ -30,8 +30,8 @@ const Div = styled.div`
     padding-left: 2rem;
   }
 `;
-const Definition = ({ word, ipa, PoS, children }) => (
-  <Div>
+const Definition = ({ word, ipa, PoS, children, ...props }) => (
+  <Div {...props}>
     <heading>
       <h1>{word}</h1>
       {ipa && <p className="ipa">/{ipa}/</p>}

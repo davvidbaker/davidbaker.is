@@ -10,13 +10,13 @@ const Main = styled.main`
 
   .full-width-grid {
     display: grid;
-    grid-template-columns: minmax(10px, 1fr) minmax(10em, 50em) minmax(
+    grid-template-columns: minmax(10px, 1fr) repeat(4, minmax(3em, 12.5em)) minmax(
         10px,
         1fr
       );
 
     * {
-      grid-column: 2;
+      grid-column: 2 / span 4;
     }
   }
 
@@ -69,13 +69,15 @@ const Main = styled.main`
   del {
     color: salmon;
     position: relative;
+    display: inline-block;
     &::after {
       content: '';
       position: absolute;
       left: -5%;
+      top: -10%;
       width: 110%;
-      height: 150%;
-      background: bisque;
+      height: 120%;
+      background: #ff8a8a;
       box-shadow: 0px -1px 20px 3px lightsalmon,
         inset 0px 2px 5px 3px palevioletred;
       mix-blend-mode: multiply;

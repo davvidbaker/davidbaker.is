@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
+import FlambeLogo from 'flambe-logo';
+
 import colors from '../constants/colors';
 
 const UL = styled.ul`
   list-style: none;
   padding: 10px;
+  margin-bottom: 70vh;
 
   li {
     margin-bottom: 10px;
@@ -43,6 +46,21 @@ const UL = styled.ul`
       display: inline-block;
     }
   }
+
+  .overlay {
+    position: sticky;
+    z-index: 100000;
+    top: 0;
+
+    &::after {
+      pointer-events: none;
+      content: '';
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+      background: linear-gradient(white,  transparent, 10%, transparent 90%, white)
+    }
+  }
 `;
 
 class PostList extends Component {
@@ -53,6 +71,8 @@ class PostList extends Component {
   render() {
     return (
       <UL>
+        <FlambeLogo size={20}></FlambeLogo>
+        <div className="overlay" />
         {this.props.posts.map(post => {
           const isDraft = post.node.fileAbsolutePath.includes('/drafts/');
           return (

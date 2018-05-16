@@ -1,0 +1,115 @@
+---
+title: Everything at Once
+path: everything-at-once
+date: 2018-05-10T07:05:12.665Z
+---
+
+Here's an idea I just had. Future-date posts when they are started and make that date a deadline.
+
+### I think that 👆 was a bad idea.
+
+Maybe not terrible though.
+
+I think I am digging the way Safia Abdalla dives into things. [And how she writes them up](https://blog.safia.rocks/). Specifically talking about [this one](https://blog.safia.rocks/post/173746752130/what-happens-when-you-run-sudo).
+
+---
+
+**Whenever I want to do anything at all, I want to do *everything***. This is my motivation problem. Sometimes I am not motivated to do anything. Then, when I am motivated, I want to do it all, and find myself jumping between projects {endlessly, will-nilly}(?). 
+
+---
+
+Potentially interesting flambé charts/data to visualize 
+
+
+
+- correlations between how many tabs are open while there are many attention shifts or activities being created
+
+... The next day
+Holy shit 🕵{this stuff} is 🕵{kicking} and 🕵{kicking hard}.
+
+{Collection, Anthology}(?) of 🕵{blogs of all the people killed in American terrorist attacks}. Is that way too dark?
+
+**Everything Now** could be more of the name of personal {assistant, operating system, tracker}(?).
+
+Something I do often... what was I going to say. 🕵{Dat og ku}sh.
+
+> thinking of it in terms of the transformation it's performing on the data flowing through it, instead of in terms of the context in which it's being used, opens it up to generic reuse
+
+👆Lyle earlier today.
+
+I should be able to write full HTML in here. It's potentially dangerous, but not if I use it {properly, safely}(?). 
+
+# [Gütenberg might be pretty sweet](https://testgutenberg.com/).
+
+Hell, I could even write `<JSX />` in here and parse it if I wanted to. Just throw a component. I should do that.
+
+---
+
+I should be able to easily add a caption to this image...
+I am not sure how I feel about the spacing here 👇.
+
+![./screenshot.png](./screenshot.png)
+
+Should default behavior for an `<h1>` (and other `<h#>` tags) be to have a nonzero `margin-top`? What I really need is maybe to use more html in here?
+
+```component
+tag: Definition
+props:
+  word: render
+  ipa: ɹɛndər
+  PoS: verb
+  children: hand over
+  style: {gridColumn: "3 / span 4"}    
+```
+
+## 🤔
+
+```component
+tag: Definition
+props:
+  word: render
+  ipa: ɹɛnðeɹ
+  PoS: verb
+  children: transform
+  style: {gridColumn: "3 / span 3"}  
+```
+
+# 💡
+```component
+tag: Definition
+props:
+  word: render
+  ipa: rɛnər
+  PoS: verb
+  children: deliver
+  style: {gridColumn: "3 / span 2"}
+```
+<br>
+
+In web land, things are almost always rendered **to** something.
+
+```component
+tag: CycleItems
+props:
+  title: "Rendered to"
+  items: [
+    'DOM.', 'the screen.', 'SVG.',
+  ]
+```
+
+## Maybe [theuser.today]() studies my habits using the data gathered from flambé 🔥?
+
+~~I should make it much for a block to span specific columns of the main grid, which itself should be divided into more than the 3 columns that current exist.~~ 
+
+I kinda did that ☝️. I should also fix `<Tangent />`.
+
+ie
+
+```component
+tag: CycleItems
+props:
+  title: ""
+  items: [
+    'The user today made 122 google searches.', 'The user today checked his email 18 times.', 'The user today was on his laptop 8 hours.', "The user's heart beat 15,000 times today.", "The user today tweeted 1 time.", "The user today looked at 19 reddit links."
+  ]
+```

@@ -1,22 +1,22 @@
 /**
-*
-* WordChoice
-*
-*/
+ *
+ * WordChoice
+ *
+ */
 
 /**
  * 💁⚠️ Right now, word choice will only work for up to three words
  */
 
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import { popupStyle } from '../Popup'
+import { popupStyle } from '../Popup';
 
 const Multiple = styled.span`
-  & {
-    display: inline-block;
-  }
+  display: inline-block;
+  position: relative;
+
   &::before,
   &::after {
     opacity: 0.05;
@@ -29,18 +29,20 @@ const Multiple = styled.span`
   &:hover::before,
   &:hover::after {
     opacity: 1;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.95);
     z-index: 1;
   }
   &::before {
+    bottom: 80%;
     content: attr(data-before);
-    transform: translateY(-0.6rem);
+    /* transform: translateY(-180%); */
   }
   &::after {
     content: attr(data-after);
-    transform: translateY(-0.3rem);
+    top: 75%;
+    /* transform: translateY(-0.3rem); */
   }
-`
+`;
 
 const Single = styled.span`
   &::before {
@@ -56,18 +58,25 @@ const Single = styled.span`
     line-height: 1;
     background: firebrick;
   }
-`
+`;
+
+function noBreakingSpace(str = '') {
+  return str.replace(/\s/, ' ');
+}
 
 function WordChoice({ children }) {
   return children[1] ? (
-    <Multiple data-before={children[1]} data-after={children[2]}>
+    <Multiple
+      data-before={noBreakingSpace(children[1])}
+      data-after={noBreakingSpace(children[2])}
+    >
       {children[0]}
     </Multiple>
   ) : (
     <Single>{children[0]}</Single>
-  )
+  );
 }
 
-WordChoice.propTypes = {}
+WordChoice.propTypes = {};
 
-export default WordChoice
+export default WordChoice;
