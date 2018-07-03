@@ -34,7 +34,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // Create blog posts pages.
         _.each(result.data.allWhoa.edges, edge => {
           createPage({
-            path: `scribbling-about-${edge.node.frontmatter.path}`,
+            path: `${edge.node.frontmatter.path}`,
             component: blogPost,
             context: {
               postPath: edge.node.frontmatter.path,
@@ -81,13 +81,4 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   });
 
   return Promise.all([BlogPosts, Projects]);
-};
-
-exports.modifyWebpackConfig = ({ config, stage }) => {
-  if (stage === 'build-html') {
-    config.loader('null', {
-      test: /webfontloader/,
-      loader: 'null-loader',
-    });
-  }
 };

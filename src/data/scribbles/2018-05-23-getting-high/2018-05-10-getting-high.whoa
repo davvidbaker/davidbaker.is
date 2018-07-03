@@ -1,0 +1,434 @@
+---
+title: As we speak
+path: getting-high
+date: 2018-05-24T03:50:37.073Z
+---
+*I'm amazed there is no waffle emoji.*
+
+I just had one of those 🕵{edible stroopwaffles}. All str🕵{oopwaffle}s are 🕵{edible} (hopefully!), but you know what I mean.
+
+*Stop the music,* he said.
+
+# In order for someone to buy in to your alternate experience, you need to captivate them immediately.
+
+*felt profound at the moment*
+
+I should add comments to moving through time and space. I should add some patterns for normatives to grab on to. I would rather have written "I need to add comments to moving through time and space." write there.
+
+Service worker as a database. Is that at all an interesting idea. Don't think so.
+
+I bet [wooorm](https://github.com/wooorm) has an interesting blog. He's at least got [a fun website](http://wooorm.com).
+
+# Whoa.
+## I just for the first time was able to see `whoa` parsing and transforming in real time in the browser of this [moving-through-time-and-space](./moving-through-space-and-time) page.
+
+Damn I'm really getting 🕵{very little} accomplished. Or maybe 🕵{almost not time has elapsed}?
+
+Here's an idea. Frontend chaos(?) testing. Am I just thinking of [fuzz testing](https://en.wikipedia.org/wiki/Fuzzing)? Hmmm...maybe overload is a better term.
+
+I would love to just be spinning off microservices left and right at work. Maybe not exactly left and right. But occasionally. I think that is where [Chris](https://github.com/cschauer) is heading with `hive`, kinda. For that I would like to make the a super awesome dashboard for managing everything. Spinning up new hives with a nice wizard maybe.
+
+🔎react wizard🔍
+
+...a brief time
+
+![./flam-screenshot.png](./flam-screenshot.png)
+
+There's just no way to stop thinking about work sometimes.
+
+Is [react-commander](https://github.com/davvidbaker/react-commander) a wizard?
+
+
+```component
+tag: Definition
+props:
+  word: wizard
+  ipa: jərʌ wɪzəɹd ɑɪɹi
+  PoS: noun
+  children: a thing that walks you through a process
+  style: {gridColumn: "2 / span 4"}    
+```
+
+<br />
+
+🔎wizard🔍
+
+<br />
+
+Just had a good idea, I think. For custom components I want in here but don't feel like adding a `whoa` thing for, just write a good snippet with good tabbing..
+
+Is Gütenberg kinda like [Pages](https://www.apple.com/pages/) for the web? 
+
+What is pages like now??? Is it awesome? Like, it used to be pretty fun. I shall try it out.
+
+...trying it out
+
+Oh right. It's very *static*. Like things are meant to be printed. Not alive.
+
+I would really love to get a flame chart in here right now. 
+
+```component
+tag: CycleItems
+props:
+  title: Maybe I'll do that tomorrow interspersed with 
+  items: [
+    'work.', 'work woork.', 'woooork.',
+  ]
+```
+
+One-off components should also be easier to make. Like right now I am imagining a graph of 🕵{highness} over time but maybe not over time, maybe over `y` (vertical distance from the beginning of the post) as I wrote through this post. It would like something like:
+
+![./ht.png](./ht.png)
+
+...Many Days Later...
+
+<div style=
+">
+
+```component
+tag: Phone
+props:
+  name: Me
+  messages: [
+    {
+      me: true,
+      value: "Yo I have some *ideas*"
+    },
+    {
+      me: true,
+      value: "### Think about how cool flambé🔥 could look on the touch bar."
+    },
+    {
+      value: "# Cool"
+    },
+    {
+      value: "I think"
+    },
+    {
+      value: "..."
+    },
+    {
+      value: "Here's an idea *I* had"
+    },
+      {value: "whoa could be a whole platform."},
+  {value: "## BYOD"},
+    {
+    me: true,
+    value: "of course"
+  },
+  {
+    value: "Opinionated. Also."
+  },
+  {
+    value: "And some of those opinions. VS Code (latest). Snippets. `whoa-theme`, probably. Also."
+  },
+  {
+    me: true,
+    value: "these could also be thought of as dependencies."
+  },
+  {
+    value: "But dependencies should really be explicit and modularly(?) replaceable. Like... the text editor... Is it BYO? Probably should be. You might not want dictate to that level."
+  }
+  ]
+```  
+</div>
+
+Oh yes here's a couple ideas that I should do.
+
+- Add a notch to iPhoneX. **And design around it.**
+  - This should only happen for future versions of phone though. It should be backwards compatible. I can just add a prop to choose a version of the phone and **leave the default**
+
+
+  - flambé🔥 could be really cool for managing a team. Like everyone on the team could see everyone's else's charts.
+
+  - Layers of whoa files diffed to add layers.
+
+
+  Here's something I ought to do for work: 
+  🔎Component Inventory🔍
+
+
+Different levels of {abstraction, programming}(?)
+  - snippets
+  - components
+
+I guess snippets are more of a utility or shortcut.
+
+
+# Shortcut-based User Interfaces
+**...where you can swap out the shortcuts between device types.**
+
+Wait what.
+
+🔎scroll overflow bounciness for document body🔍
+
+[This is what I was looking for.](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior) Too bad you can't have the bounciness on elements beside `<body />` it seems. |-It might work on Firefox, but that ain't good enough-|
+
+![markup](./markup.png)
+
+I should probably switch from styled components to `[emotion](https://github.com/emotion-js/emotion)` like everywhere. I'd much rather always right CSS as a string than as a `{javascript object}`.
+
+🔎css formal syntax🔍
+
+*Whoa.* [This is very cool](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax).
+
+Wow. I'm really all over the place right now. I need to get flamecharts in here.
+
+...More days later
+
+# I am going to start...
+...see next post
+
+<hmm>why did I do that.</hmm>
+
+
+I am going to start getting in shape. Taking care of my body. Exercising.
+
+I want to be able to jump higher. I might try [this](https://www.basketballforcoaches.com/vertical-jump/).
+
+Observe. Alter. Improve. O. A. I. 
+
+*Oooh an idea* for another statistic to be added to the thing. Words per minute (typed). I guess also words per minute spoken maybe at some point, but that's less pressing. Also if I haven't already mentioned it,
+
+I should start making improvements to `[whoa](https://whoa.now.sh)` through a test-driven approach. TDD. **Wait not exactly.** What I mean is I should just start using markup ideas that I have 
+
+---
+
+Here is how opinionated whoa should be:
+
+# Map to components with a set of defaults, but make all the styles customizable.
+
+And setting some default components.
+
+![active admin](./aadmin)
+---
+
+One of the biggest benefits to having a job right is are learning (how to make) software better. Seeing how larger decisions are made.
+
+---
+
+![]
+
+screenshot of json styles in whoa-theme
+Needs to be better.
+
+---
+
+There's no question one of the best ways to ensure a project is maintained is to do it yourself? (Oh I remembered, much later in the evening. Depend upon it for your livelihood.)
+
+I need a component for I forgot what I was saying midway through that sentence.
+
+___
+
+## Night and day should definitely be denoted somehow. 
+
+And location should be taken into account. So location will also have to be tracked, somewhat.
+
+I should also make line charts biggerable {sic}.
+
+I need a list of components I can use just a shortcut away, and a visual click?
+
+---
+What I want is just 🕵{to have people following along because} they see what you are doing and are interested so they are following the story. Know what I'm saying?
+
+--- 
+
+I like thinking of the idea of software engineering as removing unnecessary work. Or minimizing it. Maybe? {Removing work.}
+
+A component that indicates confidence in a statement. Like that last one would be given 50%? And this one also 50%.
+
+---
+
+I was reading about quantum computing yesterday, and it's absolutely fascinating. Maybe I go back to school for something like that. I think what I need to look at is a good concrete example of quantum computing solving a **real,** *tangible* problem. Or rather do something that normal computers just cannot do. Solving exponentially difficult e ^n.
+
+*I need an easy superscript markup.*
+
+If I was understanding [what I was watching](https://youtu.be/ZN0lhYU1f5Q?t=18m) correctly, which I definitely might not have been, then, if you can transform your problem into certain types of matrix multiplications/operations, you can reap the benefits that quantum computing can provide.
+
+Though, I guess we have not yet made quantum computers with enough qubits to really be useful[needs source]. Ie there are not yet problems that can be solved faster on quantum computer than a regular one.
+---
+
+🤔{I like to think of what I'm doing here as composing.}
+
+---
+
+Not that hot: The beautiful thing about react is how data flows through your application. Right?
+
+---
+Is the thing about using web standards (that is so desirable)👈somehow designate this as (meant to be read as a clause) reusability? Like across domains.
+---
+
+flambé🔥 is kind of like a productivity manager. Or just a manager. For your life.
+
+I'd like to see <trail-off>a version, or filter/plugin, idk!</trail-off>.
+
+---
+
+Hotness Level: 🔥🔥🔥🔥🔥
+Blah blah blah.
+
+---
+
+Highness Level 🌱 
+Your mind as a pointer in cyberspace. 
+
+~~A point of observation that collapses the superpositions into a singularity.~~ 
+
+Where your attention is cyberphysically [sic]. What.
+
+---
+
+In my highness level...
+
+---
+
+🔎Why do cats meow?🔍
+
+---
+
+Highness 🌱🌱🌱
+I can sometimes get 🕵{high} me to be excited about things, but I never come back to them if I am not 🕵{high}.
+r
+interested in how he's doing it.
+
+---
+
+# Babel {plugin, transformer}(?) that lets you use emoji as function names.
+
+---
+
+Succinticity{sic} is something I look for in a {language, application}(?)
+Maybe I meant minimalism?
+
+---
+
+Statistics that show improvement.
+Average issue time.
+
+---
+I am interested in observability and productivity. ??? Low confidence in that for sure.
+
+---
+
+## Save-level diffing that uses the same model as git,
+I guess maybe I mean attention-level.
+
+A question flambe🔥 should easily answer:
+What was I doing when I started doing this. Healthy sarcasm. *yikes* Where was I.{sic}
+
+---
+BDD
+Bug Driven Development
+
+ehhhh. Could you say this is what Agile becomes?
+
+🔎Bug Driven Development🔍
+
+...some time passed
+Could also go as EDD. 
+error driven development
+
+
+---
+
+Work Idea
+# Use real data in all the components.
+
+From all the clients. And just test that things aren't breaking, by throwing exceptions in places where they do.
+
+
+---
+One of the great things about Something like Trello/Jira does is demonstrate(?) visibility of your problems. Granularize. Make your problems, or maybe priorities, very visible.
+
+That's why I need to work on Limbo a lot more! Maybe limbo should actually be somewhere like Trello. Like you send an activity out into limbo and it is continued or whatever when that thing does a certain action. Just an easy hook-in to s
+
+---
+
+Insight.now.sh
+Insight into how your organization functions at a large scale by analyzing granular actions, like communication. 
+
+A great starting point could be looking at @mentions. 
+
+Cycle: Who is mentioning who? Who is is responding to who. Response times. Lengths of responses. Elements used in responses. (code blocks, images, etc.) Is *more* generally better? Maybe not strictly, but more be a contributing factor to doing well, depending on how it's done.
+
+...to depend upon it.
+
+☝️ possibly the wrong {device, construction}(?) there.
+
+---
+🔥🔥🔥🔥 
+
+Failing to compile should roll back the application I am using in the browser, ideally, right?
+
+---
+
+Visual representations of your code executing. Objects being created, calling things, etc. Data flowing throughout. Kind of as a 3d vector field. Right?
+
+___
+
+A way to debug is to look at snapshots of your data as it moves throughout its transformation.
+
+Things can be hard to understand if you can't.
+
+---
+A line plot of knowledge over time. How do you measure knowledge?
+
+I guess you could rank our understanding of different things through time.
+
+On a broader picture, it could be for life in general, not just humans. Like understanding ourselves is one thing. But understanding.....is it just instinct though?
+
+---
+
+I want to have some fun making informational websites for my own things.
+
+...More days later...
+
+It's really too bad flambé's frontend totally broke down today. With [lerna] needs link() issues. Might have probably had to do with something in the environment changing.
+
+```component
+tag: CycleItems
+props:
+  title:
+  items: [
+    'version of npm', 'version of node', 'version of lerna', 'webpack update', 'webpack-dev-server update', 'webpack plugin updates'
+  ]
+```
+
+
+~~One thing I am pretty positive about though is that it wasn't a babel issue. It actually wasn't really webpack stuff either. That only cropped up at the end and seems minor.~~
+Actually, now having gotten it back up again, `babel@7.0.0-beta.47` might have been a culprit somehow. So hard to pin this kind of thing down. 🤷‍♂️. Oh well.
+
+I need npm autocomplete in my terminal. Does npx provide that?
+
+🔎npm terminal typeahead🔍
+
+...And more days later
+
+I hope it's clear to you, David, that the reason things are not being split into separate posts these days is because how not effortless that is to do.
+
+I think I do very much like the name everything.now  
+
+*It's called everything now. I use it for everything now*
+
+Just a spiral up here into introspection.
+
+
+
+The Introspective Spirals 🎸
+
+# What is the reason I am interested in user interface?
+
+I want us to be able to more easily control the machines. 🤖🤖🤖🤖
+
+The problem I was alluding to earlier about 🕵{being high and thinking of ideas and being enthusiastic about them} but 🕵{being too high} to follow through with any ideas. And then enthusiasm fades with 🌲elevation.
+
+I think I should think about doing some flag-rooted features.
+
+I feel like watching the propogation of a new version of code 
+
+
+So flambé🔥 should be the name for flame charts specifically. Not the service that is everything.now. 
+
+Here's an idea. Accessibility modes. Or flags or sliders.
+
+**Simple analytics**, like line plot of issue count over time. Open pull request count. Number of branches. Number of forks.

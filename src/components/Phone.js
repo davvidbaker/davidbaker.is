@@ -54,8 +54,8 @@ const Div = styled.div`
 }
 `;
 
-const Phone = ({ messages, vertical, name = 'you' }) => (
-  <Div>
+const Phone = ({ messages, vertical, name = 'you', style = {} }) => (
+  <Div style={style}>
     <div className="phone-speaker" />
     <div className="phone-screen">
       <Messenger className="messenger" name={name}>
@@ -72,7 +72,8 @@ const Phone = ({ messages, vertical, name = 'you' }) => (
     <button
       className="phone-button"
       onClick={() =>
-        smoothScrollTo(document.querySelector('.messenger-body'), 0)}
+        smoothScrollTo(document.querySelector('.messenger-body'), 0)
+      }
     />
   </Div>
 );

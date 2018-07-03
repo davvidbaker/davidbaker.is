@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import colors from '../constants/colors';
 
-const Main = styled.main`
+const makeElement = nodeType => styled[nodeType]`
   position: relative;
   left: 300px;
   transition: width 0.5s, left 0.5s;
@@ -34,9 +34,10 @@ const Main = styled.main`
   }
 
   blockquote {
-    border-left: 5px solid #444;
-    border-top: 5px solid #fff;
-    border-bottom: 5px solid #fff;
+    border-left: 3px solid #444;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    box-shadow: -3px 0 0 aquamarine, -6px 0 0 lightcoral, -9px 0 0 lemonchiffon;
     padding: 0.5em;
     padding-left: 1.5em;
     margin: 1em;
@@ -84,5 +85,8 @@ const Main = styled.main`
     }
   }
 `;
+
+const Main = makeElement('main');
+export const Section = makeElement('section');
 
 export default Main;

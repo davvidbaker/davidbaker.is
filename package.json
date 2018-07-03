@@ -7,12 +7,13 @@
     "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
   },
   "dependencies": {
+    "@flambe/logo": "^0.1.12",
     "downshift": "^1.31.7",
-    "flambe-logo": "^0.0.4",
+    "flambe-core": "^0.1.9",
     "front-matter": "^2.3.0",
     "fuzzaldrin-plus": "^0.5.0",
-    "gatsby": "^1.9.250",
-    "gatsby-link": "^1.6.40",
+    "gatsby": "^1.9.273",
+    "gatsby-link": "^1.6.45",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-manifest": "^1.0.19",
     "gatsby-plugin-offline": "^1.0.15",
@@ -49,6 +50,8 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
+    "@mdx-js/loader": "^0.11.0",
+    "@mdx-js/mdx": "^0.10.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
     "gh-pages": "^0.12.0",
     "prettier": "^1.12.0",

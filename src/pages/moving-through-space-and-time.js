@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import PostList from '../components/PostList';
-import StyledMain from '../components/StyledMain';
+import {Section as StyledSection} from '../components/StyledMain';
 import Whoa from '../components/whoa';
 import PostHeading from '../components/PostHeading';
 import PostBody from '../components/PostBody';
@@ -21,7 +21,6 @@ import astronaut from '../images/astronaut-pushing.svg';
 
 const Main = styled.main`
   margin: 0 auto;
-  max-width: 50rem;
 `;
 
 class BlogIndex extends React.Component {
@@ -47,13 +46,13 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
-        <Helmet title={'David Baker is Scribbling'} />
+        <Helmet title={'David Baker is moving through space and time.'} />
         {/* <Bio /> */}
         <Main>
-          <p>I probably wouldn't read any of this if I were you.</p>
+          <p style={{gridColumn: '2 / span 2'}}>I probably wouldn't read any of this if I were you.</p>
           {/* {posts && <PostList posts={posts} />} */}
           {posts.map(post => (
-            <StyledMain
+            <StyledSection
               key={post.path}
               style={{
                 left: this.props.sideBarVisible ? '300px' : 0,
@@ -71,7 +70,6 @@ class BlogIndex extends React.Component {
               <div
                 className="full-width-grid"
                 style={{
-                  // maxWidth: '50rem',
                   margin: '0 auto',
                 }}
               >
@@ -85,7 +83,7 @@ class BlogIndex extends React.Component {
                   <Whoa>{() => JSON.parse(post.ast).children}</Whoa>
                 </PostBody>
               </div>
-            </StyledMain>
+            </StyledSection>
           ))}
         </Main>
       </div>

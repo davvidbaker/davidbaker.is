@@ -1,0 +1,9 @@
+ mdx whoa this shit
+ 
+![JavaScript engine fundamentals: Shapes and Inline Caches](https://mathiasbynens.be/notes/shapes-ics)
+
+#javascript #internals
+
+Great explanation into some JavaScript internals
+
+Related: [ECMAScript Language Spec](https://tc39.github.io/ecma262/#table-2)•zom 

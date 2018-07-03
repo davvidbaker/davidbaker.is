@@ -202,7 +202,11 @@ function Element({ type, children, ...props }) {
       return null;
 
     case 'component':
-      const { tag: compTag, props: compProps } = yaml.load(props.value);
+      console.log(`props.value`, props.value);
+      const {
+        tag: compTag,
+        props: compProps,
+      } /*🔮🤔 add error boundary here*/ = yaml.load(props.value);
       Tag = customComponents[compTag];
       return <Tag {...compProps} />;
 

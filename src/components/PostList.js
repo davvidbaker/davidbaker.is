@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
-import FlambeLogo from 'flambe-logo';
+import FlambeLogo from '@flambe/logo';
 
 import colors from '../constants/colors';
+
+type whatever = string
 
 const UL = styled.ul`
   list-style: none;
@@ -95,7 +97,7 @@ class PostList extends Component {
                   pathname: '/blog',
                   query: { slug: post.slug },
                 }}
-                to={`/scribbling-about-${post.node.frontmatter.path}`}
+                to={`/${post.node.frontmatter.path}`}
               >
                 <h1
                   style={{

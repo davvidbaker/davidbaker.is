@@ -9,8 +9,11 @@ class Whoa extends Component {
     content: PropTypes.object,
   };
 
-  componentDidCatch() {
-    debugger;
+  state = { hasError: false };
+
+  componentDidCatch(error, info) {
+    console.log(`WHOA CAUGHT💥`, error, info);
+    this.setState({ hasError: true, error: { error, info } });
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -25,7 +28,9 @@ class Whoa extends Component {
   }
 
   render() {
-    return (
+    return this.state.hasError ? (
+      <h1>{JSON.stringify(this.state.error)}</h1>
+    ) : (
       <Fragment>
         {this.props
           .children()

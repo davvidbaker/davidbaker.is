@@ -32,7 +32,8 @@ class BlogIndex extends React.Component {
     /* ⚠️ not working */
     // window.scrollTo({top: document.body.scrollHeight});
     // document.body.animate({ scrollTop: document.body.scrollHeight }, 200)
-    /* **************☝️**************    */
+    /***************☝️***********************************/
+    /* I kinda like some kind of visual markup like this*/
 
     const posts = get(this, 'props.data.allWhoa.edges');
 
@@ -41,7 +42,7 @@ class BlogIndex extends React.Component {
         <Helmet title={'David Baker is Scribbling'} />
         {/* <Bio /> */}
         <Main>
-          <p>I probably wouldn't read any of this if I were you.</p>
+          <p>I probably wouldn't read any of this if I were you. But if I were to find myself here for the first time, I might <a href="./moving-through-space-and-time">start from the beginning</a> to catch up.</p>
           <PostList posts={posts} />
         </Main>
         {/* <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} /> */}
