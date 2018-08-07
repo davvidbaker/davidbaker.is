@@ -16,10 +16,16 @@ const Span = styled.span`
       : 'background: black'};
   transition: background-color 0.5s;
 
+  &:hover {
+    background: rgba(0,0,0,0.3);
+  }
+  
   *::selection {
     ${props =>
       props.redactionsVisible ? 'background: ``' : 'background: black;'};
   }
+
+  &
 `;
 
 const Redaction = ({ children, redactionsVisible }) => {

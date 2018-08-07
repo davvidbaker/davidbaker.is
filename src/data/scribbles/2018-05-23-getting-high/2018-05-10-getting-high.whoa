@@ -398,7 +398,7 @@ props:
 ~~One thing I am pretty positive about though is that it wasn't a babel issue. It actually wasn't really webpack stuff either. That only cropped up at the end and seems minor.~~
 Actually, now having gotten it back up again, `babel@7.0.0-beta.47` might have been a culprit somehow. So hard to pin this kind of thing down. 🤷‍♂️. Oh well.
 
-I need npm autocomplete in my terminal. Does npx provide that?
+I need npm autocomplete in my terminal. Does npx provide that? **EDIT: No, no it certainly does not. It is just sugar for `../node_modules/whatever/bin`**. Or global cache etc. I need a better EDITed presentation.
 
 🔎npm terminal typeahead🔍
 
