@@ -3,7 +3,12 @@ import Link from 'gatsby-link';
 import { connect } from 'react-redux';
 import styled, { injectGlobal } from 'styled-components';
 import PropTypes from 'prop-types';
-import WebFont from 'webfontloader';
+
+let WebFont;
+if (typeof window !== 'undefined') {
+  WebFont = require('webfontloader');
+}
+// import WebFont from 'webfontloader';
 
 import { italic } from '../constants/styles';
 import colors from '../constants/colors';
@@ -76,15 +81,17 @@ const H1 = styled.h1``;
 
 class IndexLayout extends React.Component {
   componentDidMount = () => {
-    WebFont.load({
-      typekit: {
-        id: 'diy2xuy',
-      },
-      /* ⚠️ I don't need the whole font, at least not now, so maybe only load needed glyphs... */
-      google: {
-        families: ['Yesteryear'],
-      },
-    });
+    if (typeof window !== 'undefined') {
+      WebFont.load({
+        typekit: {
+          id: 'diy2xuy',
+        },
+        /* ⚠️ I don't need the whole font, at least not now, so maybe only load needed glyphs... */
+        google: {
+          families: ['Yesteryear'],
+        },
+      });
+    }
   };
 
   render() {
