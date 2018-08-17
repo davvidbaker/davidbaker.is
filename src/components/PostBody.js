@@ -11,10 +11,40 @@ const Article = styled.article`
   position: relative;
 `;
 
+function callNative(val) {
+  try {
+    webkit.messageHandlers.callbackHandler.postMessage(val);
+  } catch (err) {
+    console.log('The native context does not exist.');
+  }
+}
+
 class PostBody extends React.Component {
   // shouldComponentUpdate() {
   //   return false;
   // }
+
+  componentDidMount() {
+    window.redBody = () => {
+      document.body.style.background = 'palevioletred';
+    };
+
+    var options = {
+      root: document.querySelector('#scrollArea'),
+      rootMargin: '0px',
+      threshold: 1.0,
+    };
+
+    if (window.IntersectionObserver) {
+      var observer = new IntersectionObserver(callNative, options);
+      observer.observe(document.body);
+    } else {
+      window.addEventListener('scroll', evt =>
+        callNative(document.body.scrollTop)
+      );
+    }
+  }
+
   componentDidCatch() {
     debugger;
   }

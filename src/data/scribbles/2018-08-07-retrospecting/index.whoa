@@ -7,3 +7,35 @@ date: 2018-08-07T04:52:43.849Z
 
 I would like to take some time to look over my production over the last month. Potentially in excessive detail. Potentially not.
 
+But also window resize performance.
+
+Handwritten annotations on the web.
+
+Or just defaced web?
+
+*This page can be defaced.*
+` 
+But also I do want this rather immediately for myself, so might build a prototype that just works locally for my specific project.
+
+![uniform-height.png](uniform-height.png)
+
+![variable-height.png](variable-height.png)
+
+The other day I was compelled to make [my Github profile](https://github.com/davvidbaker) picture me from sophomore year of college. The only copy of the photo I have is a photo of the photo, and there is some glare that makes it look funny [when taken out context](https://hairs-with-context-gxgwjtdqsg.now.sh). Luckily we have photoshop.
+
+![hairs.png](hairs.png)
+
+I'm pretty happy with the result.
+
+---
+
+## `scroll-behavior: smooth` is awesome most of the time. 
+
+It isn't working great on [`https://davvidbaker.is/moving-through-time-and-space#retrospecting`]() though. It's doing a few things not amazingly.
+
+1. It takes a *long* time to scroll to an `#id` that is way far down the page.
+2. It isn't ending up at the right spot when navigating from an external site to an `#id` way far down. I bet it might have to do with image size calculations or something of that sort.
+3. **It is really fucking up *find on page*.**
+
+
+![floating.png](floating.png)

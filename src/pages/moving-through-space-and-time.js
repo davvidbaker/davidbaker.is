@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import PostList from '../components/PostList';
-import {Section as StyledSection} from '../components/StyledMain';
+import { Section as StyledSection } from '../components/StyledMain';
 import Whoa from '../components/whoa';
 import PostHeading from '../components/PostHeading';
 import PostBody from '../components/PostBody';
@@ -22,6 +22,30 @@ import astronaut from '../images/astronaut-pushing.svg';
 const Main = styled.main`
   margin: 0 auto;
 `;
+
+const HashContainer = styled.div`
+h1 {
+  position: relative;
+
+  &::before {
+    content: '#';
+    opacity: 0.2;
+    position: absolute;
+    right: calc(100% + 0.25em);
+    font-family: monospace;
+    font-size: 1.25em;
+    color: black;
+  }
+}
+
+a:hover {
+  h1::before {
+    opacity: 1;
+  }
+}
+
+`
+
 
 class BlogIndex extends React.Component {
   componentDidMount() {
@@ -49,7 +73,9 @@ class BlogIndex extends React.Component {
         <Helmet title={'David Baker is moving through space and time.'} />
         {/* <Bio /> */}
         <Main>
-          <p style={{gridColumn: '2 / span 2'}}>I probably wouldn't read any of this if I were you.</p>
+          <p style={{ gridColumn: '2 / span 2' }}>
+            I probably wouldn't read any of this if I were you.
+          </p>
           {/* {posts && <PostList posts={posts} />} */}
           {posts.map(post => (
             <StyledSection
@@ -75,9 +101,19 @@ class BlogIndex extends React.Component {
               >
                 {post &&
                   !post.frontmatter.bareNaked && (
-                    <PostHeading date={post.frontmatter.date}>
-                      {() => post.frontmatter.title}
-                    </PostHeading>
+                    <HashContainer>
+                    <Link
+                      id={post.frontmatter.path}
+                      to={`#${post.frontmatter.path}`}
+                    >
+                      <PostHeading
+                        className="left-aligned"
+                        date={post.frontmatter.date}
+                      >
+                        {() => post.frontmatter.title}
+                      </PostHeading>
+                    </Link>
+                    </HashContainer>
                   )}
                 <PostBody normatives={this.props.normatives}>
                   <Whoa>{() => JSON.parse(post.ast).children}</Whoa>

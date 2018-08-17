@@ -24,6 +24,7 @@ injectGlobal`
     height: 100%; 
     overflow-y: auto;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   *, *::before, *::after {

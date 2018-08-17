@@ -26,10 +26,20 @@ const OuterDiv = styled.div`
     color: #888;
     font-size: 0.9em;
   }
+
+  &.left-aligned {
+    margin: unset;;
+    justify-content: unset;
+
+    .inner-title {
+      align-items: unset;
+      margin: unset;
+    }
+  }
 `;
 
-const PostHeading = ({ children, date }) => (
-  <OuterDiv className="outer-title">
+const PostHeading = ({ children, date, className }) => (
+  <OuterDiv className={`outer-title${className ? ` ${className}` : ''}`}>
     <div className="inner-title">
       <h1>{children()}</h1>
       <p>{date}</p>
