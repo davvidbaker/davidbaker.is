@@ -102,9 +102,10 @@ const IndexPage = ({ url }) => (
 
         <p>
           I just moved from New York to Denver in December 2017. In New York, I
-          was a senior <strong>developer</strong> at{' '}
-          <a href="http://click3x.com/">Click 3X</a>
-          , an ad agency in the Flatiron District of Manhattan.
+          was a senior developer at <a href="http://click3x.com/">Click 3X</a>
+          , an ad agency in the Flatiron District of Manhattan, and now I am a
+          full stack software engineer at{' '}
+          <a href="https://elasticsuite.com">Elastic Suite</a>.
         </p>
         <p>
           I <span style={{ color: 'red' }}>❤</span> making stuff, and I love how

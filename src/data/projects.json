@@ -1,11 +1,11 @@
 [
   {
-    "name": "stitch",
+    "name": "flambé",
     "path": "a-busy-bee",
     "status": ["coming soon!", "darkmagenta"],
     "tagline":
       "Chrome DevTools-inspired flame charts for keeping track of your life.",
-    "year": [2017],
+    "year": [2017, 2018],
     "linkToSource": "https://github.com/davvidbaker/stitch",
     "keywords": []
   },

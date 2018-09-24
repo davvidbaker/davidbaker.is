@@ -270,6 +270,32 @@ const ResumeIndex = ({ url }) => (
           <section>
             <h2>Work Experience</h2>
             <h3>
+              <a href="https://elasticsuite.com">Elastic Suite</a> - Full Stack
+              Software Engineer <span>[January 2018 - present]</span>
+            </h3>
+            <ul>
+              <li>
+                <p>
+                  Have been mostly working on modernizing a legacy dojo single
+                  page app, porting existing functionality and building new
+                  features with React.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Lots of writing tests. Unit tests. Functional component tests.
+                  End to end tests. I make sure <strong>everything</strong> I am
+                  writing has tests.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Occasionally have worked on our backend which is basically a
+                  Ruby on Rails API that hooks up with Mongo.
+                </p>
+              </li>
+            </ul>
+            <h3>
               <a href="http://click3x.com/">Click 3X</a> ― Senior Developer
               <span>[June 2016 - December 2017]</span>
             </h3>
