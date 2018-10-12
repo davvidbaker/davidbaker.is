@@ -73,7 +73,6 @@ class PostList extends Component {
   render() {
     return (
       <UL>
-        <FlambeLogo size={20}></FlambeLogo>
         <div className="overlay" />
         {this.props.posts.map(post => {
           const isDraft = post.node.fileAbsolutePath.includes('/drafts/');

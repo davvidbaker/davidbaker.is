@@ -143,6 +143,7 @@ const IndexPage = ({ url }) => (
               'the merits of iterative design.',
               'a web component future 🔧.',
               'the proliferation of emoji as a stage in the evolution of written language.',
+              'data-driven decisions.',
             ]}
           />
           <CycleItems
@@ -180,6 +181,18 @@ const IndexPage = ({ url }) => (
               'accessibility.',
               'the health of the codebase.',
               'vertical rhythm.',
+            ]}
+          />
+          <CycleItems
+            title="I am"
+            items={[
+              'mistrustful of untested code.',
+              'doubting my use of mistrustful.',
+              'wrong about doubting myself there.',
+              'a sucker for @beesandbombs 🐝💣 GIFs.',
+              'Rob Burgundy?',
+              'always trying to do meaningful work.',
+              'iron man. Dadaddadadadada duhnn duhnn duuuhhnn.',
             ]}
           />
         </ul>

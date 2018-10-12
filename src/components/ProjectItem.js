@@ -3,6 +3,10 @@ import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 import { compose, withHandlers, withReducer } from 'recompose';
 import styled from 'styled-components';
+
+/* ⚠️ rather haphazard to do this 🤷 */
+import FlambeLogo from '@flambe/logo';
+import ribeye from '../images/ribeye.png';
 // import Router from 'next/router';
 
 import ExternalLinks from './ExternalLinks';
@@ -29,6 +33,16 @@ const withToggle = compose(
   })
 );
 
+const Teaser = styled.div`
+  flex: 2;
+  align-self: center;
+  z-index: 1;
+`;
+
+const TeaserImage = styled.img`
+  width: 100%;
+`;
+
 const LI = styled.li`
   display: flex;
   flex-direction: column;
@@ -36,6 +50,9 @@ const LI = styled.li`
   padding: 10px;
   background: white;
   position: relative;
+
+  ${({ gridColumn }) => (gridColumn ? `grid-column: ${gridColumn}` : '')};
+  ${({ gridRow }) => (gridRow ? `grid-row: ${gridRow}` : '')};
 
   &::after {
     content: '';
@@ -94,18 +111,28 @@ const ProjectItem = ({
   unfocus,
   showAdditionalInfo,
   agency,
+  gridColumn,
+  gridRow,
 }) => {
   return (
     <LI
       className={`project ${highlight && 'highlight-project'}`}
       onMouseEnter={focus}
       onMouseLeave={unfocus}
+      /* ⚠️ Idk If I like this pattern */
+      {...{ gridRow, gridColumn }}
     >
       <h1>
         {name} <span>{year && formatYears(year)}</span>
       </h1>
       {status && <Status status={status} focused={focused} />}
       <p className="tagline">{tagline}</p>
+      {(name === 'flambé' || name === 'Udder Space') && (
+        <Teaser>
+          {name === 'flambé' && <FlambeLogo isAnimated size={128} />}
+          {name === 'Udder Space' && <TeaserImage src={ribeye} alt="" />}
+        </Teaser>
+      )}
       {description ? <Link to={`/${path}`}>Read more...</Link> : null}
       <ExternalLinks {...{ link, linkToSource, linkToTrello, callToAction }} />
     </LI>

@@ -1,0 +1,16 @@
+---
+title: Cycles
+path: cycling-items
+hashtags: []
+date: 2018-09-27T05:56:30.257Z
+---
+
+```component
+tag: CycleItems
+props:
+  title: "I am"
+  items: [
+    'afa',
+    'at first I was afraid',
+  ]
+```

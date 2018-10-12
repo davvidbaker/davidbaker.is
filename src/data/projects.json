@@ -4,10 +4,12 @@
     "path": "a-busy-bee",
     "status": ["coming soon!", "darkmagenta"],
     "tagline":
-      "Chrome DevTools-inspired flame charts for keeping track of your life.",
+      "Chrome DevTools-inspired flame charts for keeping track of all your projects.",
     "year": [2017, 2018],
     "linkToSource": "https://github.com/davvidbaker/stitch",
-    "keywords": []
+    "keywords": [],
+    "gridColumn": "span 2",
+    "gridRow": "span 2"
   },
   {
     "name": "ELC 360",
@@ -215,7 +217,8 @@
     ],
     "images": ["forcefield.JPG"],
     "link": "https://www.youtube.com/watch?v=5L02NgFlN2I&feature=youtu.be",
-    "callToAction": "Watch presentation"
+    "callToAction": "Watch presentation",
+    "gridColumn": "span 2"
   },
   {
     "name": "Udder Space",
@@ -246,7 +249,8 @@
       },
       { "name": "Pat Romano", "link": "#" },
       { "name": "Zach Fox", "link": "https://twitter.com/zacharydafox?lang=en" }
-    ]
+    ],
+    "gridRow": "span 2"
   },
   {
     "name": "sound360",

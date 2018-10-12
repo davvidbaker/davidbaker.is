@@ -51,15 +51,14 @@ const Main = styled.main`
 
 class ProjectsIndex extends React.Component {
   render() {
-    const projects = get(
-      this,
-      'props.data.allProjectsJson.edges'
-    ).map(project => ({
-      node: {
-        ...project.node,
-        year: project.node.year.map(year => Number(year)),
-      },
-    }));
+    const projects = get(this, 'props.data.allProjectsJson.edges').map(
+      project => ({
+        node: {
+          ...project.node,
+          year: project.node.year.map(year => Number(year)),
+        },
+      })
+    );
     return (
       <div>
         <Helmet title="David Baker is Hacking" />
@@ -93,6 +92,8 @@ export const pageQuery = graphql`
           link
           linkToSource
           linkToTrello
+          gridColumn
+          gridRow
           agency {
             name
             link

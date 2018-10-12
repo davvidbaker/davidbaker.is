@@ -49,6 +49,8 @@ const ProjectList = ({ projects }) => (
           highlight={project.node.highlight}
           agency={project.node.agency}
           path={project.node.path}
+          gridRow={project.node.gridRow}
+          gridColumn={project.node.gridColumn}
         />
       );
     })}
