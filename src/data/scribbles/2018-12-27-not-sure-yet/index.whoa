@@ -1,0 +1,68 @@
+---
+title: Not Sure Yet
+path: not-sure-yet
+hashtags: []
+date: 2018-12-27T03:04:34.297Z
+---
+
+I was not sure what to title this.
+
+Naming is hard. Especially when the name carries some meaning. I don't really think ski runs have much intentionality behind their names. Do they?
+
+*Really just throwing thoughts at the screen here. ⚠️ Beware.*
+
+I should get mdx working for finally.
+
+I started watching *Patriot* on Amazon Prime Video. The sadness enthralls me.
+
+I'm interested in note-taking technologies.
+
+I should make `CycleItems`s more accessible. Like a hover will show you all at once if that's how you prefer to read them.
+
+🔎Why should we care about accessibility?🔍
+
+# Wait–before you google–let's think about it.
+
+I want everyone to have access to it. To be able to use it, look at it, modify it.
+
+
+# Things I've made and their platform
+Fonts - anywhere
+Variable Fonts - modern browsers
+Box Man - right now, I think it only works on the Google Pixel 2+
+Flambé🔥 - modern browsers
+whoa - modern browsers, but really React users right now, and markdown writers, and its optimized for the visual studio code text editor
+
+
+
+---
+
+When thinking about your users, ask
+
+## Are they or aren't they in the modern browser era.
+
+It's much easier to only develop for the modern browser era.
+
+Developing for evergreen^1 ^2 ^3 browsers is much easier.
+
+1. <Definition>
+Evergreen
+ipa: /fooor ɛɛɛvər/
+The latest and greatest internet browser basically is what I mean. Dictating a browser among vendors isn't necessarily that big a deal, especially if the reason is other browsers not having specs implemented or implemented correctly, while Chrome basically does. There are of course exceptions to Chrome being best. Like with variable fonts and sometimes some newer css things, but nothing comes to mind right now.
+
+</Definition>
+
+2. I should make footnotes work. I should also aggregate definitions into a dictionary/glossary–and did I mention `MDX`? Whoa should be rebased on top of that.
+
+3. I should make sure normatives work in footnotes. Speaking of, I should make normatives just a lot better in a bunch of ways. The list of tasks associatedng with something that's actually keeping them in mind when prioritizing.
+
+Back-nominalization is a cool
+
+<Commandment or HotTake>If a refresh is required, something is broken.</Commandment or HotTake>
+
+I'd like to figure out how to teach problem solving.
+
+I should make a directed network visualization of your party 📦.
+
+I'm excited to get to work on some fun stuff tomorrow. 
+

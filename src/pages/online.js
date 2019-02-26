@@ -158,19 +158,23 @@ const IndexPage = ({ url }) => (
           <CycleItems
             title="I am interested in"
             items={[
-              'new media 🤦.',
               'virtual reality.',
               'augmented reality.',
               'reality.',
+              'note-taking technologies',
               'annotations on the web.',
               'the internet of things.',
               'rapid prototyping.',
               'artificial intelligence.',
               'intelligence.',
+              'new media 🤦.',
               'sustainability in the tech world.',
+              'sustainability.',
               'the future of the internet 🌐.',
               'memory, specifically working memory.',
+              'memory.',
               'education.',
+              'expression',
             ]}
           />
           <CycleItems
@@ -179,8 +183,10 @@ const IndexPage = ({ url }) => (
               'the user experience.',
               'performance ⚡.',
               'accessibility.',
+              'the color palette.',
               'the health of the codebase.',
               'vertical rhythm.',
+              '',
             ]}
           />
           <CycleItems

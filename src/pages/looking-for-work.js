@@ -259,7 +259,7 @@ const ResumeIndex = ({ url }) => (
               </li>
               <li>
                 <p>
-                  <a title="transcript" href="unofficial-transcript.png">
+                  <a title="transcript" href="/unofficial-transcript.png">
                     Cumulative GPA: 3.78/4.00
                   </a>
                 </p>

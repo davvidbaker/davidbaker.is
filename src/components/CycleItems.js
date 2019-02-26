@@ -17,28 +17,45 @@ class CycleItems extends Component {
   constructor(props) {
     super(props);
 
-    this.characterInd = 0;
     this.itemInd = 1;
-    // add a space to the end of the items (for text-breaking purposes)
     this.items = this.props.items.map(item => `${item} `);
 
-    this.timeouts = [];
-    this.raf = null;
+    if (props.byLine) {
+      setInterval(() => {
+        if (this.text) this.text.textContent = this.items[this.itemInd];
+
+        const ind = ++this.itemInd % this.items.length;
+        if (this.text) this.text.textContent = this.items[ind];
+      }, 400);
+    } else {
+      this.characterInd = 0;
+      // add a space to the end of the items (for text-breaking purposes)
+
+      this.timeouts = [];
+      this.raf = null;
+    }
   }
 
   componentDidMount() {
-    this.nextCharacter();
+    if (!this.props.byLine) {
+      this.nextCharacter();
+    }
   }
 
   componentWillUnmount() {
-    this.timeouts.forEach(timeout => clearTimeout(timeout));
-    window.cancelAnimationFrame(this.raf);
+    if (!this.props.byLine) {
+      this.timeouts.forEach(timeout => clearTimeout(timeout));
+      if (this.props.byLine) {
+        window.cancelAnimationFrame(this.raf);
+      }
+    }
   }
 
   nextCharacter() {
     this.raf = window.requestAnimationFrame(() => {
       let letter;
       // if (this.text && this.text.textContent) {
+        debugger;
       if (this.text.textContent.length - 1 < this.characterInd) {
         // if the current textContent doesn't have a character at character ind, just add to textContent
         letter = letterThatMightBeAnEmoji(
