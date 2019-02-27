@@ -198,11 +198,6 @@ const Div = styled.div`
       display: block !important;
     }
 
-    #skills {
-      display: flex !important;
-      justify-content: space-around !important;
-    }
-
     #skills p {
       font-size: 10px !important;
     }
