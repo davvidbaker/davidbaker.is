@@ -196,7 +196,7 @@ const IndexPage = ({ url }) => (
               'doubting my use of mistrustful.',
               'wrong about doubting myself there.',
               'a sucker for @beesandbombs 🐝💣 GIFs.',
-              'Rob Burgundy?',
+              'Ron Burgundy?',
               'always trying to do meaningful work.',
               'iron man. Dadaddadadadada duhnn duhnn duuuhhnn.',
             ]}
