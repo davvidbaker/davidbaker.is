@@ -48,12 +48,6 @@ a:hover {
 
 
 class BlogIndex extends React.Component {
-  componentDidMount() {
-    /* ⚠️ not working. Just fucking think about it for a second and figure it out! 🤯 */
-    // setTimeout(() => document.body.animate({ scrollTop: document.body.scrollHeight }, 200), 1000)
-    // setTimeout(() => window.scrollTo({top: document.body.scrollHeight}), 1000);
-    /* **************☝️**************    */
-  }
 
   render() {
     /* ⚠️ not working */

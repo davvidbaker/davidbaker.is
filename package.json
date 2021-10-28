@@ -1,9 +1,9 @@
 {
-  "name": "personal site",
+  "name": "personal-site",
   "version": "1.0.0",
   "author": "David Baker",
   "engines": {
-    "node": "10.x"
+    "node": "14.x"
   },
   "dependencies": {
     "@flambe/logo": "^0.1.12",
@@ -44,7 +44,8 @@
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
     "remark-whoa": "^0.2.2",
-    "scroll-into-view": "^1.9.3",
+    "scroll-into-view": "^1.15.0",
+    "sharp": "^0.20.8",
     "styled-components": "^2.4.0",
     "webfontloader": "^1.6.28"
   },
@@ -59,6 +60,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "vercel-build":"echo \"doing it fucking live\"",
     "start": "npm run dev",
     "dev": "gatsby develop --host 0.0.0.0",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
