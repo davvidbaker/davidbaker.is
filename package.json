@@ -1,10 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "personal site",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+  "author": "David Baker",
+  "engines": {
+    "node": "10.x"
   },
   "dependencies": {
     "@flambe/logo": "^0.1.12",
@@ -57,16 +56,8 @@
     "prettier": "^1.12.0",
     "prop-types": "^15.6.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
   "scripts": {
     "start": "npm run dev",
     "dev": "gatsby develop --host 0.0.0.0",
