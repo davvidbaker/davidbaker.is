@@ -34,7 +34,7 @@
     "gatsby-transformer-whoa": "^0.0.1",
     "js-yaml": "^3.11.0",
     "lodash": "^4.17.5",
-    "marked": "^0.3.19",
+    "marked": "^4.0.10",
     "pngquant-bin": "^3.1.1",
     "react-commander": "^0.0.1",
     "react-modal": "^3.3.2",
