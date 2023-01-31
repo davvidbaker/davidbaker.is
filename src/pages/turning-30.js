@@ -2,10 +2,9 @@ import * as React from 'react'
 import "./turning-30.css"
 import { StaticImage } from "gatsby-plugin-image"
 import favicon from '../images/turning-30-favicon.png'
-import mainImage from '../images/turning-30.jpg'
 import slice from '../images/turning-30-slice.png'
 
-const Turning30 = () => <div><StaticImage src={mainImage} alt="turning-30" /></div>
+const Turning30 = () => <div><StaticImage src="../images/turning-30.jpg" alt="turning-30" /></div>
 
 export function Head() {
     return <>
