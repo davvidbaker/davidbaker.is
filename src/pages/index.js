@@ -1,4 +1,5 @@
 import * as React from "react"
+import "./global.css"
 
 const pageStyles = {
   color: "#232129",
