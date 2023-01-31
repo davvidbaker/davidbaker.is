@@ -8,11 +8,11 @@ const Turning30 = () => <div><StaticImage src="../images/turning-30.jpg" alt="tu
 
 export function Head() {
     return <>
-        <meta property="og:title" content="davidbaker.is/turning-30" />
+        <meta property="og:title" content="davidbaker.is/turning-30 and you're invited" />
         <meta property="og:image" content={slice} />
         <meta property="og:url" content="https://davidbaker.is/turning-30" />
         <link rel="icon" href={favicon} type="image/x-icon" />
-        <title>davidbaker.is/turning-30</title>
+        <title>davidbaker.is/turning-30 and you're invited</title>
     </>
 }
 
