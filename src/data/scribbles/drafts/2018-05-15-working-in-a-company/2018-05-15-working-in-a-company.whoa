@@ -1,0 +1,53 @@
+---
+title: Working in a Company
+path: working-in-a-company
+date: 2018-05-16T05:12:50.992Z
+---
+
+Idea:
+
+`scramble-com` high-level (as in high in the tree) component that is just recording user flows/events.
+
+cycle items
+I was going to write about some of the things I've been learning from working in a company with the company of other people.
+
+## Why is writing everything as pure functions good?
+
+A couple reasons that come to mind immediately before the google search.
+
+- Easy testability.
+- Easier to understand.
+
+🔎the benefits of pure functions🔍
+
+Sure I think I about understand it.
+
+🔎the drawbacks to pure functions🔍
+
+I guess the biggest one is potential performance, but I am currently not usually too worried about that.
+
+Can I write `<custom-element>`s in here. Sure why not. Need to make it happen first, but then it will be doable. I *could* even try to render simple react components to web components and just include those web components. Like I could use other web components in here that aren't at all directly tied to my project. They would have to be imported somewhere. Would proabably want to have a registry I keep track of myself that provides links to `.mjs` files or something like that. 
+
+***Or I could give my components a `src` attribute that tells them where to fetched from...***
+
+### Claimable 404 pages
+
+"*Failure as a service*" by [gremlin](https://www.gremlin.com/) is such a seductive tagline.
+
+---
+
+#Fuck yes I just made a prototype of all scribbles rendered to a single view and it's awesome 👌. 
+
+A cool thing I this will allow me to do is draw arrows or something like that backreferencing(?) stuff. I could *also* do a thing where flambé 🔥 is shown in another window, and your (rough) position in time in this saga of posts is marked (probably with a line or tick).  (I think it would have to be across multiple windows, but maybe you could figure out how to fit it all in one or be selective or something)
+
+..At least a day later.
+
+# The struggle is real.
+
+## There's a real lack of inspiration here.
+
+![./lack.png](./lack.png)
+
+Digging the {process, workflow}(?) moving a [Procreate](https://procreate.art/) export from iPad to here.
+
+Oh yeah before I forget. I made this today. [whatdoyouhear.now.sh](https://whatdoyouhear.now.sh). So it's not like I have totally produced nothing of late.

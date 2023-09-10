@@ -1,0 +1,45 @@
+---
+title: I should be writing more always
+path: going-to-do-a-better-job
+hashtags: []
+date: 2018-07-27T05:50:58.764Z
+---
+
+You need to have a playground where you can easily iterate on ideas and search out good patterns. For me that happens in a few places, some of them open source projects I've created and maintained over the years.
+
+At work, experimental branches that continually rebase to master.
+
+timeline
+
+IPA typing mode component
+
+
+## *Maybe* I should maybe somehow mark/denote that an activity's start time has been significantly altered (on the scale that you are looking at it at).
+
+Here's an idea (in addition to the obvious idea that I should grep "Here's an idea" for normative extraction since I'm not yet doing that). Fuck what was it.
+
+...Minutes
+
+Oh yes it was some thoughts about HTTP priority levels for autocomplete result-resources. **I need to do some research about whether network requests can avoid blocking the main thread**.
+
+🔎Network requests main thread🔍
+
+🔎service worker priority levels🔍
+
+<br>
+
+[Well this is probably an amazing read.](https://developers.google.com/web/fundamentals/performance/http2/)
+
+I've got a lot of nothing done here this evening.
+
+Let's change that quick.
+
+![./2hours.png](./2hours.png)
+
+I gouda: Instead of an image right there 👆, it would be cool if that was live live live, like you could zoom out and more of the timeline would load and you could open the full thing in a separate window and have that area highlighted.
+
+I gouda: delete I gouda if gouda is followed by immediately by a colon, and instead treat the following block as a normative.
+
+I gouda also be reading constantly.
+
+TODO fix normative parsing and replace previous "gouda"s with "should"s.

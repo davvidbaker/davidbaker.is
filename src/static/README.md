@@ -1,0 +1,1 @@
+# Try to avoid using this folder for images.

@@ -1,0 +1,27 @@
+---
+title: I want...
+path: scribbling-about-how-me-list-needs-a-better-name
+date: 2017-08-01T04:00:00.000Z
+bareNaked: true
+---
+
+```component
+tag: CycleItems
+props:
+  title: "I want"
+  items: [
+    'text boxes.', 'layers.', 'hand-markup.', 'time-control sometimes.',
+  ]
+```
+
+    
+```style
+p { font-size: calc(4em + 2vw); }
+li {
+  list-style: none;
+}
+article {
+  width: 90%;
+  max-width: unset !important;
+}
+```

@@ -1,5 +1,4 @@
 import * as React from 'react'
-import "./turning-30.css"
 import { StaticImage } from "gatsby-plugin-image"
 import favicon from '../images/turning-30-favicon.png'
 import slice from '../images/turning-30-slice.png'

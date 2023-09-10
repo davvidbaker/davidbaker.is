@@ -1,0 +1,162 @@
+---
+title: A Post Post Order World
+date: "2017-11-27T07:19:12.137Z"
+path: scribbling-about-post-post-order
+---
+
+It's a world we do not live in.
+
+I almost always start a new post―as opposed to editing/revising an old one― after any significant amount of time has elapsed.
+
+It's definitely /bicʌzədə hool foorwoordflowɪŋ taɪm θeɪŋ/, and while I want to preserve that, maybe I also want to prune. **Or maybe there's I should distinguish things that should be edited vs things that were just word dumps...**
+
+## The order of the items in the table of contents affects your attitude towards the writing.
+
+Ain't no doubt about it.
+
+🔎post order blog ux🔍 
+Not really anything good there ☝️.
+
+[This](https://ux.stackexchange.com/questions/90156/why-are-previous-and-next-buttons-so-often-switched) is more along the lines of what I am referring to, albeit from a slightly different angle.
+
+# Chronology and the User
+
+That could make a decent theuser.today article.
+
+I guess as long as new posts are being written, a forward-chronological presentation will never be super intuitive, when presented to #theUser in a list. |- I should make a hashtag component.-| I should also make tangent normatives work better, if not completely normal.
+
+✍️{Maybe you can't live in a post post order world until you're dead.}(No.)
+
+|- Unicode 10 or my Mac's implementation of it is fucking with the visual presentation of a couple of my emoji shortcuts. A maybe skin-toned emoji without a color modifier should just be yellow, right? -|
+
+🕵{I should make redactions have different security clearances.} That would be pretty cool. |- Oh no! Normative redactions are visible in the side bar!! 😲-|
+
+🔎Can  I legally use non-native emoji as I please?🔍
+I'm  feeling like the answer is [not really](https://lizerbramlaw.com/2016/05/17/emoji-protected-copyright/).
+
+Oooh. Here's an idea. I should / could write a test that checks that no links (and images) 404.
+
+FIX 👇
+404
+verb. transitive
+To return as missing when a resource is requested over a network.
+
+<div class="test123">
+## Idea: Error messages in real life
+*Potentially as sketch, or AR, or just not at all actually a thingl*
+</div>
+[Memory errors](https://en.wikipedia.org/wiki/Memory_errors#Types_of_memory_errors)
+
+The high resolution of Apple (and Samsung) emoji is nice.
+
+<style>
+div {
+  background: blue;
+}
+</style>
+
+Shoot.
+
+I really should combine a timeline with writing this! I think that's what I kinda have been thinking this whole time anyways. 🕵{Whoa}.
+
+The thing I need to remember is,
+# why not just start doing it now?
+
+|- I like the idea of big words being for emphasis or the climax of a topic, instead of headings for the below text, is a fun change of pace to user expectations. -|
+
+|- It's moments like these that I really wish there was a green pipe emoji a la mario. -|
+
+Here's a potentially neat idea. Every save to a file is a commit. And you can play back commits through animation. Or it doesn't have to be every save, 
+
+Okay. Here's two potential ways to integrate writing with stitch.
+1. Stitch is a native app that listens for saves in local directories, and those saves show up as snapshots.
+
+2. Git commits to a remote repository, with diffs shown.
+
+ I think diffs being shown is going to be key. Also, everything being remote is maybe essential, since I don't think I can do it all on one machine, for things ✍{like screen capture.}
+
+ *Could I easily scroll a document through time via git commits?*
+ ✍{How would you maintain state?}(Does that question even make sense?)
+ What about the chillln.
+
+***Just stitch for lesson structuring***. Wonderful, right*
+
+I'm afraid the flame chart of writing this be too asynchronous to yet model on stitch. (Or that it will show that I just start so many things and never go back to anything.)
+
+
+✍{Thinking hierarchically.}(What?)...Oh right I remember. Hierarchical abstractions.
+
+🔎google docs history model🔍
+
+
+One way for whoa to be more customizable would be standard use of function tags. 
+```javascript
+${this.syntax}
+```
+
+Or maybe more integrated. Code completion snippets? Or maybe something else. 
+
+Also think about naming functions by arity...maybe not
+
+Integration
+
+Functions to describe everything.
+
+
+```
+Input 
+  ===
+ |   |
+ |   |
+ |   |
+ |   |
+ |   |
+ [   ]
+ |   |
+ |   |
+ |   |
+ |   |
+ |   |
+  ===
+  Output
+```
+
+Easy visual linking between blocks in here and style nodes would be interesting. Imagining a thing like this...
+
+How would you then keep all information as easily readable text still?
+
+I'm thinking I should maybe use Firebase for Stitch for two reasons.
+
+1. Ease of real-time.
+2. Removal of custom backend.
+
+🔎firebase pricing🔍
+
+TODO Look at trump twitter reply and retweet count, frequency, etc
+And other statistics. [This infographic](https://www.politico.com/magazine/gallery/2016/04/donald-trump-twitter-account-history-social-media-campaign-000631?slide=4) did a little bit, but it is static and from 2016!
+[Here's the relevant API](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object)
+
+I hope I wake up tomorrow with this much excitement about some features. I already know Firebase (event just researching whether it really would make things easier ever) is a potential timesuck.
+
+There is a lot to do in this post. I should do it tomorrow.
+
+Oh wait timeout. If I deploy to `now` on every commit, I can (more) easily scroll show snapshots of problems. time.
+
+🔎deploy to now on every commit?🔍
+
+## Here marks the beginning of the idea of [Absences](https://trello.com/c/2Q3Do1X9/4-absences)
+
+
+
+🔎Can you copy paste images to google drive?🔍
+Looks like no. That's a feature I really want.
+
+*Remembering how fun swyzzle can be.*
+
+I should revive that. One easy thing I'd like is to be able to control the global opacity of the window/swyzzle canvas. Should be easy enough, since some are already partially transparent. It is a little buggy right now. Need better state management without a doubt.
+
+I wonder how the performance of *Native* macOS apps compare to Electron apps.
+
+🔎native macOS vs electron performance🔍
+
+Now it's reloading. test

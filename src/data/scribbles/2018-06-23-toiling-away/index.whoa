@@ -1,0 +1,47 @@
+---
+title: Toil
+path: toiling-away
+hashtags: [toil, productivity]
+date: 2018-06-23T18:04:23.342Z
+---
+
+How does google define toil?
+
+🔎SRE toil🔍
+
+[I'll save you a step](https://landing.google.com/sre/book/chapters/eliminating-toil.html). Or two.
+
+> So what is toil? Toil is the kind of work tied to running a production service that tends to be manual, repetitive, automatable, tactical, devoid of enduring value, and that **scales linearly as a service grows**.
+
+Emphasis mine.
+
+Look at code here 👇 inside *Adrift is longer than a tangent. Maybe I should rename those to be opposites though.
+<Adrift>
+<div class="thought">It's very easy to make a css class and style that.</div>
+
+<style>
+.thought {
+  background: yellow;
+}
+</style>
+Well that isn't working. Fuck.
+
+In case I haven't document this. *I want to MDX work.* I mostly want the `<JSX />`
+If I had an AST to manipulate, and `.whoa` files were **auto-formattable**, I think I could *trivially* do things like change the color of something in the browser and have it reflect in this here `.whoa` file. This ~~might need~~ needs to be thought out some more, it is somewhat along the lines of what the [notion](https://notion.so) editor is doing.
+
+I think auto-formattable is maybe the only thing whoa is missing for this to already be the case.
+</Adrift>
+
+---
+
+I may have lost some writings about the beginning of debugging.
+Anyways, here's {an, the}(?) idea. Flame charts to demonstrate the thought processes.
+
+```
+Google Home not responding
+  Say Hey Google multiple times /x/ Check that the device is plugged in. This is basically check for power. Check that the electricity is moving through the wires. 🔌⚡️. Is the thing {on, live}(?) /✅/
+```
+
+---
+
+Why is it so easy to get caught up in processes and tooling in tech and not see the **forest for the trees**?

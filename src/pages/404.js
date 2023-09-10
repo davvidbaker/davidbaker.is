@@ -1,49 +1,55 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
+const Div = styled.div`
+  margin: 0 auto;
+  padding: 0 5px;
+  max-width: 50rem;
+  h1,
+  h2,
+  h3 {
+    font-weight: normal;
+  }
+`;
+
+class FourOFourPage extends Component {
+  componentDidMount() {
+    if (typeof window !== 'undefined') {
+      window
+        .fetch(
+          `https://mr.davidbaker.is/going-to-get-an-email/${
+            window.location.pathname.match(/\/(.*)/)[1]
+          }`
+        )
+        .then(response => {
+          console.log(response);
+        })
+        .catch(e => {
+          console.log(e);
+        });
+    }
+  }
+
+  render() {
+    const descriptor =
+      typeof window !== 'undefined'
+        ? window.location.pathname.match(/\/(.*)/)[1]
+        : '404';
+    return (
+      <Div>
+        <h1>
+          So, you think David Baker is <strong>{descriptor}</strong>?
+        </h1>
+        <h2>
+          We've sent him an email letting him know. Thanks for your input!
+        </h2>
+        <h1 style={{ fontSize: '5em', textAlign: 'center' }}>😜</h1>
+        <h3 style={{ textAlign: 'right' }}>
+          Maybe thanks to you, David will one day be {descriptor}!
+        </h3>
+      </Div>
+    );
+  }
 }
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-const NotFoundPage = () => {
-  return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
-
-export default NotFoundPage
-
-export const Head = () => <title>Not found</title>
+export default FourOFourPage;

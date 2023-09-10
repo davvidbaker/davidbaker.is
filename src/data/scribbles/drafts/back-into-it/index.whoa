@@ -1,0 +1,83 @@
+---
+title: Back Into It
+date: "2018-02-14T03:38:39.178Z"
+path: scribbling-about-being-back-into-it
+---
+
+I am 🕵{getting back into} it.
+
+## Hot Takes
+- a single cli command that opens all my things back to a previous state
+  - `open sesame` 👈 I feel like explaining workflow by telling someone "Then you open sesame and ..." would be pretty fun.
+- I need a tab manager
+- I need everything.now to be working better ― I guess mostly more feature work. But not only. It's essential UX stuff, that is keeping me from using it.
+- Fix my `code` commands (for opening Visual Studio Code)
+- I feel like  🕵{I am only excited about} many of 🕵{my projects when I am a} certain 🕵{level of high}.
+- I need a better way to {organize, group}? windows and tabs into project-focused windows.
+
+I like to leave behind trails 🕵{of fun} in my codebases. 🍬🍬🍬🍬🗺
+
+![skewness.png](skewness.png)
+
+I need to do more things more quickly, and then edit more things more often. More is a funny word.
+
+# Professional Quality Pull Requests
+
+[I need to get this codepen embed in here.](https://s.codepen.io/davvidbaker/debug/mXMxLe)
+
+
+
+
+```javascript
+// I wish something like this would work for me here. I will make it work eventually.
+<link rel="import" href="astronaut.html" >
+```
+
+Test . 
+
+
+<p data-height="167" data-theme-id="18499" data-slug-hash="mXMxLe" data-default-tab="result" data-user="davvidbaker" data-embed-version="2" data-pen-title="Alt Astronaut" data-preview="true" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/davvidbaker/pen/mXMxLe/">Alt Astronaut</a> by David Baker (<a href="https://codepen.io/davvidbaker">@davvidbaker</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+... The next day...?
+
+## I forgot to mention this yestereday [sic].
+
+Part of why I am excited about work is finally getting to work on a real piece of software that people use regularly and rely on as one of their primary tools of the trade. I kind of get to ooown the product.
+
+What 🕵{do people mean when they say David has} such 🕵{high earning potential}?
+
+Is 🕵{programming} about doing things 🕵{programmatically}? What does 🕵{program} even mean?
+
+There is a future involving web 3.0 where there can be individual's editions of the web. I can make any layered(?) changes to the web and that can be served instead of the original format. **Fake Web**
+___
+
+#Oh no!
+
+I am about to go down a domain hole. Rabbit hole to the rescue! *This would be a great opportunity to have rabbit holes be embeddable.* 
+
+potential taglines for Rabbit Hole (aka stitch aka everything.now)
+  - It's dark down there.
+
+### Wheew. Made it out. 😵
+
+I feel like I am getting more into 🕵{virtual machines} as I {think, speak}?.
+
+Ok. I should focus on Fourth Person / Box Man / ? now.
+
+It would be☝️kind of cool if the backend were written with Phoenix Channels. Maybe a bit overboard? Maybe not. It's all gonna have to be measured eventually. ***Focus now!***
+
+Can I yet use `|>` pipes in javascript yet with babel?
+
+...Many days later...
+
+I'd like to set a goal of writing (more).
+
+I have a pair of glasses that I use for finding my other glasses. (exaggeration).
+
+Fuck I've just spent over an hour just trying to make this thing work again. My writing tool I mean. Ughh. Okay now it will is just not reloading in the browser unless I restart the gatsby server.
+
+...Many more days later...
+Hot reloading is working once again!
+
+It's *weird* how things break seemingly randomly and then somehow *magically* work again.

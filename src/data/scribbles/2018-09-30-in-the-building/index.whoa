@@ -1,0 +1,128 @@
+---
+title: In a While
+path: in-the-building
+hashtags: []
+date: 2018-09-30T04:53:44.483Z
+---
+
+```component
+tag: CycleItems
+props:
+  title: "I feel"
+  items: [
+    'happy.', 'interested.', 'inspired.',
+    'inspired to create.','sappy.', 'poetic.'
+  ]
+```
+
+I should make a line by line diff animation where the letters stream down.
+
+```component
+tag: CycleItems
+props: 
+  title: ""
+  items: [
+    'My lack of passion ', 'my day-to-day job ', 'shines through me. ☀️'
+  ]
+```
+---
+
+I need to be more inspired. 
+
+```
+   To feel inspired
+is to feel happy.
+```
+
+![differ.png](differ.png)
+
+```component
+tag: CycleItems
+props:
+  title: ""
+  items: [
+    '___To feel inspired', 'is to feel happy.'
+  ]
+```
+
+I guess basically I want ☝️ but with more emphasis on the persistent words, case-insensitive.
+
+🕵{Abby}, you made me aware of how much I need change in my life. It's very not exciting, and I prefer to be excited.
+
+Give me a couple months to go (finish) make(ing) something. (flambé🔥)
+
+```component
+tag: Phone
+props:
+  name: "Work"
+  messages: [
+    {
+      me: true,
+      value: "Hey, work"
+    },
+    {
+      value: "### Sup"
+    },
+    {
+      me: true, 
+      value: "I think I'm gonna take a couple months off work to work on something."
+    },
+    {
+      me: true, 
+      value: "can I take some kind of sabbatical or something or should I quit."
+    },
+    {me: true, value: '# ?'},
+    {
+      value: "*Ummm*"
+    },
+    {
+      value: "Let me talk to 🕵{Lyle and Mike and} everyone}"
+    },
+    {
+    me: true,
+    value: "of course"
+  }
+  ]
+```
+
+I should definitely make redactions work up there ☝️.
+ 
+
+---
+
+Here's an idea.
+
+For callbacks on a scrollable page. some kind of `#{'throwback', 'the text'}` capture. And then nicely curved bezier arrows connecting things in the background of the document.
+
+---
+
+Here's the thing. I can't quickly create certain kinds of things if I don't have the tools to create them at my fingertips. Like, I can't think enough steps ahead to know how something might turn out without first going down that road a bit first.
+
+> 
+
+
+# What I'm aaactually interested in is the future of *User* Interfaces.
+
+How we control the machines.
+
+---
+
+`redivide` (motivating? nah) example: iframes on iframes on iframes, all with location bars
+
+```
+[foreword [the main thing] afterword]
+
+// compiles to
+<div>
+  ::before "foreword"
+  ::after "afterword"
+  the main thing
+</div>
+```
+
+## Box and whiskeresque.
+
+
+> The value of Greek prose composition, he said, was not that it gave one any particular facility in the language that could not be gained as easily by other methods but that if done properly, off the top of one’s head, it taught one to think in Greek. **One’s thought patterns become different**, he said, **when forced into the confines of a rigid and unfamiliar tongue. Certain common ideas become inexpressible; other, previously undreamt-of ones spring to life, finding miraculous new articulation.**
+
+ - Donna Tart, *The Secret History*, emphasis mine

@@ -1,0 +1,91 @@
+---
+title: What am I trying to do here?
+path: scribbling-about-how-that-was-bad
+date: 2017-07-07T04:00:00.000Z
+---
+That last post (Coffee) is rather painful to read.
+
+I had wanted to write something using that new phone messenger component, but that post didn't really lend itself to it. I'm not happy with how the phone component looks some of the time in landscape, but I don't feel like fixing it right now either.
+
+```component
+tag: Phone
+props: 
+  name: You
+  messages: [
+    {
+      me: true,
+      value: "# You there, reader"
+    },
+    {
+      me: true,
+      value: "### It's me."
+    },
+    {
+      value: "Me?<br />**You** can't be *me*."
+    },
+    {
+      value: "# Who am I in this situation?",
+      style: {
+        background: "gold",
+        color: "black"
+      }
+    },
+    {
+      me: true,
+      value: "You tell me."
+    },
+    {
+      value: "Does anyone else find this a bit annoying?"
+    },
+    {
+      value: "I bet **you** do."
+    },
+    {
+      me: true,
+      value: "## How about an h2?"
+    },
+    {
+      value: "# What does this look like?"
+    },
+    {
+      me: true,
+      value: "Hello"
+    },
+    {
+      value: "It's me"
+    },
+    {
+      value: "# What does this look like?"
+    },
+    {
+      value: "A bunch ot text as;fljasd;fljkas;df j;ksafj;kja sh sjd hjsasjhd slafhj a;sdjf;alsf jl;asjdf; hkj;hlj"
+    },
+    {
+      me: true,
+      value: "# What does this look like?"
+    },
+    {
+      value: "# What does this look like?"
+    },
+    {
+      me: true,
+      value: "Hello"
+    },
+    {
+      value: "It's me"
+    },
+    {
+      value: "# What does this look like?"
+    },
+    {
+      value: "A bunch ot text as;fljasd;fljkas;df j;ksafj;kja sh sjd hjsasjhd slafhj a;sdjf;alsf jl;asjdf; hkj;hlj"
+    },
+    {
+      me: true,
+      value: "# What does this look like?"
+    },
+    {
+      value: "# What does this look like?"
+    }
+  ]
+```

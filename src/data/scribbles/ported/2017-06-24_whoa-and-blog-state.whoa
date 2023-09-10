@@ -1,0 +1,68 @@
+---
+title: The Current State of Whoa (and this blog)
+path: scribbling-about-whoa-and-blog-state
+date: "2017-06-24T06:00:00.000Z"
+---
+
+So I've been working on this `Whoa` thing for a while now, and I've never really tried to explain—*even to myself*—what exactly it is. I'm not sure I could do that now either. But **I can say what it looks like right now**, and I can lay out some plans I have for the near future.
+
+A lot of early inspiration came from [Jake Albaugh's self coding pen](https://codepen.io/jakealbaugh/pen/PwLXXP). 
+
+🔎Jake Albaugh's Self Coding Pen🔍
+
+In its current state, `Whoa` looks nothing like that. Currently `whoa` is **kinda just an expansion of Markdown**. By that I mean that I can write `whoa` posts using all the features of [Markdown](https://daringfireball.net/projects/markdown/syntax), *and then some*. 
+
+So here is what drafting a post looks like, next to the rendered version.
+
+ Here is what whoa does for me. I draft a post with the extension `.whoa`. This post looks like this. |- I'll throw a tangent in here just for fun.-|
+
+![cur-state.png](cur-state.png)
+
+> *It can be kinda hard to differentiate between what `whoa` does and what the blog structure I set up does. Ideally I would have them less closely coupled, but that isn't pressing.*
+
+So there are kinda 3 layers that make it all happen.
+
+1. [whoa-theme](https://github.com/davvidbaker/whoa/tree/master/whoa-theme) and [whoa-language-support](https://github.com/davvidbaker/whoa/tree/master/whoa-language-support)
+
+2. [whoa-loader](https://github.com/davvidbaker/whoa/tree/master/whoa-loader)
+
+3. [whoa-components](https://github.com/davvidbaker/davvidbaker/tree/master/whoa-components)
+
+Let's go through them 1 by 1.
+
+## 1. whoa-theme and whoa-language-support
+
+These are two Visual Studio Code Extensions. One thing you can do in [VS Code](https://twitter.com/code?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor)—and some other text editors is create your own language grammars. `whoa-language-support` is what does that. 
+
+Language grammars are how you are able to get things like syntax highlighting and bracket matching, among many others. Out of the box, VS Code comes installed with a JavaScript grammar and some others, but of course, every programming language needs a grammar! People are using new and obscure languages all the time, and you don't want to have to rely on the text-editor folks to support your language.  It's fairly easy to create your own language extension by looking through [VS Code docs](https://code.visualstudio.com/docs/languages/overview) and  language extensions that others have open-sourced, like [the elm one](https://marketplace.visualstudio.com/items?itemName=sbrink.elm).
+
+`whoa-theme` is just a simple [VS Code theme extension](https://code.visualstudio.com/docs/extensions/themes-snippets-colorizers). This colorizes the scopes that have been set up by the language grammar. 
+
+## 2 UNFINISHED. Got hungry
+
+
+# Components
+
+### Tangents
+Probably the component I've put the most time into. |-It's best displayed as a shorter tangent on that is just long enough to go off page.-| But if it does go off page and then maybe gets covered, you can just click on it and read the contents in a popup.
+
+### Search Bars
+🔎What's up with Russia today?🔍
+
+### Revisions
+✍️{Some bad text that you should hover over.}(You gotta do better kid.) ✍️{And some that hovering over doesn't do nothin}.
+
+### Normatives
+I should find a new job. Now look over in the notes to the left 👈.
+
+### Redactions
+Here is some text that maybe I don't want you to 🕵{see}, at least not without 🕵{some effort}.
+
+### Word Choice
+I often can't decide what word to {use, write, say}(?). And sometimes I have doubts about whether the word I use is a real word and the befitting(?) word.
+
+___
+
+# Damn I really need more components.
+
+Maybe. Or I might just want to write more. For one. Then I'll see what I really need.

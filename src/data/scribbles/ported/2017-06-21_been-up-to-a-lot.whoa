@@ -1,0 +1,47 @@
+---
+title: Lately
+path: has-done-been-up-to-a-lot
+date: "2017-06-21T06:00:00.000Z"
+---
+
+**I've been doing a lot things lately.** I guess most of it has been in preparation for applying to new jobs.
+
+### For frontend developers, on some level, the personal website is your application.
+
+☝ That is kind of what I feel, but also not totally.
+
+A lot of time has been put into deciding what tools to use to build everything. I have settled on using [Next.js](https://github.com/zeit/next.js) made by the team over at [zeit](https://zeit.co/).
+
+Right now I am at the point where I am trying to figure out what should go on [my home page](https://🙃🐢.ws). |- That reminds me, I am pretty excited—I don't know why I would use the word excited, but it seems kind of accurate—excited about being able to use emoji in domain names. Right now, it only works for the .ws domain, though. I sorta kinda just want to be able to make business cards that look like this.-|
+
+![🙃🐢.ws](business-card.png)
+s
+TODO: I should align that image, and all images, better.
+
+I should really figure out a better method than I currently have for drafting a blog post. The `whoa-theme` is great, but it isn't everything. Right now, as part of a workaround for Next.js's lack of server side rendering for custom webpack loaders, I have to run a script that uses `whoa-loader` and compiles it to a javascript object that is then used. 
+
+I guess one workaround could and maybe should be to just do all the things whoa-loader is doing in the browser. At least for development. It could get a bit heavy in production...maybe, *but I also wonder how it will be exported when I export the site to a static version...*
+
+|- It's not that I hate the tube of content, but some designers don't even think about any other kind of layout. The web is powerful, especially with CSS grid. We can do better! -|
+
+A lot of what I write about right now is so temporal, because it is about specifics of tech. **I hate it.** This won't be interesting to read in 5 years. **It isn't even interesting now.**
+
+Let's try a redaction 🕵{redacted}. COOL. That was easy enough to create.
+
+Now I'm going to 🕵{smoke some weed} and then write a bunch and 🕵{redact a bunch} of it.
+
+I guess I kinda like the way redactions look. It's like you're hiding something. I am very aware that the text is still there, and nothing is really hidden from most people, but the whole reason for the redactions is to 🕵{prevent people who aren't savvy enough to figure} it out themselves from 🕵{seeing things that they just can't handle}. 
+
+# People like 🕵{my parents}.
+
+Hmmmm. I wonder if during development I should not totally hide redactions from myself?
+
+Wow got real side tracked there for a second/15 minutes. *But now*, the side bar state is saved through hot reloads... which is sooo important. I still need to sync the `<main>` element's scroll state though. Oh well. Can't do everything at once. I'd say that would take probably maybe a half hour. **Why are my 🕵{estimates} often so wrong?**
+
+Earlier today, I overheard these two guys at 🕵{Milk and Pull} talking about VR.  do i hate.
+
+I am very quick to 🕵{hate on people}. Maybe I should be more 🕵{positive}.
+
+# Wow I just looked back at some of the self coding stuff I was making last fall.
+
+[You can see a collection here](https://codepen.io/collection/XQGkRJ/).

@@ -1,0 +1,31 @@
+---
+title: 2D Printers
+path: printing-on-all-his-printing-machines
+hashtags: []
+date: 2018-11-02T02:42:22.298Z
+---
+
+I'm definitely happier when I'm making things targeted at me as the end user.
+
+```component
+tag: CycleItems
+props:
+  title: ''
+  byLine: true
+  items: [
+    'I am not unhappy right now. I have been stressed about work though.',
+    "I'm so slaphappy right now. I have been eating pullled pork though."
+  ]
+```
+
+⚠️There is a bug with the above (implementation of `byLine` in `<CycleItems />` ) that causes a jump on initial render. It's not hard to see.⚠️
+
+I really wish I spent more time exploring some of the concepts I've outlined here throughout.
+
+🔎can a raspberry pi act as a wireless router, and if so, what would the signal strength be like?🔍
+
+# As I go through building Box Man, one of the things I will be exploring is hot reloading multiple devices across networks (like one device is on wifi, another on cellular network) that are connected to each other P2P.
+
+## So this will hot reloading in 'production'–or, rather,  hot reloading in public, since I can do it at a different domain (like `box-man-beta.now.sh`)
+
+### This might turn out to be interesting.

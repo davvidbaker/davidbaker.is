@@ -1,0 +1,76 @@
+---
+title: Not Yet
+date: "2017-05-04T06:00:00.000Z"
+path: wondering-can-i-use-css-grid-on-android
+---
+
+# But I don't think I care.
+
+One of the problems with writing the {editor, compiler, code}(?) for a thing at the same time as you trying to write that thing can be challenging. It's very difficult to stay focused on the actual writing of the writing and not start fixing problems with the codebase―problems that may be deeply seeded problems 🌱.
+
+**I need to see if I can get hot module replacement working. Not a fan of these page flashes every time I save.** I think one of the things I'll need to do is store the scroll location for individual scrollable components, in the redux store. ⚛'--
+
+Yeahhh buddy. Writing this in zen mode looks dope. [Using a workspace-specific](https://code.visualstudio.com/updates/v1_11) color theme for the whoa file only, which I had to open in a new window. I like it. **Yes very much**.
+Something.
+
+Yesss. Now I'm writing this in Helvetica, much better. It's all visual studio code for all the things.
+
+One small thing I wanted to do was format how inline code looks. `Let's do it.`
+
+Cool!
+
+Yeesh I just spent far too much time doing something trivial.
+
+Here is some of what needs to happen to allow me to easily get some continuous deployment (also right now any kind of deployment) up in here. 
+
+1. Start writing tests.
+1. Publish whoa-loader as an npm module.
+1. Get ordered lists working 😁.
+1. Also unordered lists.
+1. Git webhooks.
+1. Write some form of documentation, at least a `README`.
+1. Make it much easier to insert images.
+1. Get `Socrates` back up and running.
+
+*I should go to sleep soon.* But I should also fix the terribly buggy CSS I just wrote. Ay dios mio. |-How do I put an accent mark on a character in Ubuntu/VS Code/without just posting a unicode value.-|
+
+## Okay okay okay. How about here's a checklist of stuff I {want, need}(?) to get done tomorrow.'
+- [ ] fix style problems with individual post pages. (See [Trello Board](https://trello.com/b/kDjPvwZq/dot-whoa))
+- [ ] (probably not tomorrow) github flavored markdown
+
+# Potentially v. cool idea: VR CSS (with setting CSS variables in Javascript which is only way to get accelerometer, right?)
+
+|- Also. CSS Shapes. -|
+
+Being a frontend developer is definitely being somewhat of an artist. When doing creative works certainly. |-Or so I tell myself.-| I think it makes some amount of sense to 
+
+Man there's really so much potential for this thing. I need to start really doing it fuller time.
+
+### Cool things to try out with Puppy Club.
+- Shader overlays
+- |-This is pretty tangential I think. Tangentialness can be so easy to follow but it really has no depth.-|
+- WebGL shader explosions when you click on stuff. They can different depending on if you
+- Large-scale code-mods on the abstract syntax tree.
+- Prepack
+
+If you're a part of my life right now, you might be aware that I have been a bit of on an emoji kick lately. 👴 Emoji everywhere. When I couldn't get emoji working in Ubuntu I was {amiss, remiss, is-amiss-a-word?}(?).
+
+# 👴
+# 🎽
+#  👣👣
+
+
+# I really think writing cool shaders for Augmented Reality is where I want to be right meow 🐱.
+
+Post idea: The Memory Implications/Considerations of Javascript's "everything is an object" design.
+
+I think I might change the # ## ### Markdown meanings to instead be wrappers for just changing font size..
+
+When I'm writing code, am I mostly thinking in terms of operational transformations?
+
+Let's do a stream of consciousness.
+
+# Streams of Consciousness
+## book title
+
+Ok. Actually here we go. HOOOLD THAT I'm going to 🕵{pass out.}

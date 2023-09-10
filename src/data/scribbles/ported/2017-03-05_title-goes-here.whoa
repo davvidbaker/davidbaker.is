@@ -1,0 +1,9 @@
+---
+title: The Post Title Goes Here
+date: "2017-03-12T06:00:00.000Z"
+path: scribbling-about-how-the-title-goes-here
+---
+
+Gosh darn I need to sit down and actually figure out how it is I want to organize posts. I need to set up dynamic routing. It would probably be nice to have things set up so I can just run `npm run generate post {posttitle}` and boom new post with everything set up. Eventually a gui might be nice.
+
+I really need to decide whether **vim** is doing me good. I do like that it has made me more comfortable editing files in the terminal, which is useful when working on remote machines. The downside has been not necessarily with regards to **vim**, but rather the vim extension for **VS Code**. There are certain functionalities that it takes away from me. For instance, CTRL+D ought to highlight the next instance of the currently highlighted word, instead it looks like it decrements the indentation. Maybe that is actually a vim command? It is quite possible I just mostly need to learn more vim commands. The problem is that vim commands are not implemented perfectly in the extension either. Like global find replace with confirmation. `:%s/foo/bar/gc` By the way, this is regarding the extension [Vim v0.6.2](https://github.com/VSCodeVim/Vim). I should look at the codebase and see if it might be worthwhile to try to make some PRs. I should do this. I should should should . I should do that.
