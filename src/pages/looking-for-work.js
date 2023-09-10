@@ -33,7 +33,7 @@ const Div = styled.div`
 
   .subtitle {
     position: absolute;
-    top: 0;
+    top: 20px;
     right: 40px;
     text-align: right;
     font-size: small;
@@ -86,7 +86,7 @@ const Div = styled.div`
     margin-bottom: 0.75rem;
   }
 
-  .print-hide {
+  #printer-icon {
     display: unset;
   }
 
@@ -183,6 +183,11 @@ const Div = styled.div`
   }
 
   @media print {
+
+    body {
+      width: 6in;
+    }
+    
     .name {
       text-align: left !important;
       margin: 0;
@@ -199,14 +204,30 @@ const Div = styled.div`
       display: block !important;
     }
 
+    #skills {
+      display: flex;
+      justify-content: space-between;
+    }
+
     #skills p {
       font-size: 10px !important;
     }
 
     #skills ul {
-      list-style: none;
+      list-style-type: none;
       padding-left: 0;
+      display: block;
     }
+
+    #skills li {
+      display: inline;
+    }
+
+    #skills li p {
+      display: inline;
+      padding-right: 3px;
+    }
+
 
     #skills div {
       min-width: 20% !important;
@@ -216,6 +237,50 @@ const Div = styled.div`
     main {
       overflow: visible;
     }
+
+    h2 {
+      margin: 0.25rem 0 0.25rem 0;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+  
+    h3 {
+      margin-left: 8px;
+      margin-bottom: 0.25rem;
+      font-size: 12px;
+    }
+    h3 span {
+      font-size: 10px;
+    }
+
+    ul { margin: 0; list-style: none; }
+
+    li::before {
+      content: "• ";
+      color: lightgray;
+      display: inline;
+      font-size: 10px;
+    }
+
+    li p {
+      display: inline;
+    }
+    
+    p { 
+      font-size: 11px;
+      line-height: 12px;
+    }
+
+    p a {color: inherit;}
+
+
+
+    .left {
+      max-width: unset;
+      margin-right: unset;
+      width: unset;
+    }
+    
   }
 `;
 const ResumeIndex = ({ location }) => (
@@ -230,7 +295,7 @@ const ResumeIndex = ({ location }) => (
       <header>
         <h1 className="name">David Baker</h1>
         <p className="subtitle print-show">
-          davidbaker.is/online<br />davvidbaker@gmail.com
+          davidbaker.is/looking-for-work<br /><br />david_baker@mines.edu
         </p>
         <button
           className="print-hide"
@@ -241,7 +306,17 @@ const ResumeIndex = ({ location }) => (
       <main>
         <div className="left">
           <section>
+            <h2>Objective</h2>
+          <p>Experienced software engineer seeking electrical engineering internship in distributed energy resource field.
+            Passionate about modernizing the grid and renewable energy sources.
+          </p>
+          </section>
+
+          <section>
             <h2>Education</h2>
+            <h3><a href="https://www.mines.edu/">Colorado School of Mines</a>
+              <span>[2023 - graduating December 2024]</span></h3>
+            <ul><li><p>Masters of Science in Advanced Energy Systems</p></li></ul>
             <h3>
               <a href="https://www.upenn.edu">University of Pennsylvania</a>
               <span>[2011 - 2015]</span>
@@ -266,10 +341,20 @@ const ResumeIndex = ({ location }) => (
           <section>
             <h2>Work Experience</h2>
             <h3>
+              <a href="https://www.workday.com/">Workday</a> - Software Engineer 3, 4 <span>[September 2019 - July 2023]</span>
+            </h3>
+            <ul>
+              <li>
+                <p>Worked within and across (mostly) client-centric teams focused on collaborative productivity-driving applications,
+                  ie a data visualization/charting library, a text editor used across the platform, a WYSIWYG email designer.
+                </p>
+              </li>
+            </ul>
+            <h3>
               <a href="https://elasticsuite.com">Elastic Suite</a> - Full Stack
               Software Engineer <span>[January 2018 - present]</span>
             </h3>
-            <ul>
+            <ul className="print-hide">
               <li>
                 <p>
                   Have been mostly working on modernizing a legacy dojo single
@@ -295,7 +380,7 @@ const ResumeIndex = ({ location }) => (
               <a href="http://click3x.com/">Click 3X</a> ― Senior Developer
               <span>[June 2016 - December 2017]</span>
             </h3>
-            <ul>
+            <ul className='print-hide'>
               <li>
                 <p>
                   Worked on a really wide variety of client projects varying
@@ -375,7 +460,7 @@ const ResumeIndex = ({ location }) => (
               Metallurgical & Quality Systems Intern
               <span>[Summer 2013]</span>
             </h3>
-            <ul>
+            <ul className='print-hide'>
               <li>
                 <p>
                   Implemented process management system for anodizing alloys of
@@ -401,7 +486,7 @@ const ResumeIndex = ({ location }) => (
               </a>{' '}
               ― Teaching Assistant<span>[Summer 2015]</span>
             </h3>
-            <ul>
+            <ul className='print-hide'>
               <li>
                 <p>
                   Provided guidance for 55 high school students in engineering
@@ -418,10 +503,10 @@ const ResumeIndex = ({ location }) => (
               >
                 SAAST
               </a>
-              * ― Residential Teaching Assistant
+              <span className='print-hide'>*</span> ― Residential Teaching Assistant
               <span>[Summer 2014]</span>
             </h3>
-            <ul>
+            <ul className='print-hide'>
               <li>
                 <p>
                   Served as educator, mentor, and group leader of 20 high school
@@ -444,7 +529,7 @@ const ResumeIndex = ({ location }) => (
             <ul>
               <li>
                 <p>
-                  Website: <a href="http://🙃🐢.ws">🙃🐢.ws</a> or{' '}
+                  Website:{' '}
                   <a href="https://davidbaker.is/online">
                     davidbaker.is/online
                   </a>
@@ -453,8 +538,8 @@ const ResumeIndex = ({ location }) => (
               <li>
                 <p>
                   Email:{' '}
-                  <a href="mailto:davvidbaker@gmail.com">
-                    davvidbaker@gmail.com
+                  <a href="mailto:david_baker@mines.edu">
+                    david_baker@mines.edu
                   </a>
                 </p>
               </li>
@@ -499,8 +584,9 @@ const ResumeIndex = ({ location }) => (
             <h2>Skills</h2>
             <div id="skills">
               <div>
-                <h3>Software</h3>
+                <h3 className='print-hide'>Software</h3>
                 <ul>
+                  <li><p>Matlab, Simulink</p></li>
                   <li>
                     <p>JavaScript, HTML, CSS</p>
                   </li>
@@ -513,8 +599,7 @@ const ResumeIndex = ({ location }) => (
                   <li>
                     <p>Postgres</p>
                   </li>
-
-                  <li>
+                  <li className='print-hide'>
                     <p>C# (for Unity)</p>
                   </li>
                   <li>
@@ -524,7 +609,7 @@ const ResumeIndex = ({ location }) => (
               </div>
 
               <div>
-                <h3>Hardware/Electronics</h3>
+                <h3 className='print-hide'>Hardware/Electronics</h3>
                 <ul>
                   <li>
                     <p>Breadboarding, PCB Design, SPICE</p>
@@ -542,7 +627,7 @@ const ResumeIndex = ({ location }) => (
               </div>
 
               <div>
-                <h3>Other</h3>
+                <h3 className='print-hide'>Other</h3>
                 <ul>
                   <li>
                     <p>
@@ -551,14 +636,14 @@ const ResumeIndex = ({ location }) => (
                     </p>
                   </li>
                   <li>
-                    <p>Spanish, Japanese</p>
+                    <p>Spanish, Japanese, Mandarin</p>
                   </li>
                 </ul>
               </div>
             </div>
           </section>
 
-          <section>
+          <section className='print-hide'>
             <h2>Organizations</h2>
             <h3>
               <a href="http://2015s.pennapps.com/">PennApps</a> Design Team
@@ -571,7 +656,7 @@ const ResumeIndex = ({ location }) => (
         </div>
       </main>
 
-      <section className="annotations">
+      <section className="annotations print-hide">
         <ul>
           <li>
             <p>

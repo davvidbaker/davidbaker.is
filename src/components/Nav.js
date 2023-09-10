@@ -47,7 +47,7 @@ const activeStyle = {
 /** 💁 root path was matching for all other paths, so I am not using activeStyle prop, but a class instead, for just that link */
 const Nav = ({ location }) => (
   <Wrapper>
-    <ul>
+    <ul className='print-hide'>
       <li>
         <Link
           className={

@@ -58,6 +58,14 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+@media print {
+  .print-hide,
+  .print-hide::before,
+  .print-hide::after {
+    display: none !important;
+  }
+}
 `
 
 // 💁 doing font-sizing based on https://css-tricks.com/rems-ems/

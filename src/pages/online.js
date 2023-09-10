@@ -6,8 +6,6 @@ import Helmet from 'react-helmet';
 import CycleItems from '../components/CycleItems';
 import { Layout } from '../components/layout'
 
-import TwitterImg from '../images/twitter.svg';
-import CodepenImg from '../images/codepen.png';
 import GithubImg from '../images/github.svg';
 
 const Main = styled.main`
@@ -72,21 +70,11 @@ const Main = styled.main`
 
 export const IndexPage = ({ location }) => <Layout location={location}><div><Main><header>
     <h1>David Baker</h1>
-    <h2>web developer making internet things</h2>
+    <h2>graduate student</h2>
     <ul>
         <li>
             <a href="https://github.com/davvidbaker">
                 <img width="35px" src={GithubImg} alt="Github" />
-            </a>
-        </li>
-        <li>
-            <a href="https://twitter.com/davvidbaker">
-                <img width="35px" src={TwitterImg} alt="Twitter" />
-            </a>
-        </li>
-        <li>
-            <a href="https://codepen.io/davvidbaker/">
-                <img width="35px" src={CodepenImg} alt="Codepen" />
             </a>
         </li>
     </ul>
@@ -94,35 +82,20 @@ export const IndexPage = ({ location }) => <Layout location={location}><div><Mai
     <article>
         <h2>Hello!</h2>
         <p>You're probably here because I am applying for a job!</p>
+        <p>I am currently pursuing my masters in <a href="https://energysystems.mines.edu/">Advanced Energy Systems at Colorado School of Mines</a>, where I am specializing in power systems engineering.</p>
 
         <p>
-            I just moved from New York to Denver in December 2017. In New York, I
-            was a senior developer at <a href="http://click3x.com/">Click 3X</a>
-            , an ad agency in the Flatiron District of Manhattan, and now I am a
-            full stack software engineer at{' '}
-            <a href="https://elasticsuite.com">Elastic Suite</a>.
-        </p>
-        <p>
-            I <span style={{ color: 'red' }}>❤</span> making stuff, and I love how
-            quickly you can turn ideas into reality in our industry.
+            I spent the last seven 8 years as a software engineer, mostly doing frontend work, most recently at <a href="https://www.workday.com/">Workday</a>.
+            My career experiences in the enterprise software industry have taught me how to work collaboratively across large organizations to build creative, sustainable solutions.
+            Now I am applying my skills to fighting climate change via increased electrification and integrating distributed energy resources.
         </p>
 
         <p>
-            I really am interested in how people―<em>users</em>, if you
-            will―interact with technology and what kinds of experiences we can
-            deliver to them in today's highly connected digital world. These days
-            I'm mostly making things for the web platform, using tools like React
-            and Phoenix.
-        </p>
-
-        <p>
-            <strong>
-                You should check out the{' '}
-                <Link to="/hacking">
-                    <a>projects page</a>
-                </Link>
-            </strong>{' '}
-            to see some of my work. It contains a mix of client work and
+            You can find some old projects—mostly software—on the{' '}
+            <Link to="/hacking">
+                <a>projects page</a>
+            </Link>.{' '}
+            You'll find a mix of old client work and
             (unpolished) personal projects.
         </p>
 
@@ -132,12 +105,12 @@ export const IndexPage = ({ location }) => <Layout location={location}><div><Mai
             <CycleItems
                 title="I believe in"
                 items={[
+                    'humanity.',
+                    'engineering.',
                     'design that serves a purpose.',
                     'the potential of the internet to make positive change in the world.',
                     'myself occasionally 🙃.',
                     'the merits of iterative design.',
-                    'a web component future 🔧.',
-                    'the proliferation of emoji as a stage in the evolution of written language.',
                     'data-driven decisions.',
                 ]}
             />
@@ -145,7 +118,7 @@ export const IndexPage = ({ location }) => <Layout location={location}><div><Mai
                 title="I would like to work"
                 items={[
                     'alongside smart, talented people who are passionate about what they do.',
-                    'mostly on the front end, but I am not afraid to get my hands dirty.',
+                    'on projects that aim to combat climate change.',
                     'on useful products that I believe in.',
                     'with folks who value quality code.',
                 ]}
@@ -153,190 +126,34 @@ export const IndexPage = ({ location }) => <Layout location={location}><div><Mai
             <CycleItems
                 title="I am interested in"
                 items={[
-                    'virtual reality.',
-                    'augmented reality.',
-                    'reality.',
-                    'note-taking technologies',
-                    'annotations on the web.',
+                    'distributed energy resources.',
+                    'pumped hydro storage.',
+                    'power electronics.',
                     'the internet of things.',
                     'rapid prototyping.',
                     'artificial intelligence.',
                     'intelligence.',
-                    'new media 🤦.',
-                    'sustainability in the tech world.',
+                    'batteries',
+                    'electricity and magnetism.',
                     'sustainability.',
                     'the future of the internet 🌐.',
-                    'memory, specifically working memory.',
-                    'memory.',
                     'education.',
-                    'expression',
-                ]}
-            />
-            <CycleItems
-                title="When building websites, I care about"
-                items={[
-                    'the user experience.',
-                    'performance ⚡.',
-                    'accessibility.',
-                    'the color palette.',
-                    'the health of the codebase.',
-                    'vertical rhythm.',
-                    '',
                 ]}
             />
             <CycleItems
                 title="I am"
                 items={[
                     'mistrustful of untested code.',
-                    'doubting my use of mistrustful.',
-                    'wrong about doubting myself there.',
                     'a sucker for @beesandbombs 🐝💣 GIFs.',
-                    'Ron Burgundy?',
                     'always trying to do meaningful work.',
-                    'iron man. Dadaddadadadada duhnn duhnn duuuhhnn.',
+                    'Ron Burgundy?',
+                    'a hard worker.',
+                    'a problem solver.',
                 ]}
             />
         </ul>
     </article>
 </Main></div></Layout>
 
-export const IndexPage2 = ({ url }) => (
-    <Layout>
-        <div>
-            <Helmet title="David Baker is Online" />
-            <Main>
-                <header>
-                    <h1>David Baker</h1>
-                    <h2>web developer making internet things</h2>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/davvidbaker">
-                                <img width="35px" src={GithubImg} alt="Github" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/davvidbaker">
-                                <img width="35px" src={TwitterImg} alt="Twitter" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://codepen.io/davvidbaker/">
-                                <img width="35px" src={CodepenImg} alt="Codepen" />
-                            </a>
-                        </li>
-                    </ul>
-                </header>
-
-                <article>
-                    <h2>Hello!</h2>
-                    <p>You're probably here because I am applying for a job!</p>
-
-                    <p>
-                        I just moved from New York to Denver in December 2017. In New York, I
-                        was a senior developer at <a href="http://click3x.com/">Click 3X</a>
-                        , an ad agency in the Flatiron District of Manhattan, and now I am a
-                        full stack software engineer at{' '}
-                        <a href="https://elasticsuite.com">Elastic Suite</a>.
-                    </p>
-                    <p>
-                        I <span style={{ color: 'red' }}>❤</span> making stuff, and I love how
-                        quickly you can turn ideas into reality in our industry.
-                    </p>
-
-                    <p>
-                        I really am interested in how people―<em>users</em>, if you
-                        will―interact with technology and what kinds of experiences we can
-                        deliver to them in today's highly connected digital world. These days
-                        I'm mostly making things for the web platform, using tools like React
-                        and Phoenix.
-                    </p>
-
-                    <p>
-                        <strong>
-                            You should check out the{' '}
-                            <Link to="/hacking">
-                                <a>projects page</a>
-                            </Link>
-                        </strong>{' '}
-                        to see some of my work. It contains a mix of client work and
-                        (unpolished) personal projects.
-                    </p>
-
-                    <hr />
-                    <h3>Here are some things you might want to know about me.</h3>
-                    <ul className="about-list">
-                        <CycleItems
-                            title="I believe in"
-                            items={[
-                                'design that serves a purpose.',
-                                'the potential of the internet to make positive change in the world.',
-                                'myself occasionally 🙃.',
-                                'the merits of iterative design.',
-                                'a web component future 🔧.',
-                                'the proliferation of emoji as a stage in the evolution of written language.',
-                                'data-driven decisions.',
-                            ]}
-                        />
-                        <CycleItems
-                            title="I would like to work"
-                            items={[
-                                'alongside smart, talented people who are passionate about what they do.',
-                                'mostly on the front end, but I am not afraid to get my hands dirty.',
-                                'on useful products that I believe in.',
-                                'with folks who value quality code.',
-                            ]}
-                        />
-                        <CycleItems
-                            title="I am interested in"
-                            items={[
-                                'virtual reality.',
-                                'augmented reality.',
-                                'reality.',
-                                'note-taking technologies',
-                                'annotations on the web.',
-                                'the internet of things.',
-                                'rapid prototyping.',
-                                'artificial intelligence.',
-                                'intelligence.',
-                                'new media 🤦.',
-                                'sustainability in the tech world.',
-                                'sustainability.',
-                                'the future of the internet 🌐.',
-                                'memory, specifically working memory.',
-                                'memory.',
-                                'education.',
-                                'expression',
-                            ]}
-                        />
-                        <CycleItems
-                            title="When building websites, I care about"
-                            items={[
-                                'the user experience.',
-                                'performance ⚡.',
-                                'accessibility.',
-                                'the color palette.',
-                                'the health of the codebase.',
-                                'vertical rhythm.',
-                                '',
-                            ]}
-                        />
-                        <CycleItems
-                            title="I am"
-                            items={[
-                                'mistrustful of untested code.',
-                                'doubting my use of mistrustful.',
-                                'wrong about doubting myself there.',
-                                'a sucker for @beesandbombs 🐝💣 GIFs.',
-                                'Ron Burgundy?',
-                                'always trying to do meaningful work.',
-                                'iron man. Dadaddadadadada duhnn duhnn duuuhhnn.',
-                            ]}
-                        />
-                    </ul>
-                </article>
-            </Main>
-        </div>
-    </Layout>
-);
 
 export default IndexPage
