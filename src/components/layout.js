@@ -75,7 +75,7 @@ class IndexLayout extends React.Component {
 
   render() {
     const { location, children } = this.props;
-    let header;
+    // let header;
 
     // let rootPath = `/`;
     // if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
@@ -87,7 +87,7 @@ class IndexLayout extends React.Component {
     //   /** 💁 include nav in top-level directories */
     //   location.pathname.match(/\//g).length === 1
     // ) {
-    header = this.props.navVisible && <Nav location={location} />;
+    // header = this.props.navVisible && <Nav location={location} />;
     // } else {
     //   header = null;
     // }
@@ -95,7 +95,7 @@ class IndexLayout extends React.Component {
       <React.Fragment>
         <GlobalStyle />
         <Container>
-          {header}
+          <Nav location={location} />
           {children}
         </Container>
       </React.Fragment>
