@@ -4,7 +4,8 @@
 module.exports = {
   siteMetadata: {
     title: `davidbaker.is`,
-    siteUrl: `https://davidbaker.is`
+    siteUrl: `https://davidbaker.is`,
+    autho: "David Baker"
   },
   plugins: [`gatsby-plugin-styled-components`,
     "gatsby-plugin-image",
@@ -13,6 +14,23 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     'gatsby-transformer-json',
+    // {
+    //   resolve: `gatsby-transformer-whoa`,
+    //   options: {
+    //     plugins: [
+    //       'gatsby-whoa-images',
+    //       // {
+    //       //   resolve: `gatsby-remark-images`,
+    //       //   options: {
+    //       //     maxWidth: 590,
+    //       //   },
+    //       // },
+    //       'gatsby-remark-prismjs',
+    //       'gatsby-remark-copy-linked-files',
+    //       'gatsby-remark-smartypants',
+    //     ],
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
