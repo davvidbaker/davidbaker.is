@@ -1,5 +1,10 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import * as React from "react"
+import { styled } from 'styled-components'
+const pageStyles = {
+  color: "#232129",
+  padding: "96px",
+  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+}
 
 const Div = styled.div`
   margin: 0 auto;
@@ -11,34 +16,16 @@ const Div = styled.div`
     font-weight: normal;
   }
 `;
-
-class FourOFourPage extends Component {
-  componentDidMount() {
-    if (typeof window !== 'undefined') {
-      window
-        .fetch(
-          `https://mr.davidbaker.is/going-to-get-an-email/${
-            window.location.pathname.match(/\/(.*)/)[1]
-          }`
-        )
-        .then(response => {
-          console.log(response);
-        })
-        .catch(e => {
-          console.log(e);
-        });
-    }
-  }
-
-  render() {
-    const descriptor =
-      typeof window !== 'undefined'
-        ? window.location.pathname.match(/\/(.*)/)[1]
-        : '404';
-    return (
+const NotFoundPage = () => {
+  const descriptor =
+    typeof window !== 'undefined'
+      ? window.location.pathname.match(/\/(.*)/)[1]
+      : '404';
+  return (
+    <main style={pageStyles}>
       <Div>
         <h1>
-          So, you think David Baker is <strong>{descriptor}</strong>?
+          So, you think David Baker is <strong>{ }</strong>?
         </h1>
         <h2>
           We've sent him an email letting him know. Thanks for your input!
@@ -48,8 +35,10 @@ class FourOFourPage extends Component {
           Maybe thanks to you, David will one day be {descriptor}!
         </h3>
       </Div>
-    );
-  }
+    </main>
+  )
 }
 
-export default FourOFourPage;
+export default NotFoundPage
+
+export const Head = () => <title>Not found</title>

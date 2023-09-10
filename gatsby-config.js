@@ -24,7 +24,7 @@ module.exports = {
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",
-        icon: "src/static/boxman.png", // This path is relative to the root of the site.
+        icon: "static/boxman.png", // This path is relative to the root of the site.
         // An optional attribute which provides support for CORS check.
         // If you do not provide a crossOrigin option, it will skip CORS for manifest.
         // Any invalid keyword or empty string defaults to `anonymous`
@@ -38,7 +38,7 @@ module.exports = {
         preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
         custom: [
           {
-            name: ["some time later"], file: "./src/static/some_time_later.otf"
+            name: ["some time later"], file: "/static/some_time_later.otf"
           },
         ],
         web: [
