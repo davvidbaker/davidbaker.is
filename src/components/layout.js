@@ -110,6 +110,7 @@ IndexLayout.propTypes = {
   route: PropTypes.object,
 };
 
-export const Layout = connect(state => ({ navVisible: state.navVisible }), null)(
-  IndexLayout
-);
+export const Layout = IndexLayout
+// export const Layout = connect(state => ({ navVisible: state.navVisible }), null)(
+//   IndexLayout
+// );

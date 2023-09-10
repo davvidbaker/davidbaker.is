@@ -3,13 +3,13 @@ const { Provider } = require('react-redux')
 
 const { initStore } = require('./src/state/store')
 
-exports.wrapRootElement = ({ element, location}) => {
-    const store = initStore()
+// not using the store right now, will need to set it up to get blog working
+// exports.wrapRootElement = ({ element, location}) => {
+//     const store = initStore()
 
-    console.log('❤️‍🔥 location', location);
     
-    return <Provider store={store}>
-        {element}
-    </Provider>
+//     return <Provider store={store}>
+//         {element}
+//     </Provider>
 
-}
+// }

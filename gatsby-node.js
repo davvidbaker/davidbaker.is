@@ -31,6 +31,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
 
   result.data.allProjectsJson.edges.forEach(edge => {
+    if (!edge.node.description) return;
     createPage({
       path: `${edge.node.path}`,
       component: projectTemplate,
