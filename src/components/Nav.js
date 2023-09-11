@@ -65,11 +65,11 @@ const Nav = ({ location }) => (
           Projects
         </Link>
       </li>
-      <li>
+      {/* <li>
         <Link activeStyle={activeStyle} to="https://davidbaker-is-dvrr3g2fc-davvidbaker.vercel.app/scribbling">
           Old Scribbles
         </Link>
-      </li>
+      </li> */}
       <li>
         <Link activeStyle={activeStyle} to="/looking-for-work">
           Résumé

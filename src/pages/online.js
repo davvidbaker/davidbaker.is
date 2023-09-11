@@ -82,10 +82,10 @@ export const IndexPage = ({ location }) => <Layout location={location}><div><Mai
     <article>
         <h2>Hello!</h2>
         <p>You're probably here because I am applying for a job!</p>
-        <p>I am currently pursuing my masters in <a href="https://energysystems.mines.edu/">Advanced Energy Systems at Colorado School of Mines</a>, where I am specializing in power systems engineering.</p>
+        <p>I am currently pursuing my master's in <a href="https://energysystems.mines.edu/">Advanced Energy Systems at Colorado School of Mines</a>, where I am specializing in power systems engineering.</p>
 
         <p>
-            I spent the last seven 8 years as a software engineer, mostly doing frontend work, most recently at <a href="https://www.workday.com/">Workday</a>.
+            I spent the last eight years as a software engineer, mostly doing frontend work, most recently at <a href="https://www.workday.com/">Workday</a>.
             My career experiences in the enterprise software industry have taught me how to work collaboratively across large organizations to build creative, sustainable solutions.
             Now I am applying my skills to fighting climate change via increased electrification and integrating distributed energy resources.
         </p>

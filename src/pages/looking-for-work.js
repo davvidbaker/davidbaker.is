@@ -307,16 +307,19 @@ const ResumeIndex = ({ location }) => (
         <div className="left">
           <section>
             <h2>Objective</h2>
-          <p>Experienced software engineer seeking electrical engineering internship in distributed energy resource field.
-            Passionate about modernizing the grid and renewable energy sources.
-          </p>
+            <p>Experienced software engineer seeking electrical engineering internship in distributed energy resource field.
+              Passionate about modernizing the grid and renewable energy sources.
+            </p>
           </section>
 
           <section>
             <h2>Education</h2>
             <h3><a href="https://www.mines.edu/">Colorado School of Mines</a>
               <span>[2023 - graduating December 2024]</span></h3>
-            <ul><li><p>Masters of Science in Advanced Energy Systems</p></li></ul>
+            <ul>
+              <li><p>Master of Science in Advanced Energy Systems</p></li>
+              <li><p>Relevant coursework includes Power Electronics, Power Systems Analysis, and Physics of Energy</p></li>
+            </ul>
             <h3>
               <a href="https://www.upenn.edu">University of Pennsylvania</a>
               <span>[2011 - 2015]</span>
@@ -352,7 +355,7 @@ const ResumeIndex = ({ location }) => (
             </ul>
             <h3>
               <a href="https://elasticsuite.com">Elastic Suite</a> - Full Stack
-              Software Engineer <span>[January 2018 - present]</span>
+              Software Engineer <span>[January 2018 - August 2019]</span>
             </h3>
             <ul className="print-hide">
               <li>
