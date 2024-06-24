@@ -1,3 +1,3 @@
-import { IndexPage } from './online';
+import IndexPage from './online';
 
 export default IndexPage;

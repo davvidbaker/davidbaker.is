@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import Helmet from 'react-helmet';
 
 import CycleItems from '../components/CycleItems';
 import { Layout } from '../components/layout'
@@ -68,9 +67,9 @@ const Main = styled.main`
   }
 `;
 
-export const IndexPage = ({ location }) => <Layout location={location}><div><Main><header>
+const IndexPage = ({ location }) => <Layout location={location}><div><Main><header>
     <h1>David Baker</h1>
-    <h2>graduate student</h2>
+    <h2>graduate student in advanced energy systems</h2>
     <ul>
         <li>
             <a href="https://github.com/davvidbaker">
@@ -93,7 +92,7 @@ export const IndexPage = ({ location }) => <Layout location={location}><div><Mai
         <p>
             You can find some old projects—mostly software—on the{' '}
             <Link to="/hacking">
-                <a>projects page</a>
+                projects page
             </Link>.{' '}
             You'll find a mix of old client work and
             (unpolished) personal projects.
@@ -133,7 +132,7 @@ export const IndexPage = ({ location }) => <Layout location={location}><div><Mai
                     'rapid prototyping.',
                     'artificial intelligence.',
                     'intelligence.',
-                    'batteries',
+                    'batteries.',
                     'electricity and magnetism.',
                     'sustainability.',
                     'the future of the internet 🌐.',

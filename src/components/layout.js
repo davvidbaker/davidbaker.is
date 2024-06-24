@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import styled, { createGlobalStyle } from 'styled-components';
 import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet'
+import { Link } from 'gatsby'
 
 import { italic } from '../constants/styles';
 import colors from '../constants/colors';
@@ -101,6 +103,7 @@ class IndexLayout extends React.Component {
     // }
     return (
       <React.Fragment>
+        <Helmet><Link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" /></Helmet>
         <GlobalStyle />
         <Container>
           <Nav location={location} />

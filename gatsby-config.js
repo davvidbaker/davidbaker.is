@@ -10,7 +10,17 @@ module.exports = {
   plugins: [`gatsby-plugin-styled-components`,
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx",
+    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `writing`,
+        path: `${__dirname}/src/pages/writing`,
+      },
+
+    },
+
+    
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     'gatsby-transformer-json',
@@ -68,7 +78,7 @@ module.exports = {
             name: 'Yesteryear',
             file: 'https://fonts.googleapis.com/css2?family=Yesteryear&display=swap',
           },
-          { namem: 'mr-eaves-sans', file: 'https://use.typekit.net/diy2xuy.css' }
+          { name: 'mr-eaves-sans', file: 'https://use.typekit.net/diy2xuy.css' }
         ],
       },
     },

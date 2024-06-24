@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
+const FadedLI = styled.li`
+opacity: 0.2;`
+
 const Wrapper = styled.nav`
   width: 100%;
   overflow: hidden;
@@ -65,16 +68,16 @@ const Nav = ({ location }) => (
           Projects
         </Link>
       </li>
-      {/* <li>
-        <Link activeStyle={activeStyle} to="https://davidbaker-is-dvrr3g2fc-davvidbaker.vercel.app/scribbling">
-          Old Scribbles
-        </Link>
-      </li> */}
       <li>
         <Link activeStyle={activeStyle} to="/looking-for-work">
           Résumé
         </Link>
       </li>
+      {/* <FadedLI>
+        <Link activeStyle={activeStyle} to="https://davidbaker-is-dvrr3g2fc-davvidbaker.vercel.app/scribbling">
+          Old Scribbles
+        </Link>
+      </FadedLI> */}
     </ul>
   </Wrapper>
 );
